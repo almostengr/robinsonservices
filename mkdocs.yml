@@ -1,7 +1,8 @@
-site_name: Robinson Services, LLC
+site_name: Robinson Tech and Handy Services
 site_description: Providing handyman and technology services for the Montgomery, Alabama area.
+site_author: Robinson Tech and Handy Services
 site_url: https://localhost
-copyright: Copyright 2020, Robinson Services LLC
+copyright: 2020, Robinson Tech and Handy Services
 
 # site_favicon: images/lightbulb/favicon.ico
 
@@ -12,29 +13,92 @@ remote_name: origin
 remote_branch: website
 
 # Development server details
-dev_addr: 192.168.57.117:8080
-  
-extra_css: [css/extra.css]
+dev_addr: 192.168.57.117:8081
 
 # Appearance
 theme:
-  name: mkdocs
-  # custom_dir: 'readthedocs'
-  highlightjs: false
+  name: null
+  custom_dir: 'theme'
   language: en
   static_templates:
     - 404.html
     - 500.html
-  include_search_page: true
-  search_index_only: false
-  highlightjs: false
-  hljs_languages: []
-  include_homepage_in_sidebar: true
-  prev_next_buttons_location: bottom
-  navigation_depth: 4
-  titles_only: false
-  sticky_navigation: true
-  collapse_navigation: true
+    - contact.html
+  jumbotron:
+      heading: Get It Done Without Headaches
+      detail: Providing services to homeowners and businesses in Montgomery, AL and surrounding areas.
+      url: /services
+  mainnav:
+    - url: /about
+      name: About
+    - url: /services
+      name: Services
+    - url: projects
+      name: Projects
+    - url: /contact
+      name: Contact
+  footerlinks:
+    - url: /privacy
+      name: Privacy Policy
+    - url: /sitemap.xml
+      name: Sitemap
+    - url: "tel:(334) 595-9690"
+      name: "(334) 595-9690"
+  featurette:
+    - heading: Handyman Services
+      description: "Our popular handyman services include Ceiling Fan Replacement/Installation, Desk Assembly, Furniture Assembly (Indoor and Outdoor), Lawn Services (Cutting, Edging, Light Landscaping), Lighting Fixture Replacement/Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
+      buttonlink: /services
+      imageurl: /images/tvmounting.jpg
+      color: bg-light
+    - heading: Technology Services
+      description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation/Configuration, Website Design"
+      buttonlink: /services
+      imageurl: /images/thermostat.jpg
+      color: bg-warning
+    - heading: Service Areas
+      description: We primarily provide services in Autauga, Elmore, and Montgomery Counties in Alabama. This includes cities of Millbrook, Montgomery, Prattville, Pike Road, and Wetumpka.
+      buttonlink: /about
+      imageurl: /images/service_area.jpg
+      color: bg-light
+  subfooter1:
+    heading: About RTHS
+    links:
+      - url: "tel:(334) 595-9690"
+        name: "(334) 595-9690"
+        icon: fas fa-phone
+      - url: "https://rthservices.com"
+        name: "rthservices.com"
+        icon: fas fa-globe-africa
+      - name: "Sun-Fri Hours: By Appointment"
+        icon: fas fa-clock
+      - name: "Sat Hours: 8AM-7PM"
+        icon: fas fa-clock
+  subfooter2:
+    heading: COVID-19 Notice
+    links:
+      - name: "We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance."
+        icon: fas fa-head-side-mask
+  subfooter3:
+    heading: "Other Links"
+    links:
+      - name: "Make Payment"
+        url: /payment
+        icon: far fa-money-bill-alt
+      - name: "Projects"
+        url: /projects
+        icon: fas fa-tasks
+      - name: Uses
+        url: /uses
+        icon: fas fa-tools
+      - name: Frequently Asked Questions (FAQ)
+        url: /faq
+        icon: fas fa-question
+      - name: Privacy Policy
+        url: /privacy
+        icon: fas fa-user-secret
+      - name: Sitemap
+        url: /sitemap.xml
+        icon: fas fa-sitemap
 
 use_directory_urls: true
 strict: false

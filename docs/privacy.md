@@ -57,10 +57,10 @@ the caveat that it may prevent them from engaging in certain website-related act
 ## Cookies
 
 A cookie is a string of information that a website stores on a visitor’s computer,
- and that the visitor’s browser provides to the website each time the visitor returns. 
- Almost Engineer Services does not use cookies. However, third-parties and affiliates that 
- Almost Engineer Services website uses for analytic and other purposes, may provide use 
- cookies for their services.
+and that the visitor’s browser provides to the website each time the visitor returns. 
+Almost Engineer Services does not use cookies. However, third-parties and affiliates that 
+Almost Engineer Services website uses for analytic and other purposes, may provide use 
+cookies for their services.
 
 ## Ads
 

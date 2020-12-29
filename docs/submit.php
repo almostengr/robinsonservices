@@ -1,9 +1,12 @@
 <?php
 
-$env_vars = "../../phpenv.php";
+$env_vars = "../../phpenv.rs.php";
 require_once($env_vars);
 
 if(isset($_POST['emailer'])){
+    date_default_timezone_set('America/Chicago');
+    unset($_POST['captcha']);
+
     $new_line = "\r\n";
     $current_time = date("Y-m-d H:i:s");
     $message = print_r($_POST, true);
