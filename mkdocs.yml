@@ -2,7 +2,7 @@ site_name: Robinson Tech and Handy Services
 site_description: Providing handyman and technology services for the Montgomery, Alabama area.
 site_author: Robinson Tech and Handy Services
 site_url: https://localhost
-copyright: 2020, Robinson Tech and Handy Services
+copyright: Robinson Tech and Handy Services
 
 # site_favicon: images/lightbulb/favicon.ico
 
@@ -23,82 +23,126 @@ theme:
   static_templates:
     - 404.html
     - 500.html
-    - contact.html
+  sitemessage:
+    - heading: COVID-19 (Coronavirus) Notice
+      detail: We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
+      bgcolor: bg-primary
+      textcolor: text-light
+  # homemessage
+    # - heading: heading
+    #   detail: detail
+    #   bgcolor: bg-primary
+    #   textcolor: text-light
   jumbotron:
-      heading: Get It Done Without Headaches
+    - heading: Get It Done, Without Headaches
       detail: Providing services to homeowners and businesses in Montgomery, AL and surrounding areas.
       url: /services
+      background_image: "/images/jumbotron.jpg"
+      textcolor: text-warning
+      buttoncolor: btn-warning 
   mainnav:
+    bgcolor: bg-dark
+    linkcolor: text-white
+    buttoncolor: btn-warning
+    links:
     - url: /about
       name: About
+      button: false
     - url: /services
       name: Services
+      button: false
     - url: projects
       name: Projects
+      button: false
     - url: /contact
       name: Contact
-  footerlinks:
-    - url: /privacy
-      name: Privacy Policy
-    - url: /sitemap.xml
-      name: Sitemap
-    - url: "tel:(334) 595-9690"
-      name: "(334) 595-9690"
+      button: false
+    - url: "/contact"
+      name: Request Service
+      button: true
   featurette:
     - heading: Handyman Services
       description: "Our popular handyman services include Ceiling Fan Replacement/Installation, Desk Assembly, Furniture Assembly (Indoor and Outdoor), Lawn Services (Cutting, Edging, Light Landscaping), Lighting Fixture Replacement/Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
       buttonlink: /services
       imageurl: /images/tvmounting.jpg
-      color: bg-light
+      bgcolor: bg-light
+      textcolor: text-dark
     - heading: Technology Services
-      description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation/Configuration, Website Design"
+      description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation/Configuration, and Website Design."
       buttonlink: /services
       imageurl: /images/thermostat.jpg
-      color: bg-warning
+      bgcolor: bg-warning
+      textcolor: text-dark
     - heading: Service Areas
       description: We primarily provide services in Autauga, Elmore, and Montgomery Counties in Alabama. This includes cities of Millbrook, Montgomery, Prattville, Pike Road, and Wetumpka.
       buttonlink: /about
       imageurl: /images/service_area.jpg
-      color: bg-light
-  subfooter1:
-    heading: About RTHS
-    links:
+      bgcolor: bg-light
+      textcolor: text-dark
+  promotions:
+    - heading: "Save 5% on your first service!"
+      detail: "Mention that you saw this message on our website and you will get 5% off your first service!"
+      buttoncolor: btn-dark-gray
+      buttontext: Request Services
+      buttonlink: /contact
+      bgcolor: bg-warning
+      textcolor: text-dark
+    # - heading: "Free Business Website"
+    #   detail: "During the month of February, one business will be selected each week to have a free business website created. See terms and conditions."
+    #   buttontext: Register for Free Website
+    #   buttonlink: /freewebsiteoffer
+    #   color: bg-light
+  subfooter:
+    - bgcolor: bg-dark
+      textcolor: text-white
+      headercolor: text-warning
+      columns:
+      - heading: About RTHS
+        links:
+          - url: "tel:(334) 595-9690"
+            name: "(334) 595-9690"
+            icon: fas fa-phone
+          - url: "https://rthservices.com"
+            name: "rthservices.com"
+            icon: fas fa-globe-africa
+          - name: "Sun-Fri Hours: By Appointment"
+            icon: fas fa-clock
+          - name: "Sat Hours: 8AM-7PM"
+            icon: fas fa-clock
+      - heading: COVID-19 Notice
+        links:
+          - name: "We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance."
+            icon: fas fa-head-side-mask
+      - heading: "Other Links"
+        links:
+          - name: "Make Payment"
+            url: /payment
+            icon: far fa-money-bill-alt
+          - name: "Projects"
+            url: /projects
+            icon: fas fa-tasks
+          - name: Uses
+            url: /uses
+            icon: fas fa-tools
+          - name: Frequently Asked Questions (FAQ)
+            url: /faq
+            icon: fas fa-question
+          - name: Privacy Policy
+            url: /privacy
+            icon: fas fa-user-secret
+          - name: Sitemap
+            url: /sitemap.xml
+            icon: fas fa-sitemap
+  footer:
+    - bgcolor: bg-black
+      textcolor: text-warning
+      links:
+      - url: /privacy
+        name: Privacy Policy
+      - url: /sitemap.xml
+        name: Sitemap
       - url: "tel:(334) 595-9690"
         name: "(334) 595-9690"
-        icon: fas fa-phone
-      - url: "https://rthservices.com"
-        name: "rthservices.com"
-        icon: fas fa-globe-africa
-      - name: "Sun-Fri Hours: By Appointment"
-        icon: fas fa-clock
-      - name: "Sat Hours: 8AM-7PM"
-        icon: fas fa-clock
-  subfooter2:
-    heading: COVID-19 Notice
-    links:
-      - name: "We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance."
-        icon: fas fa-head-side-mask
-  subfooter3:
-    heading: "Other Links"
-    links:
-      - name: "Make Payment"
-        url: /payment
-        icon: far fa-money-bill-alt
-      - name: "Projects"
-        url: /projects
-        icon: fas fa-tasks
-      - name: Uses
-        url: /uses
-        icon: fas fa-tools
-      - name: Frequently Asked Questions (FAQ)
-        url: /faq
-        icon: fas fa-question
-      - name: Privacy Policy
-        url: /privacy
-        icon: fas fa-user-secret
-      - name: Sitemap
-        url: /sitemap.xml
-        icon: fas fa-sitemap
 
 use_directory_urls: true
 strict: false

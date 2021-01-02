@@ -21,35 +21,11 @@ will automatically be routed to our work tracking system.
 
 ## What are your working hours?
 
-Services are primarily performed on weekday evenings and on Saturdays between 8AM (0800) and 7PM (1900).
+Services are primarily performed on weekday evenings and on Saturdays between 8 AM (0800) and 7 PM (1900).
 
 ## What areas do you serve? 
 
 Below are the primary areas served in Alabama's River Region.
 Cities or counties not listed here can be served, depending
 on availability and distance. Mileage fees may apply to jobs outside of the below mentioned
-cities and counties in Alabama.
-
-### Cities
-
-Autaugaville,
-Cecil,
-Coosada,
-Deatsville,
-Elmore,
-Hope Hull,
-Millbrook,
-Montgomery,
-Mount Meigs,
-Pike Road,
-Pine Level (Autauga),
-Pine Level (Montgomery),
-Prattville,
-Tallassee,
-Wetumpka
-
-### Counties
-
-Autauga County, Alabama;
-Elmore County, Alabama;
-Montgomery County, Alabama
+cities and counties in Alabama. See the [About page](/about) for exact locations.

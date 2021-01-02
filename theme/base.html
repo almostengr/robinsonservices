@@ -88,10 +88,14 @@
   <link href="/css/navbar-top-fixed.min.css" rel="stylesheet">
   <link href="/css/jumbotron.min.css" rel="stylesheet">
   <link href="/css/style.min.css" rel="stylesheet">
+
+  {% for stylesheet in config.theme.extracss %}
+  <link href="{{ stylesheet }}" rel="stylesheet">
+  {% endfor %}
 </head>
 
 <body class="bg-black">
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top {{ config.theme.mainnav.bgcolor }}">
     <a class="navbar-brand" href="/">{{ config.site_name }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,36 +103,71 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
-        {% for nav_item in config.theme.mainnav %}
+        {% for link in config.theme.mainnav.links %}
+        {% if link.button == false %}
         <li class="nav-item">
-          <a class="nav-link text-white" href="{{ nav_item.url | url }}">{{ nav_item.name }}</a>
+          <a class="nav-link {{ config.theme.mainnav.linkcolor }}" href="{{ link.url | url }}">{{ link.name }}</a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
-      <form class="form-inline mt-2 mt-md-0" action="#firstservice">
-        <button class="btn btn-warning my-2 my-sm-0" type="submit">Request Service</button>
+      {% for link in config.theme.mainnav.links %}
+      {% if link.button == true %}
+      <form class="form-inline mt-2 mt-md-0 mr-1" action="{{ link.url }}" method="GET">
+        <button class="btn {{ config.theme.mainnav.buttoncolor }} my-2 my-sm-0" type="submit">{{ link.name }}</button>
       </form>
+      {% endif %}
+      {% endfor %}
     </div>
   </nav>
 
   <main role="main" class="bg-light">
-    {% if page and page.is_homepage %}
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+
+    {% for message in config.theme.sitemessage %}
+    <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4">
       <div class="container">
-        <h1 class="display-3">{{ config.theme.jumbotron.heading }}</h1>
+        <div class="row">
+          <div class="col-sm-12 pb-2 pl-4">
+            <h4>{{ message.heading }}</h4>
+            <p>{{ message.detail }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+
+    {% if page and page.is_homepage %}
+
+    {% for message in config.theme.homemessage %}
+    <section class="{{ message.color }} py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 pb-2 pl-4">
+            <h4>{{ message.heading }}</h4>
+            <p>{{ message.detail }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+
+    {% for jt in config.theme.jumbotron %}
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron {{ jt.textcolor }}" style="background-image: url({{ jt.background_image }});">
+      <div class="container">
+        <h1 class="display-3">{{ jt.heading }}</h1>
         <p>
-          {{ config.theme.jumbotron.detail }}
+          {{ jt.detail }}
         </p>
         <p>
-          <a class="btn btn-warning btn-lg" href="{{ config.theme.jumbotron.url | url }}" role="button">Learn more
-            &raquo;</a>
+          <a class="btn {{ jt.buttoncolor }} btn-lg" href="{{ jt.url | url }}" role="button">Learn more&raquo;</a>
         </p>
       </div>
     </div>
+    {% endfor %}
 
     {% for feature in config.theme.featurette %}
-    <div class="{{ feature.color }}">
+    <div class="{{ feature.bgcolor }} {{ feature.textcolor }}">
       <div class="container">
         <div class="row py-3">
           <div class="col-sm-12 col-md-6 text-center">
@@ -145,7 +184,6 @@
     {% endfor %}
 
     {% elif page and page.meta.title %}
-
     <div class="container pt-3">
       <h1 class="pt-3">{{ page.meta.title }}</h1>
     </div>
@@ -158,29 +196,32 @@
     </div>
   </main>
 
-  <section id="firstservice" class="bg-warning py-4">
+  {% for promo in config.theme.promotions %}
+  <section class="{{ promo.bgcolor }} {{ promo.textcolor }} py-4">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <h4>Save 5% on your first service!</h4>
-          <p>Mention that you saw this message on our website and you will get 5% off your first service!</p>
+          <h4>{{ promo.heading }}</h4>
+          <p>{{ promo.detail }}</p>
         </div>
         <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <form method="GET" action="/contact">
-            <input type="submit" class="btn btn-lg btn-dark-gray" value="Request Services">
+          <form method="GET" action="{{ promo.buttonurl }}">
+            <input type="submit" class="btn btn-lg {{ promo.buttoncolor }}" value="{{ promo.buttontext }}">
           </form>
         </div>
       </div>
     </div>
-    </div>
   </section>
+  {% endfor %}
 
-  <section id="subfooter" class="bg-dark-gray text-light">
+  {% for section in config.theme.subfooter %}
+  <section id="subfooter" class="{{ section.bgcolor }} {{ section.textcolor }}">
     <div class="container text-center py-3">
       <div class="row">
+        {% for column in section.columns %}
         <div class="col-sm-12 col-md-4">
-          <h4>{{ config.theme.subfooter1.heading }}</h4>
-          {% for item in config.theme.subfooter1.links %}
+          <h4 class="subfooterheader {{ section.headercolor }}">{{ column.heading }}</h4>
+          {% for item in column.links %}
           <p>
             {% if item.icon %}
             <i class="{{ item.icon }}"></i>
@@ -194,59 +235,34 @@
           </p>
           {% endfor %}
         </div>
-        <div class="col-sm-12 col-md-4">
-          <h4>{{ config.theme.subfooter2.heading }}</h4>
-          {% for item in config.theme.subfooter2.links %}
-          <p>
-            {% if item.icon %}
-            <i class="{{ item.icon }}"></i>
-            {% endif %}
-            {% if item.url %}
-            <a href="{{ item.url | url }}">
-              {{ item.name}}</a>
-            {% else %}
-            {{ item.name }}
-            {% endif %}
-          </p>
-          {% endfor %}
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <h4>{{ config.theme.subfooter3.heading }}</h4>
-          {% for item in config.theme.subfooter3.links %}
-          <p>
-            {% if item.icon %}
-            <i class="{{ item.icon }}"></i>
-            {% endif %}
-            {% if item.url %}
-            <a href="{{ item.url | url }}">
-              {{ item.name}}</a>
-            {% else %}
-            {{ item.name }}
-            {% endif %}
-          </p>
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
+  {% endfor %}
 
-  <footer class="bg-black text-warning">
+  {% for section in config.theme.footer %}
+  <footer class="{{ section.bgcolor }} {{ section.textcolor }}">
     <div class="container text-center py-3">
       <div class="col-sm-12">
-        &copy; Copyright {{ config.copyright }}
-        {% for link in config.theme.footerlinks %}
+        &copy; Copyright {{ build_date_utc.strftime("%Y") }} {{ config.copyright }}
+        {% for link in section.links %}
         | <a href="{{ link.url | url }}">{{ link.name }}</a>
         {% endfor %}
         <br />
-        Website developed by {{ config.site_name }}
+        Website developed by <a href="#" target='_blank'>Robinson Tech and Handy Services</a>
       </div>
       <div class="text-small col-sm-12 pt-2">
         Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
+        {% if page and page.is_homepage %}
+        Last updated: {{ build_date_utc }}
+        {% endif %}
       </div>
     </div>
   </footer>
+  {% endfor %}
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
