@@ -23,16 +23,16 @@ theme:
   static_templates:
     - 404.html
     - 500.html
-  sitemessage:
-    - heading: COVID-19 (Coronavirus) Notice
-      detail: We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
-      bgcolor: bg-primary
-      textcolor: text-light
-  # homemessage
+  # sitemessage
     # - heading: heading
     #   detail: detail
     #   bgcolor: bg-primary
     #   textcolor: text-light
+  homemessage:
+    - heading: COVID-19 (Coronavirus) Notice
+      detail: We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
+      bgcolor: bg-primary
+      textcolor: text-light
   jumbotron:
     - heading: Get It Done, Without Headaches
       detail: Providing services to homeowners and businesses in Montgomery, AL and surrounding areas.
