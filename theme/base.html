@@ -139,7 +139,7 @@
     {% if page and page.is_homepage %}
 
     {% for message in config.theme.homemessage %}
-    <section class="{{ message.color }} py-4">
+    <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 pb-2 pl-4">
