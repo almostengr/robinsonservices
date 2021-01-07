@@ -1,8 +1,8 @@
-site_name: Robinson Tech and Handy Services
+site_name: Robinson Handy and Tech Services
 site_description: Providing handyman and technology services for the Montgomery, Alabama area.
-site_author: Robinson Tech and Handy Services
-site_url: https://localhost
-copyright: Robinson Tech and Handy Services
+site_author: Robinson Handy and Technology Services
+site_url: https://rhtservices.net
+copyright: Robinson Handy and Technology Services
 
 # site_favicon: images/lightbulb/favicon.ico
 
@@ -115,7 +115,7 @@ theme:
             icon: fas fa-head-side-mask
       - heading: "Other Links"
         links:
-          - name: "Make Payment"
+          - name: "Make A Payment"
             url: /payment
             icon: far fa-money-bill-alt
           - name: "Projects"
