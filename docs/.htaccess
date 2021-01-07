@@ -1,9 +1,8 @@
 # Apache settings:
 
 # Handle any server errors
-ErrorDocument 403 /403/index.html
-ErrorDocument 404 /404/index.html
-ErrorDocument 500 /500/index.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
 
 # Do permanent redirects
 
@@ -43,9 +42,9 @@ ErrorDocument 500 /500/index.html
 
   # redirect to HTTPS if HTTP
   # RewriteCond %{SERVER_PORT} 80
-  # RewriteRule ^(.*)$ https://thealmostengineer.com [L,R=301]
+  # RewriteRule ^(.*)$ https://rhtservices.net [L,R=301]
   RewriteCond %{https} off  
-  RewriteRule ^(.*)$ https://thealmostengineer.com/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://rhtservices.net/$1 [R=301,L]
 </IfModule>
 
 ## EXPIRES CACHING ##
