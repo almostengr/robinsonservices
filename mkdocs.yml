@@ -51,9 +51,9 @@ theme:
     - url: /services
       name: Services
       button: false
-    - url: projects
-      name: Projects
-      button: false
+    # - url: projects
+    #   name: Projects
+    #   button: false
     - url: /contact
       name: Contact
       button: false
