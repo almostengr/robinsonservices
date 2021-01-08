@@ -102,8 +102,8 @@ theme:
           - url: "tel:(334) 595-9690"
             name: "(334) 595-9690"
             icon: fas fa-phone
-          - url: "https://rthservices.com"
-            name: "rthservices.com"
+          - url: "https://rhtservices.net"
+            name: "rhtservices.net"
             icon: fas fa-globe-africa
           - name: "Sun-Fri Hours: By Appointment"
             icon: fas fa-clock
