@@ -54,8 +54,6 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="/css/navbar-top-fixed.min.css" rel="stylesheet">
-  <link href="/css/jumbotron.min.css" rel="stylesheet">
   <link href="/css/style.min.css" rel="stylesheet">
 
   
@@ -114,7 +112,15 @@
 
     
 
-    <div class="container py-2">
+    <div class="bg-success text-light container py-2 d-none" id="successmessage">
+      Your request has been submitted successfully!
+    </div>
+
+    <div class="bg-danger text-light container py-2 d-none" id="failuremessage">
+      An error occurred when attempting to process your request.
+    </div>
+
+    <div class="container py-2" id="pagebody">
 <h1 id="500-internal-server-error">500 Internal Server Error</h1>
 
 <p>We encountered an error when trying to process your request.</p>
@@ -130,7 +136,7 @@
   </main>
 
   
-  <section class="bg-warning text-dark py-4">
+  <section class="bg-warning text-dark py-4 promotions">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 pb-2 text-center">
@@ -148,19 +154,19 @@
   
 
   
-  <section id="subfooter" class="bg-dark text-white">
+  <section class="bg-dark text-white subfooter">
     <div class="container text-center py-3">
       <div class="row">
         
         <div class="col-sm-12 col-md-4">
-          <h4 class="subfooterheader text-warning">About RTHS</h4>
+          <h4 class="subfooterheader text-warning">About RHTS</h4>
           
           <p>
             
             <i class="fas fa-phone"></i>
             
             
-            <a href="tel:(334) 595-9690">
+            <a href="tel:(334) 595-9690" class="text-white">
               (334) 595-9690</a>
             
           </p>
@@ -170,7 +176,7 @@
             <i class="fas fa-globe-africa"></i>
             
             
-            <a href="https://rhtservices.net">
+            <a href="https://rhtservices.net" class="text-white">
               rhtservices.net</a>
             
           </p>
@@ -196,14 +202,40 @@
         </div>
         
         <div class="col-sm-12 col-md-4">
-          <h4 class="subfooterheader text-warning">COVID-19 Notice</h4>
+          <h4 class="subfooterheader text-warning">Service Areas</h4>
           
           <p>
             
-            <i class="fas fa-head-side-mask"></i>
+            
+            Montgomery, Alabama
+            
+          </p>
+          
+          <p>
             
             
-            We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
+            Pike Road, Alabama
+            
+          </p>
+          
+          <p>
+            
+            
+            Autauga County, Alabama
+            
+          </p>
+          
+          <p>
+            
+            
+            Elmore County, Alabama
+            
+          </p>
+          
+          <p>
+            
+            
+            Montgomery County, Alabama
             
           </p>
           
@@ -217,7 +249,7 @@
             <i class="far fa-money-bill-alt"></i>
             
             
-            <a href="/payment">
+            <a href="/payment" class="text-white">
               Make A Payment</a>
             
           </p>
@@ -227,7 +259,7 @@
             <i class="fas fa-tasks"></i>
             
             
-            <a href="/projects">
+            <a href="/projects" class="text-white">
               Projects</a>
             
           </p>
@@ -237,7 +269,7 @@
             <i class="fas fa-tools"></i>
             
             
-            <a href="/uses">
+            <a href="/uses" class="text-white">
               Uses</a>
             
           </p>
@@ -247,7 +279,7 @@
             <i class="fas fa-question"></i>
             
             
-            <a href="/faq">
+            <a href="/faq" class="text-white">
               Frequently Asked Questions (FAQ)</a>
             
           </p>
@@ -257,7 +289,7 @@
             <i class="fas fa-user-secret"></i>
             
             
-            <a href="/privacy">
+            <a href="/privacy" class="text-white">
               Privacy Policy</a>
             
           </p>
@@ -267,7 +299,7 @@
             <i class="fas fa-sitemap"></i>
             
             
-            <a href="/sitemap.xml">
+            <a href="/sitemap.xml" class="text-white">
               Sitemap</a>
             
           </p>
@@ -283,16 +315,10 @@
   <footer class="bg-black text-warning">
     <div class="container text-center py-3">
       <div class="col-sm-12">
-        &copy; Copyright 2021 Robinson Handy and Technology Services
-        
-        | <a href="/privacy">Privacy Policy</a>
-        
-        | <a href="/sitemap.xml">Sitemap</a>
-        
-        | <a href="tel:(334) 595-9690">(334) 595-9690</a>
+        &copy; Copyright 2021 Robinson Handy and Technology (RHT) Services LLC
         
         <br />
-        Website developed by <a href="#" target='_blank'>Robinson Tech and Handy Services</a>
+        Website developed by <a href="#" target='_blank'>Robinson Handy and Technology Services LLC</a>
       </div>
       <div class="text-small col-sm-12 pt-2">
         Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
@@ -310,6 +336,7 @@
   <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
 </body>
 
 </html>
