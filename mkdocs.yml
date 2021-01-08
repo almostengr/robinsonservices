@@ -2,7 +2,7 @@ site_name: Robinson Handy and Tech Services
 site_description: Providing handyman and technology services for the Montgomery, Alabama area.
 site_author: Robinson Handy and Technology Services
 site_url: https://rhtservices.net
-copyright: Robinson Handy and Technology Services
+copyright: Robinson Handy and Technology (RHT) Services LLC
 
 # site_favicon: images/lightbulb/favicon.ico
 
@@ -23,6 +23,8 @@ theme:
   static_templates:
     - 404.html
     - 500.html
+  # extracss: []
+  # extrajs: []
   # sitemessage
     # - heading: heading
     #   detail: detail
@@ -30,7 +32,7 @@ theme:
     #   textcolor: text-light
   homemessage:
     - heading: COVID-19 (Coronavirus) Notice
-      detail: We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
+      detail: We take COVID-19 seriously. Masks are worn while performing services indoors, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
       bgcolor: bg-primary
       textcolor: text-light
   jumbotron:
@@ -97,7 +99,7 @@ theme:
       textcolor: text-white
       headercolor: text-warning
       columns:
-      - heading: About RTHS
+      - heading: About RHTS
         links:
           - url: "tel:(334) 595-9690"
             name: "(334) 595-9690"
@@ -109,10 +111,13 @@ theme:
             icon: fas fa-clock
           - name: "Sat Hours: 8AM-7PM"
             icon: fas fa-clock
-      - heading: COVID-19 Notice
+      - heading: Service Areas
         links:
-          - name: "We take COVID-19 seriously. Masks are worn while performing in-home services, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance."
-            icon: fas fa-head-side-mask
+          - name: Montgomery, Alabama
+          - name: Pike Road, Alabama            
+          - name: Autauga County, Alabama
+          - name: Elmore County, Alabama
+          - name: Montgomery County, Alabama
       - heading: "Other Links"
         links:
           - name: "Make A Payment"
@@ -136,13 +141,9 @@ theme:
   footer:
     - bgcolor: bg-black
       textcolor: text-warning
-      links:
-      - url: /privacy
-        name: Privacy Policy
-      - url: /sitemap.xml
-        name: Sitemap
-      - url: "tel:(334) 595-9690"
-        name: "(334) 595-9690"
+      # links:
+      # - url: "tel:(334) 595-9690"
+      #   name: "(334) 595-9690"
 
 use_directory_urls: true
 strict: false
