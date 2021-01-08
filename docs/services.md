@@ -14,8 +14,8 @@ details associated with the project. Click the service type to read more informa
 * Air Filter Replacement
 * Baby Crib Assembly
 * Bed Assembly
-* [Bookcase Assembly](/projects/2019.07.30-reinforce-bookcase-with-plywood)
-* [Ceiling Fan Replacement/Installation](/projects/2020.07.12-ceiling-fan-installation-with-downrod)
+* Bookcase Assembly
+* Ceiling Fan Replacement / Installation
 * Desk Assembly
 * Doorbell Replacement/Installation
 * Dresser Assembly
@@ -31,7 +31,7 @@ details associated with the project. Click the service type to read more informa
 * Home Inspection Fix/Repair Lists
 * Honey Do Lists
 * Kitchen Island Assembly
-* [Lawn Services (Cutting, Edging, Light Landscaping)](/projects/2020.07.21-front-yard-landscaping)
+* Lawn Services (Cutting, Edging, Light Landscaping)
 * Lighting Fixture Replacement/Installation
 * Outdoor Furniture Assembly
 * Patio Furniture Assembly
@@ -54,7 +54,7 @@ details associated with the project. Click the service type to read more informa
 
 * Thermostat (Smart and Non-Smart) Replacement/Installation
 * To Do Lists
-* [Toilet Leak/Value Repair and Replacement](/projects/2018.07.21-how-to-replace-toilet-gasket-and-bolts/)
+* Toilet Leak/Value Repair and Replacement
 * Trim Repair
 * Washing Machine Hose Replacement
 * Window Blind Installation/Replacement
@@ -63,12 +63,12 @@ details associated with the project. Click the service type to read more informa
 
 ## Technology Services
 
-* [Computer Repair](/projects/2018.06.19-replace-optical-drive-in-pc/)
+* Computer Repair
 * <a href="https://www.youtube.com/watch?v=fg9AgEkuy9o" target="_blank">Computer Programming Sessions</a>
 * <a href="https://www.youtube.com/watch?v=DjtIx1my2eE" target="_blank">Drupal Maintenance and Updates</a>
 * Google Analytics Installation and Configuration
-* [Google Search Console](/projects/2020.01.21-google-search-console-reports-500-errors/)
-* [Linux Training](/projects/2020.03.01-linux-training-session/)
+* Google Search Console
+* Linux Training
 * Printer Installation/Configuration
 * Robotic Process Automation (RPA)
 * Search Engine Optimization (SEO)
