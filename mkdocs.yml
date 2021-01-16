@@ -13,7 +13,7 @@ remote_name: origin
 remote_branch: website
 
 # Development server details
-dev_addr: 192.168.57.117:8081
+dev_addr: 192.168.57.117:8082
 
 # Appearance
 theme:
