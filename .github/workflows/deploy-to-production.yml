@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -29,13 +29,11 @@ jobs:
 
     - run: git fetch -p
 
-    # - run: cd rhtmkdocs
-
     - name: Deploy to website branch
       run:  /usr/bin/python3 -m mkdocs gh-deploy -f rhtmkdocs/mkdocs.yml -b website
 
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     needs: build
 
     steps:
@@ -47,3 +45,18 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
+
+   test:
+    runs-on: ubuntu-latest
+    needs: deploy
+
+    steps:
+    - uses: actions/checkout@main
+
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
+    
+    - run: cd rhtservicestest
+
+    - run: dotnet test -c RELEASE -v d

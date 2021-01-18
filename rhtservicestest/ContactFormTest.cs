@@ -13,8 +13,13 @@ namespace Almostengr.RhtServicesTest
         [OneTimeSetUp]
         public void Setup()
         {
-            // driver = TestSetup();
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+
+            #if RELEASE
+            options.AddArgument("--headless");
+            #endif
+
+            driver = new ChromeDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
         }
 
