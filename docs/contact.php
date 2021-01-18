@@ -1,3 +1,6 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -53,9 +56,7 @@
             <h1 class="pt-3">Request Services / Contact Us</h1>
         </div>
         <?php
-        $env_vars = "../phpenv.rs.php";
-        require_once($env_vars) or die("Unexpected error occurred. Please try again.");
-        if (isset($_POST['emailaddress'])) {
+        if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             date_default_timezone_set('America/Chicago');
             // unset($_POST['captcha']);
             $new_line = "\r\n";
@@ -63,9 +64,10 @@
             $message = print_r($_POST, true);
             $message .= "Submitted " . $current_time . $new_line;
             $message .= "IP Address " . $_SERVER['REMOTE_ADDR'];
-            $subject = $_POST['servicetype'] . " " . $current_time;
+            $subject = "Request " . $current_time;
             $headers = array('From' => $_POST['emailaddress']);
             $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
+            $mail_result = mail($HELPDESK_EMAIL, $subject, $message);
             if ($mail_result) {
         ?>
                 <div class="bg-success text-light container py-2 my-5" id="successmessage">
@@ -80,9 +82,12 @@
         <?php
             }
         } else {
-            header('Location: https://rhtservices.net/contact');
+            header("Location: https://rhtservices.net/contact");
         }
         ?>
+        <div class="py-5">
+            <p></p>
+        </div>
     </main>
     <section class="bg-dark text-white subfooter">
         <div class="container text-center py-3">
