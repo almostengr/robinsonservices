@@ -46,7 +46,7 @@ jobs:
         port: ${{ secrets.PORT_NUMBER }}
         user: ${{ secrets.USERNAME }}
 
-   test:
+  test:
     runs-on: ubuntu-latest
     needs: deploy
 
