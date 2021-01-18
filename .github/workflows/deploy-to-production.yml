@@ -29,6 +29,8 @@ jobs:
 
     - run: git fetch -p
 
+    - run: cd rhtmkdocs
+
     - name: Deploy to website branch
       run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
 
