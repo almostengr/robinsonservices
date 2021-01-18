@@ -59,8 +59,4 @@ jobs:
     
     - run: cd rhtservicestest
 
-<<<<<<< HEAD
     - run: dotnet test -c RELEASE -v d rhtservicestest
-=======
-    - run: dotnet test -c RELEASE -v d
->>>>>>> 59f95bbcbe44fd26276b5297a187b499c4baf324
