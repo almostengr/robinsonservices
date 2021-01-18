@@ -67,7 +67,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
             $subject = "Request " . $current_time;
             $headers = array('From' => $_POST['emailaddress']);
             $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
-            $mail_result = mail($HELPDESK_EMAIL, $subject, $message);
             if ($mail_result) {
         ?>
                 <div class="bg-success text-light container py-2 my-5" id="successmessage">
