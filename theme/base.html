@@ -67,15 +67,17 @@
   <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
   {% endif %}
 
+  {% if config.theme.google_tag %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TEYPEZ2YY"></script>
   <script async>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-1TEYPEZ2YY');
+    gtag('config', '{{ config.theme.google_tag }}');
   </script>
-
+  {% endif %}
+  
   {% if page.url == "request/" %}
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   {% endif %}
@@ -83,6 +85,10 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     type="text/css">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  {% if config.theme.site_icon %}
+  <link rel="shortcut icon" href="{{ config.theme.site_icon | url }}">
+  {% endif %}
 
   <!-- Custom styles for this template -->
   <link href="/css/style.min.css" rel="stylesheet">
@@ -94,13 +100,13 @@
 
 <body class="bg-black">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top {{ config.theme.mainnav.bgcolor }}">
-    <a class="navbar-brand" href="/">{{ config.site_name }}</a>
+    <a class="navbar-brand" href="/">{{ config.site_name_short }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav mr-auto">
         {% for link in config.theme.mainnav.links %}
         {% if link.button == false %}
         <li class="nav-item">
@@ -119,7 +125,7 @@
     </div>
   </nav>
 
-  <main role="main" class="bg-light">
+  <main role="main" class="{{ config.theme.main.bgcolor }}">
 
     {% for message in config.theme.sitemessage %}
     <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4 sitemessage">
@@ -154,12 +160,16 @@
     <div class="jumbotron {{ jt.textcolor }}" style="background-image: url({{ jt.background_image }});">
       <div class="container">
         <h1 class="display-3">{{ jt.heading }}</h1>
+
+        {% if jt.detail %}
+        <p>{{ jt.detail }}</p>
+        {% endif %}
+
+        {% if jt.buttontext %}
         <p>
-          {{ jt.detail }}
+          <a class="btn {{ jt.buttoncolor }} btn-lg" href="{{ jt.url | url }}" role="button">{{ jt.buttontext }}</a>
         </p>
-        <p>
-          <a class="btn {{ jt.buttoncolor }} btn-lg" href="{{ jt.url | url }}" role="button">Learn more&raquo;</a>
-        </p>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
@@ -167,13 +177,17 @@
     {% for feature in config.theme.featurette %}
     <div class="{{ feature.bgcolor }} {{ feature.textcolor }} featurette">
       <div class="container">
-        <div class="row py-3">
+        <div class="row py-4">
           <div class="col-sm-12 col-md-6 text-center">
             <h2 class="featurette-heading text-center">{{ feature.heading }}</h2>
+            {% if feature.description %}
             <p class="lead">{{ feature.description }}</p>
-            <p><a class="btn btn-dark-gray" href="{{ feature.buttonlink | url }}">Read more!</a></p>
+            {% endif %}
+            {% if feature.buttontext %}
+            <p><a class="btn btn-dark-gray" href="{{ feature.buttonlink | url }}">{{ feature.buttontext }}</a></p>
+            {% endif %}
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 text-center">
             <img src="{{ feature.imageurl | url }}" alt="{{ feature.heading }}" />
           </div>
         </div>
@@ -256,16 +270,14 @@
         | <a href="{{ link.url | url }}">{{ link.name }}</a>
         {% endfor %}
         <br />
-        Website developed by <a href="#" target='_blank'>Robinson Handy and Technology Services LLC</a>
+        Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services LLC</a>
       </div>
-      <div class="text-small col-sm-12 pt-2">
+      <div class="col-sm-12 pt-2">
         Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
-        {% if page and page.is_homepage %}
-        Last updated: {{ build_date_utc }}
-        {% endif %}
       </div>
+      <!-- Last updated: {{ build_date_utc }} -->
     </div>
   </footer>
   {% endfor %}
@@ -279,6 +291,7 @@
   {% for scriptfile in config.theme.extrajs %}
   <script async src="{{ scriptfile }}"></script>
   {% endfor %}
+  <script async src="/js/javascript.min.js"></script>
 </body>
 
 </html>

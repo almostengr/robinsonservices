@@ -1,6 +1,7 @@
-site_name: Robinson Handy and Tech Services
+site_name: Robinson Handy and Tech Services LLC
+site_name_short: RHT Services LLC
 site_description: Providing handyman and technology services for the Montgomery, Alabama area.
-site_author: Robinson Handy and Technology Services
+site_author: Robinson Handy and Technology Services LLC
 site_url: https://rhtservices.net
 copyright: Robinson Handy and Technology (RHT) Services LLC
 
@@ -20,6 +21,8 @@ theme:
   name: null
   custom_dir: 'theme'
   language: en
+  main:
+    bgcolor: bg-light
   static_templates:
     - 404.html
     - 500.html
@@ -66,18 +69,21 @@ theme:
     - heading: Handyman Services
       description: "Our popular handyman services include Ceiling Fan Replacement/Installation, Desk Assembly, Furniture Assembly (Indoor and Outdoor), Lawn Services (Cutting, Edging, Light Landscaping), Lighting Fixture Replacement/Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
       buttonlink: /services
+      buttontext: View Handyman Services
       imageurl: /images/tvmounting.jpg
       bgcolor: bg-light
       textcolor: text-dark
     - heading: Technology Services
       description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation/Configuration, and Website Design."
       buttonlink: /services
+      buttontext: View Technology Services
       imageurl: /images/thermostat.jpg
       bgcolor: bg-warning
       textcolor: text-dark
     - heading: Service Areas
       description: We primarily provide services in Autauga, Elmore, and Montgomery Counties in Alabama. This includes cities of Millbrook, Montgomery, Prattville, Pike Road, and Wetumpka.
       buttonlink: /about
+      buttontext: View Service Areas
       imageurl: /images/service_area.jpg
       bgcolor: bg-light
       textcolor: text-dark
