@@ -81,10 +81,6 @@ img {
     content: ' *';
 }
 
-.featurette p.lead {
-    min-height: 350px;
-}
-
 .text-small {
     font-size: small;
 }
