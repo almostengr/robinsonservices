@@ -14,15 +14,15 @@ Call [334-595-9690](tel:3345959690)
 
 Please allow up to 48 business hours to get back to you.
 
-<form method="POST" action="submit.php">
+<form method="POST" action="/submit.php">
 <p>
     <label for="customerfirst" class="required">First Name</label>
-    <input class="form-control" name="customerfirst" type="text" placeholder="First Name" minlength="5"
+    <input class="form-control" name="customerfirst" type="text" placeholder="First Name" minlength="3"
         required="required">
 </p>
 <p>
     <label for="customerlast" class="required">Last Name</label>
-    <input class="form-control" name="customerlast" type="text" placeholder="Last Name" minlength="5"
+    <input class="form-control" name="customerlast" type="text" placeholder="Last Name" minlength="3"
         required="required">
 </p>
 <p>
