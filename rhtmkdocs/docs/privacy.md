@@ -13,43 +13,43 @@ control what’s visible to the public, seen by search engines, kept private, an
 
 ## Terms
 
-By accessing this website, [thealmostengineer.com](/), 
+By accessing this website, [rhtservices.net](/), 
 you agree to be bound and operate by the terms, conditions, and policies listed in this 
 agreement. If you do not agree with the terms listed here, please discontinue use of this website.
 
 ## Disclaimer
 
-Information and resources that are provided Almost Engineer Services website, are provided 
-on an 'as is' basis. Almost Engineer Services makes no warranties, expressed, written, or 
+Information and resources that are provided RHT Services LLC website, are provided 
+on an 'as is' basis. RHT Services LLC makes no warranties, expressed, written, or 
 implied that the information provided on this website will work or is accurate.
 
 ## Website Visitors
 
-Like most website operators, Almost Engineer Services collects non-personally-identifying 
+Like most website operators, RHT Services LLC collects non-personally-identifying 
 information of the sort that web browsers and servers typically make available, such 
 as the browser type, language preference, referring site, and the date and time of 
-each visitor request. Almost Engineer Services's purpose in collecting non-personally 
-identifying information is to better understand how Almost Engineer Services's visitors 
+each visitor request. RHT Services LLC's purpose in collecting non-personally 
+identifying information is to better understand how RHT Services LLC's visitors 
 use its website.
 
-Almost Engineer Services also collects potentially personally-identifying information like 
+RHT Services LLC also collects potentially personally-identifying information like 
 Internet Protocol (IP) addresses for logged in users and for users leaving comments on
-its website. Almost Engineer Services only discloses logged in user and commenter IP addresses
+its website. RHT Services LLC only discloses logged in user and commenter IP addresses
 under the same circumstances that it uses and discloses personally-identifying 
 information as described below, except that blog commenter IP addresses and email addresses
 are visible and disclosed to the administrators of the blog where the comment was left.
 
 ## Gathering of Personally-Identifying Information
 
-Certain visitors to Almost Engineer Services's websites choose to interact with The 
-Almost Engineer in ways that require Almost Engineer Services to gather personally-identifying 
-information. The amount and type of information that Almost Engineer Services gathers 
+Certain visitors to RHT Services LLC's websites choose to interact with The 
+Almost Engineer in ways that require RHT Services LLC to gather personally-identifying 
+information. The amount and type of information that RHT Services LLC gathers 
 depends on the nature of the interaction. Those who engage in transactions with 
-Almost Engineer Services - by purchasing website development services, for example - are 
+RHT Services LLC - by purchasing website development services, for example - are 
 asked to provide additional information, including as necessary the personal and 
 financial information required to process those transactions. In each case, The 
 Almost Engineer collects such information only insofar as is necessary or appropriate
-to fulfill the purpose of the visitor’s interaction with Almost Engineer Services. The Almost
+to fulfill the purpose of the visitor’s interaction with RHT Services LLC. The Almost
 Engineer does not disclose personally-identifying information other than as described
 below. And visitors can always refuse to supply personally-identifying information, with
 the caveat that it may prevent them from engaging in certain website-related activities.
@@ -58,8 +58,8 @@ the caveat that it may prevent them from engaging in certain website-related act
 
 A cookie is a string of information that a website stores on a visitor’s computer,
 and that the visitor’s browser provides to the website each time the visitor returns. 
-Almost Engineer Services does not use cookies. However, third-parties and affiliates that 
-Almost Engineer Services website uses for analytic and other purposes, may provide use 
+RHT Services LLC does not use cookies. However, third-parties and affiliates that 
+RHT Services LLC website uses for analytic and other purposes, may provide use 
 cookies for their services.
 
 ## Ads
@@ -77,19 +77,19 @@ Engineer and does not cover the use of cookies by any advertisers.
 Links on this website may be directed to other websites to allow visitors to 
 purchase products or sign up for services. This policy does not cover the usage
 of the websites that are linked to. As a result of users clicking the affiliate links, 
-the affiliate may pay a referral fee to Almost Engineer Services.
+the affiliate may pay a referral fee to RHT Services LLC.
 
 ## Privacy Policy Changes
 
-Although most changes are likely to be minor, Almost Engineer Services may change its 
-Privacy Policy from time to time, and in Almost Engineer Services's sole discretion. The
+Although most changes are likely to be minor, RHT Services LLC may change its 
+Privacy Policy from time to time, and in RHT Services LLC's sole discretion. The
 Almost Engineer encourages visitors to frequently check this page for any changes 
 to its Privacy Policy. Your continued use of this site after any change in this 
 Privacy Policy and Terms of use will constitute your acceptance of such change.
 
 ## Liability
 
-Your use of or following the steps listed on Almost Engineer Services website or videos, 
+Your use of or following the steps listed on RHT Services LLC website or videos, 
 is done so at your own risk. If you are unsure or not certain on how to complete a 
 project, it is recommended that you contact a professional that can complete the task for you.
 
