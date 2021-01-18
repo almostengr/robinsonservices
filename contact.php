@@ -68,14 +68,14 @@
             $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
             if ($mail_result) {
         ?>
-                <div class="bg-success text-light container py-2 d-none" id="successmessage">
+                <div class="bg-success text-light container py-2 my-5" id="successmessage">
                     Your request has been submitted successfully!
                 </div>
             <?php
             } else {
                 // echo "Unexpected error occurred";
             ?>
-                <div class="bg-danger text-light container py-2 d-none" id="failuremessage">
+                <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
                     An error occurred when attempting to process your request.
                 </div>
         <?php
