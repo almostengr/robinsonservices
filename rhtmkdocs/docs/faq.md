@@ -11,7 +11,7 @@ You have questions. Hopefully we have the answer! See below the answers to commo
 
 ## What forms of payment do you accept? 
 
-RTHS accepts CashApp, PayPal, and major credit cards. Visit the 
+RHT Services accepts PayPal and major credit cards. Visit the 
 [payment page](/payment) to make a payment.
 
 ## What is the fastest way to request service? 

@@ -2,7 +2,7 @@
 title: Make Payment
 ---
 
-Need to pay for services rendered? [PayPal](#payment-via-paypal), and major 
+Need to pay for services rendered? [PayPal](#payment-via-paypal) and major 
 [credit cards](#payment-via-credit-card) are accepted. To pay,
 click the link or button below. Be sure to read the payment method instructions **before** clicking.
 
