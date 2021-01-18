@@ -55,16 +55,16 @@
         <?php
         $env_vars = "../../phpenv.rs.php";
         require_once($env_vars);
-        if (isset($_POST['emailer'])) {
+        if (isset($_POST['emailaddress'])) {
             date_default_timezone_set('America/Chicago');
-            unset($_POST['captcha']);
+            // unset($_POST['captcha']);
             $new_line = "\r\n";
             $current_time = date("Y-m-d H:i:s");
             $message = print_r($_POST, true);
             $message .= "Submitted " . $current_time . $new_line;
             $message .= "IP Address " . $_SERVER['REMOTE_ADDR'];
             $subject = $_POST['servicetype'] . " " . $current_time;
-            $headers = array('From' => $_POST['emailer']);
+            $headers = array('From' => $_POST['emailaddress']);
             $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
             if ($mail_result) {
         ?>
@@ -81,107 +81,108 @@
         <?php
             }
         } else {
-            header('Location: /500');
+            header('Location: https://rhtservices.net/contact');
         }
         ?>
-        <section class="bg-dark text-white subfooter">
-            <div class="container text-center py-3">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <h4 class="subfooterheader text-warning">About RHTS</h4>
-                        <p>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:(334) 595-9690" class="text-white">
-                                (334) 595-9690</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-globe-africa"></i>
-                            <a href="https://rhtservices.net" class="text-white">
-                                rhtservices.net</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-clock"></i>
-                            Sun-Fri Hours: By Appointment
-                        </p>
-                        <p>
-                            <i class="fas fa-clock"></i>
-                            Sat Hours: 8AM-7PM
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <h4 class="subfooterheader text-warning">Service Areas</h4>
-                        <p>
-                            Montgomery, Alabama
-                        </p>
-                        <p>
-                            Pike Road, Alabama
-                        </p>
-                        <p>
-                            Autauga County, Alabama
-                        </p>
-                        <p>
-                            Elmore County, Alabama
-                        </p>
-                        <p>
-                            Montgomery County, Alabama
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <h4 class="subfooterheader text-warning">Other Links</h4>
-                        <p>
-                            <i class="far fa-money-bill-alt"></i>
-                            <a href="/payment" class="text-white">
-                                Make A Payment</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-tasks"></i>
-                            <a href="/projects" class="text-white">
-                                Projects</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-tools"></i>
-                            <a href="/uses" class="text-white">
-                                Uses</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-question"></i>
-                            <a href="/faq" class="text-white">
-                                Frequently Asked Questions (FAQ)</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-user-secret"></i>
-                            <a href="/privacy" class="text-white">
-                                Privacy Policy</a>
-                        </p>
-                        <p>
-                            <i class="fas fa-sitemap"></i>
-                            <a href="/sitemap.xml" class="text-white">
-                                Sitemap</a>
-                        </p>
-                    </div>
+    </main>
+    <section class="bg-dark text-white subfooter">
+        <div class="container text-center py-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <h4 class="subfooterheader text-warning">About RHTS</h4>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:(334) 595-9690" class="text-white">
+                            (334) 595-9690</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-globe-africa"></i>
+                        <a href="https://rhtservices.net" class="text-white">
+                            rhtservices.net</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        Sun-Fri Hours: By Appointment
+                    </p>
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        Sat Hours: 8AM-7PM
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h4 class="subfooterheader text-warning">Service Areas</h4>
+                    <p>
+                        Montgomery, Alabama
+                    </p>
+                    <p>
+                        Pike Road, Alabama
+                    </p>
+                    <p>
+                        Autauga County, Alabama
+                    </p>
+                    <p>
+                        Elmore County, Alabama
+                    </p>
+                    <p>
+                        Montgomery County, Alabama
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h4 class="subfooterheader text-warning">Other Links</h4>
+                    <p>
+                        <i class="far fa-money-bill-alt"></i>
+                        <a href="/payment" class="text-white">
+                            Make A Payment</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-tasks"></i>
+                        <a href="/projects" class="text-white">
+                            Projects</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-tools"></i>
+                        <a href="/uses" class="text-white">
+                            Uses</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-question"></i>
+                        <a href="/faq" class="text-white">
+                            Frequently Asked Questions (FAQ)</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-user-secret"></i>
+                        <a href="/privacy" class="text-white">
+                            Privacy Policy</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-sitemap"></i>
+                        <a href="/sitemap.xml" class="text-white">
+                            Sitemap</a>
+                    </p>
                 </div>
             </div>
-        </section>
-        <footer class="bg-black text-warning">
-            <div class="container text-center py-3">
-                <div class="col-sm-12">
-                    &copy; Copyright 2021 Robinson Handy and Technology (RHT) Services LLC
-                    <br />
-                    Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services LLC</a>
-                </div>
-                <div class="col-sm-12 pt-2">
-                    Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
-                    by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-                    More information this is available in the Privacy Policy.
-                </div>
-                <!-- Last updated: 2021-01-18 15:24:44.916689+00:00 -->
+        </div>
+    </section>
+    <footer class="bg-black text-warning">
+        <div class="container text-center py-3">
+            <div class="col-sm-12">
+                &copy; Copyright 2021 Robinson Handy and Technology (RHT) Services LLC
+                <br />
+                Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services LLC</a>
             </div>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
-        <script async src="/js/bootstrap.bundle.min.js"></script>
-        <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script async src="/js/javascript.min.js"></script>
+            <div class="col-sm-12 pt-2">
+                Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
+                by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
+                More information this is available in the Privacy Policy.
+            </div>
+            <!-- Last updated: 2021-01-18 15:24:44.916689+00:00 -->
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+    <script async src="/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script async src="/js/javascript.min.js"></script>
 </body>
 
 </html>
