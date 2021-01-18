@@ -53,8 +53,8 @@
             <h1 class="pt-3">Request Services / Contact Us</h1>
         </div>
         <?php
-        $env_vars = "../../phpenv.rs.php";
-        require_once($env_vars);
+        $env_vars = "../phpenv.rs.php";
+        require_once($env_vars) or die("Unexpected error occurred. Please try again.");
         if (isset($_POST['emailaddress'])) {
             date_default_timezone_set('America/Chicago');
             // unset($_POST['captcha']);
@@ -73,7 +73,6 @@
                 </div>
             <?php
             } else {
-                // echo "Unexpected error occurred";
             ?>
                 <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
                     An error occurred when attempting to process your request.
