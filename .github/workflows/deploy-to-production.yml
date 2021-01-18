@@ -29,10 +29,10 @@ jobs:
 
     - run: git fetch -p
 
-    - run: cd rhtmkdocs
+    # - run: cd rhtmkdocs
 
     - name: Deploy to website branch
-      run:  /usr/bin/python3 -m mkdocs gh-deploy -b website
+      run:  /usr/bin/python3 -m mkdocs gh-deploy -f rhtmkdocs/mkdocs.yml -b website
 
   deploy:
     runs-on: ubuntu-18.04
