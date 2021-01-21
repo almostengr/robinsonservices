@@ -26,6 +26,7 @@ theme:
   static_templates:
     - 404.html
     - 500.html
+    - contact.php
   # extracss: []
   # extrajs: []
   # sitemessage
