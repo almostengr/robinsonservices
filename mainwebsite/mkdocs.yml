@@ -60,10 +60,10 @@ theme:
     # - url: projects
     #   name: Projects
     #   button: false
-    - url: /contact
+    - url: /contact.php
       name: Contact
       button: false
-    - url: "/contact"
+    - url: /contact.php
       name: Request Service
       button: true
   featurette:
