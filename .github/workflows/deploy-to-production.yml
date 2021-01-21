@@ -30,7 +30,7 @@ jobs:
     - run: git fetch -p
 
     - name: Deploy to website branch
-      run:  /usr/bin/python3 -m mkdocs gh-deploy -f rhtmkdocs/mkdocs.yml -b website
+      run:  /usr/bin/python3 -m mkdocs gh-deploy -f maintwebsite/mkdocs.yml -b website
 
   deploy:
     runs-on: ubuntu-latest
