@@ -1,3 +1,6 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
+?>
 <!doctype html>
 <html lang="en">
 
@@ -116,6 +119,9 @@
     </div>
 
     <div class="container py-2" id="pagebody">
+
+<h1 id="request-services-contact">Request Services / Contact Us</h1>
+
 <?php
 if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     date_default_timezone_set('America/Chicago');
@@ -128,7 +134,8 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     $subject = "Request " . $current_time;
     $headers = array('From' => $_POST['emailaddress']);
 
-    if ($_POST['emailaddress'] == "tester@rhtservices.net") {
+    // if ($_POST['emailaddress'] == "tester@rhtservices.net") {
+    if (false) {
         $mail_result = true;
     } else {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
@@ -400,7 +407,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
       </div>
-      <!-- Last updated: 2021-01-21 23:40:14.495735+00:00 -->
+      <!-- Last updated: 2021-01-21 23:47:22.884065+00:00 -->
     </div>
   </footer>
   
