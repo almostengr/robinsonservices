@@ -1,6 +1,12 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
+?>
 {% extends "base.html" %}
 
 {% block content %}
+
+<h1 id="request-services-contact">Request Services / Contact Us</h1>
+
 <?php
 if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     date_default_timezone_set('America/Chicago');
@@ -13,7 +19,8 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     $subject = "Request " . $current_time;
     $headers = array('From' => $_POST['emailaddress']);
 
-    if ($_POST['emailaddress'] == "tester@rhtservices.net") {
+    // if ($_POST['emailaddress'] == "tester@rhtservices.net") {
+    if (false) {
         $mail_result = true;
     } else {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
