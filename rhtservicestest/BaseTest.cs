@@ -1,5 +1,4 @@
 using System;
-using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -7,23 +6,34 @@ namespace Almostengr.RhtServicesTest
 {
     public class BaseTest
     {
-        // [OneTimeSetUp]
-        // public IWebDriver TestSetup()
-        // {
-        //     IWebDriver driver = new ChromeDriver();
-        //     driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
-        //     return driver;
-        // }
+        public IWebDriver StartBrowser()
+        {
+            IWebDriver driver = null;
+            ChromeOptions options = new ChromeOptions();
 
-        // [OneTimeTearDown]
-        // public IWebDriver TestClose(IWebDriver driver)
-        // {
-        //     if (driver != null)
-        //     {
-        //         driver.Quit();
-        //     }
+#if RELEASE
+            options.AddArgument("--headless");
+#endif
 
-        //     return driver;
-        // }
+            driver = new ChromeDriver(options);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+
+            driver.Navigate().GoToUrl("http://192.168.57.117:8082");
+
+            return driver;
+        }
+
+        public void GoHome(IWebDriver driver)
+        {
+            driver.FindElement(By.LinkText("RHT Services LLC")).Click();
+        }
+
+        public void CloseBrowser(IWebDriver driver)
+        {
+            if (driver != null)
+            {
+                driver.Quit();
+            }
+        }
     }
 }

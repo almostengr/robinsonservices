@@ -1,7 +1,5 @@
-using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
 namespace Almostengr.RhtServicesTest
@@ -13,20 +11,14 @@ namespace Almostengr.RhtServicesTest
         [OneTimeSetUp]
         public void Setup()
         {
-            ChromeOptions options = new ChromeOptions();
-
-            #if RELEASE
-            options.AddArgument("--headless");
-            #endif
-
-            driver = new ChromeDriver(options);
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+            driver = StartBrowser();
         }
 
         [Test]
         public void ProperFormSubmission()
         {
-            driver.Navigate().GoToUrl("https://rhtservices.net/contact");
+            GoHome(driver);
+            driver.FindElement(By.LinkText("Contact")).Click();
 
             driver.FindElement(By.Name("customerfirst")).SendKeys("RHT");
             driver.FindElement(By.Name("customerlast")).SendKeys("Tester");
@@ -40,20 +32,19 @@ namespace Almostengr.RhtServicesTest
             string lorumIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et convallis ex, non porta dui. Quisque sodales volutpat mi, quis tempor nulla laoreet in. Curabitur eget orci id sapien dapibus scelerisque quis non urna. Vivamus pretium tortor id posuere eleifend. Sed ornare tortor in sem venenatis vestibulum. Duis porta sit amet dolor vel finibus. Nulla ut metus magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus diam lacus, sodales id aliquam at, euismod quis dui. Maecenas iaculis molestie rutrum.";
             driver.FindElement(By.Name("jobdescription")).SendKeys(lorumIpsum);
 
+#if RELEASE
             driver.FindElement(By.Name("customerfirst")).Submit();
 
             driver.FindElement(By.Id("successmessage"));
+#endif
+
             Assert.Pass();
         }
 
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            // driver = TestClose(driver);
-            if (driver != null)
-            {
-                driver.Quit();
-            }
+            CloseBrowser(driver);
         }
     }
 }
