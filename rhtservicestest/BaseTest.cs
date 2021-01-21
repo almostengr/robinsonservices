@@ -18,7 +18,11 @@ namespace Almostengr.RhtServicesTest
             driver = new ChromeDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
 
+#if RELEASE
+            driver.Navigate().GoToUrl("https://rhtservices.net");
+#else
             driver.Navigate().GoToUrl("http://192.168.57.117:8082");
+#endif
 
             return driver;
         }
