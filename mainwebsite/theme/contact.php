@@ -2,11 +2,8 @@
 require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
 ?>
 {% extends "base.html" %}
-
 {% block content %}
-
 <h1 id="request-services-contact">Request Services / Contact Us</h1>
-
 <?php
 if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     date_default_timezone_set('America/Chicago');
@@ -19,8 +16,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     $subject = "Request " . $current_time;
     $headers = array('From' => $_POST['emailaddress']);
 
-    // if ($_POST['emailaddress'] == "tester@rhtservices.net") {
-    if (false) {
+    if ($_POST['emailaddress'] == "tester@rhtservices.net") {
         $mail_result = true;
     } else {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
@@ -46,19 +42,10 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         staff, please call or fill out the form below. Be sure and give a detailed description of your project and or
         ask any questions you may have in the message box. You will be contacted within 2 business days.
     </p>
-
     <h2>Phone</h2>
-
-    <p>
-        Call <a href="tel:3345959690">334-595-9690</a>
-    </p>
-
+    <p>Call <a href="tel:3345959690">334-595-9690</a></p>
     <h2>Email</h2>
-
-    <p>
-        Please allow up to 48 business hours to get back to you.
-    </p>
-
+    <p>Please allow up to 48 business hours to get back to you.</p>
     <form method="POST" action="/contact.php">
         <p>
             <label for="customerfirst" class="required">First Name</label>
@@ -94,7 +81,6 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <input type="submit" class="form-control btn btn-dark-gray" value="Submit">
         </p>
     </form>
-
 <?php
 }
 ?>
