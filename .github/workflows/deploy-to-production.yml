@@ -57,3 +57,13 @@ jobs:
     - run: cd rhtservicestest
 
     - run: dotnet test -c RELEASE rhtservicestest
+      
+  sitemapush:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - name: Sitemap Ping to search engines
+      uses: atymic/sitemap-ping-action@1.0.0
+      with:
+        sitemap-url: https://rhtservices.net/sitemap.xml
+      
