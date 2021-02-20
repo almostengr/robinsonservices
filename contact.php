@@ -95,7 +95,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
       
       
       <a href="/request">
-        <button class="btn btn-warning my-2 my-sm-0">Request Service</button>
+        <button class="btn btn-warning my-2 my-sm-0">Request Services</button>
       </a>
       
       
@@ -465,7 +465,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
       </div>
-      <!-- Last updated: 2021-02-20 19:38:17.564174+00:00 -->
+      <!-- Last updated: 2021-02-20 19:46:32.030525+00:00 -->
     </div>
   </footer>
   
