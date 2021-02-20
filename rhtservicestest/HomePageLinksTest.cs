@@ -1,7 +1,6 @@
 using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 namespace Almostengr.RhtServicesTest
 {
@@ -17,27 +16,19 @@ namespace Almostengr.RhtServicesTest
 
         [Test]
         public void TestRequestServiceButton()
-        {   
+        {
             // arrange
 
             // act
             GoHome(driver);
             driver.FindElement(By.XPath("//*[@id=\"navbarCollapse\"]/form/button")).Click();
 
-            driver.FindElement(By.TagName("h1"));
-            System.Collections.ObjectModel.ReadOnlyCollection<IWebElement> h2Elements = driver.FindElements(By.TagName("h2"));
-
-            int counter = 0;
-            foreach(var element in h2Elements)
-            {
-                if (element.Text == "Phone" || element.Text == "Email")
-                {
-                    counter++;
-                }
-            }
+            IWebElement h1Element = driver.FindElement(By.TagName("h1"));
+            System.Collections.ObjectModel.ReadOnlyCollection<IWebElement> iFrameElements = driver.FindElements(By.TagName("iframe"));
 
             // assert
-            Assert.AreEqual(h2Elements.Count, counter);
+            Assert.AreEqual("Request Service", h1Element.Text);
+            Assert.AreEqual(1, iFrameElements.Count);
         }
 
         [Test]
