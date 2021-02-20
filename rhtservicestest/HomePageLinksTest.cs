@@ -26,7 +26,7 @@ namespace Almostengr.RhtServicesTest
                 driver.FindElements(By.TagName("button"));
             foreach(IWebElement button in buttonElements)
             {
-                if (button.Text == "Request Service")
+                if (button.Text == "Request Services")
                 {
                     button.Click();
                     break;
