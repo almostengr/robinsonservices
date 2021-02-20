@@ -22,7 +22,7 @@ namespace Almostengr.RhtServicesTest
 
             driver.FindElement(By.Name("customerfirst")).SendKeys("RHT");
             driver.FindElement(By.Name("customerlast")).SendKeys("Tester");
-            driver.FindElement(By.Name("emailaddress")).SendKeys("tester@rhtservices.net");
+            driver.FindElement(By.Name("emailaddress")).SendKeys("tester@thealmostengineer.com");
             driver.FindElement(By.Name("phonenumber")).SendKeys("334-555-1234");
 
             IWebElement textmsgElement = driver.FindElement(By.Name("textmessage"));

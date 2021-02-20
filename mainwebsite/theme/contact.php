@@ -3,8 +3,58 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
 ?>
 {% extends "base.html" %}
 {% block content %}
-<h1 id="request-services-contact">Request Services / Contact Us</h1>
+<h1 id="request-services-contact">Contact Us</h1>
 <?php
+
+function doesAppearToBeSpam($firstName, $lastName, $jobDescription, $email, $phoneNumber)
+{
+    $jobDescription = trim(strtolower($jobDescription));
+    $email = trim(strtolower($email));
+    $firstName = trim(strtolower($firstName));
+    $lastName = trim(strtolower($lastName));
+    $phoneNumber = trim($phoneNumber);
+
+    // validate first and last name aren't the same
+    if ($firstName == $lastName) {
+        return true;
+    }
+
+    // check the description for spam phrases
+    $descriptionKeyphrases = array(
+        "http", "https", "www.", ".com", ".net", ".org",
+        "robinson handy and tech", "rht services"
+    );
+    foreach ($descriptionKeyphrases as $phrase) {
+        if (str_contains($jobDescription, $phrase)) {
+            return true;
+        }
+    }
+
+    // TODO check phone number for spam submissions
+    $phonePhrases = array("111", "211", "311", "411", "511", "611", "711", "811", "911", "555", "000");
+    $phoneNumber = filter_var($phoneNumber, FILTER_SANITIZE_NUMBER_INT);
+    $phoneNumber = str_replace([' ', '.', '-', '(', ')'], '', $phoneNumber);
+
+    foreach ($phonePhrases as $phone) {
+        if (
+            str_contains(substr($phoneNumber, 0, 3), $phone) ||
+            str_contains(substr($phoneNumber, 3, 3), $phone)
+        ) {
+            return true;
+        }
+    }
+
+    // TODO check email for spam submissions
+    $emailPhrases = array("rhtservices.net", "example.com");
+    foreach ($emailPhrases as $phrase) {
+        if (str_contains($email, $phrase)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     date_default_timezone_set('America/Chicago');
     // unset($_POST['captcha']);
@@ -16,14 +66,36 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     $subject = "Request " . $current_time;
     $headers = array('From' => $_POST['emailaddress']);
 
-    if ($_POST['emailaddress'] == "tester@rhtservices.net") {
+    $appearSpam = doesAppearToBeSpam(
+        $_POST['customerfirst'],
+        $_POST['customerlast'],
+        $_POST['jobdescription'],
+        $_POST['emailaddress'],
+        $_POST['phonenumber']
+    );
+
+    if ($appearSpam) {
+        $subject = "[SPAM] " . $subject;
+    }
+
+    if ($_POST['emailaddress'] == "tester@thealmostengineer.com") {
         $mail_result = true;
     } else {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
     }
 
-    if ($mail_result) {
+    // display messages to user
+
+    if ($appearSpam) {
 ?>
+        <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
+            Invalid submission. It appears that your submission is spam and has been flagged.
+        </div>
+    <?php
+    }
+
+    if ($mail_result && $appearSpam == false) {
+    ?>
         <div class="bg-success text-light container py-2 my-5" id="successmessage">
             Your request has been submitted successfully!
         </div>
@@ -45,7 +117,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     <h2>Phone</h2>
     <p>Call <a href="tel:3345959690">334-595-9690</a></p>
     <h2>Email</h2>
-    <p>Please allow up to 48 business hours to get back to you.</p>
+    <p>Please allow up to 2 business days to get back to you.</p>
     <form method="POST" action="/contact.php">
         <p>
             <label for="customerfirst" class="required">First Name</label>
