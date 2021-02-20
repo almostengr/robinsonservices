@@ -42,7 +42,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   
 
   
-  
+
   
 
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -53,8 +53,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
 
   <!-- Custom styles for this template -->
   <link href="/css/style.min.css" rel="stylesheet">
-
-  
 </head>
 
 <body class="bg-black">
@@ -96,9 +94,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
       
       
       
-      <form class="form-inline mt-2 mt-md-0 mr-1" action="/contact.php" method="GET">
-        <button class="btn btn-warning my-2 my-sm-0" type="submit">Request Service</button>
-      </form>
+      <a href="/request">
+        <button class="btn btn-warning my-2 my-sm-0">Request Service</button>
+      </a>
       
       
     </div>
@@ -119,9 +117,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
     </div>
 
     <div class="container py-2" id="pagebody">
-
 <h1 id="request-services-contact">Request Services / Contact Us</h1>
-
 <?php
 if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     date_default_timezone_set('America/Chicago');
@@ -134,8 +130,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     $subject = "Request " . $current_time;
     $headers = array('From' => $_POST['emailaddress']);
 
-    // if ($_POST['emailaddress'] == "tester@rhtservices.net") {
-    if (false) {
+    if ($_POST['emailaddress'] == "tester@rhtservices.net") {
         $mail_result = true;
     } else {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
@@ -161,19 +156,10 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         staff, please call or fill out the form below. Be sure and give a detailed description of your project and or
         ask any questions you may have in the message box. You will be contacted within 2 business days.
     </p>
-
     <h2>Phone</h2>
-
-    <p>
-        Call <a href="tel:3345959690">334-595-9690</a>
-    </p>
-
+    <p>Call <a href="tel:3345959690">334-595-9690</a></p>
     <h2>Email</h2>
-
-    <p>
-        Please allow up to 48 business hours to get back to you.
-    </p>
-
+    <p>Please allow up to 48 business hours to get back to you.</p>
     <form method="POST" action="/contact.php">
         <p>
             <label for="customerfirst" class="required">First Name</label>
@@ -209,7 +195,6 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <input type="submit" class="form-control btn btn-dark-gray" value="Submit">
         </p>
     </form>
-
 <?php
 }
 ?>
@@ -226,7 +211,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           <p>Mention that you saw this message on our website and you will get 5% off your first service!</p>
         </div>
         <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <form method="GET" action="">
+          <form method="GET" action="/request">
             <input type="submit" class="btn btn-lg btn-dark-gray" value="Request Services">
           </form>
         </div>
@@ -277,7 +262,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <i class="fas fa-clock"></i>
             
             
-            Sat Hours: 8AM-7PM
+            Sat Hours: 8 AM (0800) - 8 PM (2000)
             
           </p>
           
@@ -400,25 +385,25 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         &copy; Copyright 2021 Robinson Handy and Technology (RHT) Services LLC
         
         <br />
-        Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services LLC</a>
+        Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
+          LLC</a>
       </div>
       <div class="col-sm-12 pt-2">
         Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
       </div>
-      <!-- Last updated: 2021-02-11 04:44:28.507917+00:00 -->
+      <!-- Last updated: 2021-02-20 16:54:29.859459+00:00 -->
     </div>
   </footer>
   
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async
+  <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
-  <script async src="https://kit.fontawesome.com/a076d05399.js"></script>
-  
+  <script async src="//kit.fontawesome.com/a076d05399.js"></script>
   <script async src="/js/javascript.min.js"></script>
 </body>
 
