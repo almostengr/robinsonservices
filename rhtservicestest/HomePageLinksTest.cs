@@ -21,7 +21,17 @@ namespace Almostengr.RhtServicesTest
 
             // act
             GoHome(driver);
-            driver.FindElement(By.XPath("//*[@id=\"navbarCollapse\"]/form/button")).Click();
+            
+            System.Collections.ObjectModel.ReadOnlyCollection<IWebElement> buttonElements = 
+                driver.FindElements(By.TagName("button"));
+            foreach(IWebElement button in buttonElements)
+            {
+                if (button.Text == "Request Service")
+                {
+                    button.Click();
+                    break;
+                }
+            }
 
             IWebElement h1Element = driver.FindElement(By.TagName("h1"));
             System.Collections.ObjectModel.ReadOnlyCollection<IWebElement> iFrameElements = driver.FindElements(By.TagName("iframe"));

@@ -60,7 +60,7 @@ theme:
       button: false
     # - url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
     - url: /request
-      name: Request Service
+      name: Request Services
       button: true
   featurette:
     - heading: Handyman Services
