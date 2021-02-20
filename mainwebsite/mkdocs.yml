@@ -27,8 +27,6 @@ theme:
     - 404.html
     - 500.html
     - contact.php
-  # extracss: []
-  # extrajs: []
   # sitemessage
     # - heading: heading
     #   detail: detail
@@ -57,13 +55,11 @@ theme:
     - url: /services
       name: Services
       button: false
-    # - url: projects
-    #   name: Projects
-    #   button: false
     - url: /contact.php
       name: Contact
       button: false
-    - url: /contact.php
+    # - url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
+    - url: /request
       name: Request Service
       button: true
   featurette:
@@ -93,7 +89,8 @@ theme:
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!"
       buttoncolor: btn-dark-gray
       buttontext: Request Services
-      buttonlink: /contact
+      # buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
+      buttonurl: /request
       bgcolor: bg-warning
       textcolor: text-dark
     # - heading: "Free Business Website"
@@ -116,7 +113,7 @@ theme:
             icon: fas fa-globe-africa
           - name: "Sun-Fri Hours: By Appointment"
             icon: fas fa-clock
-          - name: "Sat Hours: 8AM-7PM"
+          - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)"
             icon: fas fa-clock
       - heading: Service Areas
         links:
