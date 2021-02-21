@@ -215,25 +215,28 @@
     <div class="container py-2" id="services">
       {% for category in config.theme.serviceslist %}
       <h2 id="{{ category.name | lower | replace(' ', '-') }}">{{ category.name }}</h2>
-      <div class="row row-cols-3">
+      <div class="row text-center align-items-start mx-auto">
+
         {% for service in category.services %}
-        <a href="{{service.url | url }}" class="text-decoration-none text-center">
-          <div class="card m-2">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <img src="{{ service.image }}" />
-            <div class="card-body">
-              <h3 class="card-title">{{ service.title }}</h3>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p> -->
-              <!-- <a href="{{service.url}}" class="btn btn-primary">Go somewhere</a> -->
-            </div>
+        <div class="col-sm-12 col-md-4 my-1 card text-decoration-none">
+          {% if service.image %}
+          <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
+          {% endif %}
+          <div class="card-body">
+            <h3 class="card-title text-decoration-none">
+              {% if service.url %}
+              <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
+              {% else %}
+              {{ service.title }}
+              {% endif %}
+            </h3>
           </div>
-        </a>
+        </div>
         {% endfor %}
       </div>
       {% endfor %}
       <h3 class="text-center">
-        Ready to get started? 
+        Ready to get started?
         <a href="/request">Schedule your service</a> today!
       </h3>
     </div>
@@ -314,6 +317,7 @@
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <script async src="//kit.fontawesome.com/a076d05399.js"></script>
   <script async src="/js/javascript.min.js"></script>
+  <script async src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

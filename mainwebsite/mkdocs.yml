@@ -90,52 +90,68 @@ theme:
       services:
       - title: Air Filter Replacment
       - title: Baby Crib Assembly
+        image: /images/baby_crib_20200208/re20200208_131750.jpg
       - title: Bed Assembly
+        image: /images/headboard_assembly_20200822/re20200822_101231.jpg
       - title: Bookcase Assembly
       - title: Ceiling Fan Replacement / Installation
       - title: Desk Assembly
+        image: /images/desk_assembly/re20200111_144150.jpg
       - title: Door Knob Replacement
+        image: /images/keypad_20201013/20201013_125226.jpg
         url: /services/keypadlock
       - title: Doorbell Replacement / Installation
         url: /services/doorbell
+        image: /images/doorbell_20200919/20200919_160721T.jpg
       - title: Dresser Assembly
         url: /services/dresser
-      - title: Firewood Stand Assembly
+        image: /images/dresser_20200823/20200823_194032T.jpg
+      - title: Exercise Equipment Assembly
+        image: /images/exercise_20211009/re20210109_113530.jpg
+      # - title: Firewood Stand Assembly
       - title: Furniture Assembly
-      - title: Hanging Shelves
-      - title: Hanging Holiday Lighting and Decorations
-      - title: Honey Do Lists
+        url: /furniture
+        image: /images/office_chair_20201124/re20201124_110805.jpg
+      # - title: Hanging Shelves
+      # - title: Hanging Holiday Lighting and Decorations
+      # - title: Honey Do Lists
       - title: Kitchen Island Assembly
-      - title: Lawn Services (Cutting, Edging, Light Landscaping)
+      - title: Lawn Services<br />(Cutting, Edging, Light Landscaping)
+        image: /images/landscaping_20200718/re20200719_085301.jpg
       - title: Lighting Fixture Replacment / Installation
         url: /services/lightfixture
-      - title: Outdoor Furniture Assembly
+        image: /images/light_fixture_install_20201231/re20201231_155035.jpg
+      # - title: Outdoor Furniture Assembly
       - title: Patio Furniture Assembly
-      - title: Picture Hanging/Hanging Pictures
+        image: /images/patio_furniture/20200527_203222.jpg
+      # - title: Picture Hanging/Hanging Pictures
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
         image: /images/sense_install.jpg
-      - title: Shed (Small) Assembly
-        url: /services/shed1
-      - title: Shed (Large) Assembly
+      # - title: Shed (Small) Assembly
+      #   url: /services/shed1
+      - title: Shed Assembly
         url: /services/shed2
-      - title: Shower Head Replacement/Installation
-      - title: Smoke Detector Replacement/Installation
+        image: /images/shed_20200926/20200926_113722T.jpg
+      - title: Shower Head Replacement / Installation
+      # - title: Smoke Detector Replacement/Installation
       - title: Table Assembly
       - title: Television (TV) Stand Assembly
         url: /services/tvstand
         image: /images/tv_stand_20200926/20200926_080447T.jpg
       - title: Television (TV) Wall Mounting
         url: /services/tvmounting
+        image: /images/tvmounting.jpg
       - title: Thermostat (Smart and Non-Smart) Replacement / Installation
         url: /services/smartthermostat
-      - title: To Do Lists
+        image: /images/thermostat_20210213/20210213_123820.jpg
+      # - title: To Do Lists
       - title: Toilet Leak Repair / Valve Replacement
-      - title: Trim Repair
+      # - title: Trim Repair
       # - title: Washing Machine Hose Replacement
-      - title: Window Blind Installation / Replacement
-      - title: Window Curtain Installation / Replacement
-      - title: Window Drapery Installation / Replacement
+      - title: Window Blind Replacement / Installation
+      - title: Window Curtain Replacement / Installation
+      - title: Window Drapery Replacement / Installation
     - category:
       name: Technology Services
       services:
@@ -155,7 +171,7 @@ theme:
       - title: Selenium WebDriver Automation
       - title: Smart Thermostat Installation
         url: /services/smartthermostat
-      - title: Web Application Design
+      # - title: Web Application Design
       - title: Website Design
       - title: Wi-Fi Router Installation / Setup
       - title: WordPress Maintenance and Updates
