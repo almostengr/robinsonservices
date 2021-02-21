@@ -84,6 +84,81 @@ theme:
       imageurl: /images/service_area.jpg
       bgcolor: bg-light
       textcolor: text-dark
+  serviceslist:
+    - category:
+      name: Handyman Services
+      services:
+      - title: Air Filter Replacment
+      - title: Baby Crib Assembly
+      - title: Bed Assembly
+      - title: Bookcase Assembly
+      - title: Ceiling Fan Replacement / Installation
+      - title: Desk Assembly
+      - title: Door Knob Replacement
+        url: /services/keypadlock
+      - title: Doorbell Replacement / Installation
+        url: /services/doorbell
+      - title: Dresser Assembly
+        url: /services/dresser
+      - title: Firewood Stand Assembly
+      - title: Furniture Assembly
+      - title: Hanging Shelves
+      - title: Hanging Holiday Lighting and Decorations
+      - title: Honey Do Lists
+      - title: Kitchen Island Assembly
+      - title: Lawn Services (Cutting, Edging, Light Landscaping)
+      - title: Lighting Fixture Replacment / Installation
+        url: /services/lightfixture
+      - title: Outdoor Furniture Assembly
+      - title: Patio Furniture Assembly
+      - title: Picture Hanging/Hanging Pictures
+      - title: Sense Energy Monitor Installation
+        url: /services/sensemonitor
+        image: /images/sense_install.jpg
+      - title: Shed (Small) Assembly
+        url: /services/shed1
+      - title: Shed (Large) Assembly
+        url: /services/shed2
+      - title: Shower Head Replacement/Installation
+      - title: Smoke Detector Replacement/Installation
+      - title: Table Assembly
+      - title: Television (TV) Stand Assembly
+        url: /services/tvstand
+        image: /images/tv_stand_20200926/20200926_080447T.jpg
+      - title: Television (TV) Wall Mounting
+        url: /services/tvmounting
+      - title: Thermostat (Smart and Non-Smart) Replacement / Installation
+        url: /services/smartthermostat
+      - title: To Do Lists
+      - title: Toilet Leak Repair / Valve Replacement
+      - title: Trim Repair
+      # - title: Washing Machine Hose Replacement
+      - title: Window Blind Installation / Replacement
+      - title: Window Curtain Installation / Replacement
+      - title: Window Drapery Installation / Replacement
+    - category:
+      name: Technology Services
+      services:
+      - title: Computer Repair
+      - title: Computer Programming Sessions
+        url: https://www.youtube.com/watch?v=fg9AgEkuy9o
+      - title: Drupal Maintenance and Updates
+        url: https://www.youtube.com/watch?v=DjtIx1my2eE
+      - title: Google Analytics Installation and Configuration
+      - title: Googe Search Console
+      - title: Home Networking Solutions
+      - title: Linux Training
+      - title: Mentoring (Programming and Linux)
+      - title: Printer Installation / Configuration
+      - title: Robotic Process Automation (RPA) 
+      - title: Search Engine Optimization (SEO)
+      - title: Selenium WebDriver Automation
+      - title: Smart Thermostat Installation
+        url: /services/smartthermostat
+      - title: Web Application Design
+      - title: Website Design
+      - title: Wi-Fi Router Installation / Setup
+      - title: WordPress Maintenance and Updates
   promotions:
     - heading: "Save 5% on your first service!"
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!"
