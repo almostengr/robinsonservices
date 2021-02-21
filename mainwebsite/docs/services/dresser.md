@@ -11,4 +11,4 @@ Photos from dresser assembly done by RHT Services LLC
 
 ![Completed assembly of dresser](/images/dresser_20200823/20200823_194032T.jpg)
 
-[<< Back to Services list](/services)
+[<< Back to Services](/services)

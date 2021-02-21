@@ -8,4 +8,4 @@ the energy usage in a home.
 
 ![Installation of Sense Energy Monitor](/images/sense_install.jpg)
 
-[<< Back to Services list](/services)
+[<< Back to Services](/services)

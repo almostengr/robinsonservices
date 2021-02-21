@@ -6,24 +6,24 @@ description: Assembly of a door knob with keypad by RHT Services LLC
 A customer wanted to have keyless entry into the house. This keypad door handle was installed on 
 an exterior door to the home.
 
-![caption](/images/keypad_20201013/20201013_121734T.jpg)
+![caption](/images/keypad_20201013/re20201013_121734.jpg)
 
-![caption](/images/keypad_20201013/20201013_121743T.jpg)
+![caption](/images/keypad_20201013/re20201013_121743.jpg)
 
-![caption](/images/keypad_20201013/20201013_122042T.jpg)
+![caption](/images/keypad_20201013/re20201013_122042.jpg)
 
-![caption](/images/keypad_20201013/20201013_122313T.jpg)
+![caption](/images/keypad_20201013/re20201013_122313.jpg)
 
-![caption](/images/keypad_20201013/20201013_122434T.jpg)
+![caption](/images/keypad_20201013/re20201013_122434.jpg)
 
-![caption](/images/keypad_20201013/20201013_122525T.jpg)
+![caption](/images/keypad_20201013/re20201013_122525.jpg)
 
-![caption](/images/keypad_20201013/20201013_123247T.jpg)
+![caption](/images/keypad_20201013/re20201013_123247.jpg)
 
-![caption](/images/keypad_20201013/20201013_124213T.jpg)
+![caption](/images/keypad_20201013/re20201013_124213.jpg)
 
-![caption](/images/keypad_20201013/20201013_125214T.jpg)
+![caption](/images/keypad_20201013/re20201013_125214.jpg)
 
-![caption](/images/keypad_20201013/20201013_125226T.jpg)
+![caption](/images/keypad_20201013/re20201013_125226.jpg)
 
-[<< Back to Services list](/services)
+[<< Back to Services](/services)

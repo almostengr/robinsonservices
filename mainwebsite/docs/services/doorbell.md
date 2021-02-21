@@ -12,4 +12,4 @@ so the doorbell had to be installed on an angle so that it would fit and not rea
 
 ![Ring Video Doorbell installed](/images/doorbell_20200919/20200919_160721T.jpg)
 
-[<< Back to Services list](/services)
+[<< Back to Services](/services)

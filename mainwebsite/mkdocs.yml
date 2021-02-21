@@ -98,7 +98,7 @@ theme:
       - title: Desk Assembly
         image: /images/desk_assembly/re20200111_144150.jpg
       - title: Door Knob Replacement
-        image: /images/keypad_20201013/20201013_125226.jpg
+        image: /images/keypad_20201013/re20201013_125226.jpg
         url: /services/keypadlock
       - title: Doorbell Replacement / Installation
         url: /services/doorbell
@@ -144,7 +144,7 @@ theme:
         image: /images/tvmounting.jpg
       - title: Thermostat (Smart and Non-Smart) Replacement / Installation
         url: /services/smartthermostat
-        image: /images/thermostat_20210213/20210213_123820.jpg
+        image: /images/thermostat_20210213/re20210213_123820.jpg
       # - title: To Do Lists
       - title: Toilet Leak Repair / Valve Replacement
       # - title: Trim Repair
