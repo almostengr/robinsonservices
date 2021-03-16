@@ -5,7 +5,7 @@ site_author: Robinson Handy and Technology Services LLC
 site_url: https://rhtservices.net
 copyright: Robinson Handy and Technology (RHT) Services LLC
 
-# site_favicon: images/lightbulb/favicon.ico
+site_favicon: /images/logo.ico
 
 # repository information
 repo_url: https://github.com/almostengr/robinsonservices
@@ -43,7 +43,7 @@ theme:
       url: /services
       background_image: "/images/jumbotron.jpg"
       textcolor: text-warning
-      buttoncolor: btn-warning 
+      buttoncolor: btn-warning
   mainnav:
     bgcolor: bg-dark
     linkcolor: text-white
@@ -93,8 +93,8 @@ theme:
         image: /images/baby_crib_20200208/re20200208_131750.jpg
       - title: Bed Assembly
         image: /images/headboard_assembly_20200822/re20200822_101231.jpg
-      - title: Bookcase Assembly
-      - title: Ceiling Fan Replacement / Installation
+      # - title: Bookcase Assembly
+      - title: "Ceiling Fan Replacement / Installation <i class='bi bi-heart-fill'></i>"
       - title: Desk Assembly
         image: /images/desk_assembly/re20200111_144150.jpg
       - title: Door Knob Replacement
@@ -109,21 +109,22 @@ theme:
       - title: Exercise Equipment Assembly
         image: /images/exercise_20211009/re20210109_113530.jpg
       # - title: Firewood Stand Assembly
-      - title: Furniture Assembly
+      - title: "Furniture Assembly <i class='bi bi-heart-fill'></i>"
         url: /furniture
         image: /images/office_chair_20201124/re20201124_110805.jpg
       # - title: Hanging Shelves
       # - title: Hanging Holiday Lighting and Decorations
       # - title: Honey Do Lists
       - title: Kitchen Island Assembly
+        image: /images/kitchen_island_20200404/re20200404_102500.jpg
       - title: Lawn Services<br />(Cutting, Edging, Light Landscaping)
         image: /images/landscaping_20200718/re20200719_085301.jpg
-      - title: Lighting Fixture Replacment / Installation
+      - title: "Lighting Fixture Replacment / Installation <i class='bi bi-heart-fill'></i>"
         url: /services/lightfixture
         image: /images/light_fixture_install_20201231/re20201231_155035.jpg
       # - title: Outdoor Furniture Assembly
       - title: Patio Furniture Assembly
-        image: /images/patio_furniture/20200527_203222.jpg
+        image: /images/patio_furniture/re20200527_203222.jpg
       # - title: Picture Hanging/Hanging Pictures
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
@@ -133,13 +134,13 @@ theme:
       - title: Shed Assembly
         url: /services/shed2
         image: /images/shed_20200926/20200926_113722T.jpg
-      - title: Shower Head Replacement / Installation
+      # - title: Shower Head Replacement / Installation
       # - title: Smoke Detector Replacement/Installation
       - title: Table Assembly
-      - title: Television (TV) Stand Assembly
+      - title: "Television (TV) Stand Assembly <i class='bi bi-heart-fill'></i>"
         url: /services/tvstand
         image: /images/tv_stand_20200926/20200926_080447T.jpg
-      - title: Television (TV) Wall Mounting
+      - title: "Television (TV) Wall Mounting <i class='bi bi-heart-fill'></i>"
         url: /services/tvmounting
         image: /images/tvmounting.jpg
       - title: Thermostat (Smart and Non-Smart) Replacement / Installation
@@ -156,21 +157,22 @@ theme:
       name: Technology Services
       services:
       - title: Computer Repair
-      - title: Computer Programming Sessions
+      - title: "Computer Programming Sessions <i class='bi bi-heart-fill'></i>"
         url: https://www.youtube.com/watch?v=fg9AgEkuy9o
       - title: Drupal Maintenance and Updates
         url: https://www.youtube.com/watch?v=DjtIx1my2eE
       - title: Google Analytics Installation and Configuration
       - title: Googe Search Console
-      - title: Home Networking Solutions
-      - title: Linux Training
+      - title: "Home Networking Solutions <i class='bi bi-heart-fill'></i>"
+      - title: "Linux Training <i class='bi bi-heart-fill'></i>"
       - title: Mentoring (Programming and Linux)
       - title: Printer Installation / Configuration
-      - title: Robotic Process Automation (RPA) 
+      - title: Robotic Process Automation (RPA)
       - title: Search Engine Optimization (SEO)
       - title: Selenium WebDriver Automation
-      - title: Smart Thermostat Installation
+      - title: Thermostat Installation
         url: /services/smartthermostat
+        image: /images/thermostat_20210213/re20210213_123820.jpg
       # - title: Web Application Design
       - title: Website Design
       - title: Wi-Fi Router Installation / Setup
@@ -202,6 +204,9 @@ theme:
           - url: "https://rhtservices.net"
             name: "rhtservices.net"
             icon: fas fa-globe-africa
+          - url: https://facebook.com/rhtservicesllc
+            name: RHT Services on Facebook
+            # icon: bi bi-facebook
           - name: "Sun-Fri Hours: By Appointment"
             icon: fas fa-clock
           - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)"
@@ -209,7 +214,7 @@ theme:
       - heading: Service Areas
         links:
           - name: Montgomery, Alabama
-          - name: Pike Road, Alabama            
+          - name: Pike Road, Alabama
           - name: Autauga County, Alabama
           - name: Elmore County, Alabama
           - name: Montgomery County, Alabama
