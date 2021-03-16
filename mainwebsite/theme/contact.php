@@ -150,6 +150,9 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <div class="text-small text-muted font-italic">Minimum 100 characters. The more details, the better</div>
         </p>
         <p>
+                  <div class="g-recaptcha" data-sitekey="6LdyOXYaAAAAAN3DtjnCOuFPmg29500M0KBu1LQ_"></div>
+        </p>
+        <p>
             <input type="submit" class="form-control btn btn-dark-gray" value="Submit">
         </p>
     </form>
