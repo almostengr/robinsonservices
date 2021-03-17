@@ -199,14 +199,14 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 
     if ($_POST['emailaddress'] == "tester@thealmostengineer.com") {
         $mail_result = true;
-    } else if ($appearSpam == false)
+    } else if ($appearSpam == false) {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
     }
 
     // display messages to user
 
     if ($appearSpam) {
-    ?>
+?>
         <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
             Invalid submission. It appears that your submission is spam and was not submitted.
         </div>
@@ -486,7 +486,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
       </div>
-      <!-- Last updated: 2021-03-17 01:46:56.972941+00:00 -->
+      <!-- Last updated: 2021-03-17 01:50:59.154660+00:00 -->
     </div>
   </footer>
   
