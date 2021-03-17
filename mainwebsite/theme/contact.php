@@ -76,11 +76,12 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 
     if ($appearSpam) {
         $subject = "[SPAM] " . $subject;
+        $mail_result == false;
     }
 
     if ($_POST['emailaddress'] == "tester@thealmostengineer.com") {
         $mail_result = true;
-    } else {
+    } else if ($appearSpam == false)
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
     }
 
@@ -89,12 +90,12 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     if ($appearSpam) {
 ?>
         <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
-            Invalid submission. It appears that your submission is spam and has been flagged.
+            Invalid submission. It appears that your submission is spam and was not submitted.
         </div>
     <?php
     }
 
-    if ($mail_result && $appearSpam == false) {
+    if ($mail_result) {
     ?>
         <div class="bg-success text-light container py-2 my-5" id="successmessage">
             Your request has been submitted successfully!
@@ -118,7 +119,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     <p>Call <a href="tel:3345959690">334-595-9690</a></p>
     <h2>Email</h2>
     <p>Please allow up to 2 business days to get back to you.</p>
-    <form method="POST" action="/contact.php">
+    <form method="POST" action="/contact.php" id="contactForm">
         <p>
             <label for="customerfirst" class="required">First Name</label>
             <input class="form-control" name="customerfirst" type="text" placeholder="First Name" minlength="3" required="required">
@@ -150,7 +151,8 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <div class="text-small text-muted font-italic">Minimum 100 characters. The more details, the better</div>
         </p>
         <p>
-                  <div class="g-recaptcha" data-sitekey="6LdyOXYaAAAAAN3DtjnCOuFPmg29500M0KBu1LQ_"></div>
+            <label class="required">Are You Human?</label>
+            <div class="g-recaptcha" data-sitekey="6LfYSYIaAAAAAMYtAq6ND9mMb0CyaTiMld1CtZW4"></div>
         </p>
         <p>
             <input type="submit" class="form-control btn btn-dark-gray" value="Submit">
