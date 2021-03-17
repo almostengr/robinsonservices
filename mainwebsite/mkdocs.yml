@@ -94,7 +94,9 @@ theme:
       - title: Bed Assembly
         image: /images/headboard_assembly_20200822/re20200822_101231.jpg
       # - title: Bookcase Assembly
-      - title: "Ceiling Fan Replacement / Installation <i class='bi bi-heart-fill'></i>"
+      - title: "Ceiling Fan Replacement / Installation"
+        favorite: true
+        image: /images/ceilingfan20210220.jpg
       - title: Desk Assembly
         image: /images/desk_assembly/re20200111_144150.jpg
       - title: Door Knob Replacement
@@ -108,48 +110,40 @@ theme:
         image: /images/dresser_20200823/20200823_194032T.jpg
       - title: Exercise Equipment Assembly
         image: /images/exercise_20211009/re20210109_113530.jpg
-      # - title: Firewood Stand Assembly
-      - title: "Furniture Assembly <i class='bi bi-heart-fill'></i>"
+      - title: "Furniture Assembly"
         url: /furniture
+        favorite: true
         image: /images/office_chair_20201124/re20201124_110805.jpg
-      # - title: Hanging Shelves
-      # - title: Hanging Holiday Lighting and Decorations
-      # - title: Honey Do Lists
       - title: Kitchen Island Assembly
         image: /images/kitchen_island_20200404/re20200404_102500.jpg
-      - title: Lawn Services<br />(Cutting, Edging, Light Landscaping)
+      - title: Lawn Services (Cutting, Edging, Light Landscaping)
         image: /images/landscaping_20200718/re20200719_085301.jpg
-      - title: "Lighting Fixture Replacment / Installation <i class='bi bi-heart-fill'></i>"
+      - title: "Lighting Fixture Replacement / Installation"
         url: /services/lightfixture
+        favorite: true
         image: /images/light_fixture_install_20201231/re20201231_155035.jpg
-      # - title: Outdoor Furniture Assembly
       - title: Patio Furniture Assembly
         image: /images/patio_furniture/re20200527_203222.jpg
       # - title: Picture Hanging/Hanging Pictures
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
         image: /images/sense_install.jpg
-      # - title: Shed (Small) Assembly
-      #   url: /services/shed1
       - title: Shed Assembly
         url: /services/shed2
         image: /images/shed_20200926/20200926_113722T.jpg
-      # - title: Shower Head Replacement / Installation
-      # - title: Smoke Detector Replacement/Installation
       - title: Table Assembly
-      - title: "Television (TV) Stand Assembly <i class='bi bi-heart-fill'></i>"
+      - title: "Television (TV) Stand Assembly"
         url: /services/tvstand
+        favorite: true
         image: /images/tv_stand_20200926/20200926_080447T.jpg
-      - title: "Television (TV) Wall Mounting <i class='bi bi-heart-fill'></i>"
+      - title: "Television (TV) Wall Mounting"
         url: /services/tvmounting
+        favorite: true
         image: /images/tvmounting.jpg
       - title: Thermostat (Smart and Non-Smart) Replacement / Installation
         url: /services/smartthermostat
         image: /images/thermostat_20210213/re20210213_123820.jpg
-      # - title: To Do Lists
       - title: Toilet Leak Repair / Valve Replacement
-      # - title: Trim Repair
-      # - title: Washing Machine Hose Replacement
       - title: Window Blind Replacement / Installation
       - title: Window Curtain Replacement / Installation
       - title: Window Drapery Replacement / Installation
@@ -157,14 +151,17 @@ theme:
       name: Technology Services
       services:
       - title: Computer Repair
-      - title: "Computer Programming Sessions <i class='bi bi-heart-fill'></i>"
+      - title: "Computer Programming Sessions"
+        favorite: true
         url: https://www.youtube.com/watch?v=fg9AgEkuy9o
       - title: Drupal Maintenance and Updates
         url: https://www.youtube.com/watch?v=DjtIx1my2eE
       - title: Google Analytics Installation and Configuration
       - title: Googe Search Console
-      - title: "Home Networking Solutions <i class='bi bi-heart-fill'></i>"
-      - title: "Linux Training <i class='bi bi-heart-fill'></i>"
+      - title: "Home Networking Solutions"
+        favorite: true  
+      - title: "Linux Training"
+        favorite: true
       - title: Mentoring (Programming and Linux)
       - title: Printer Installation / Configuration
       - title: Robotic Process Automation (RPA)
@@ -173,7 +170,6 @@ theme:
       - title: Thermostat Installation
         url: /services/smartthermostat
         image: /images/thermostat_20210213/re20210213_123820.jpg
-      # - title: Web Application Design
       - title: Website Design
       - title: Wi-Fi Router Installation / Setup
       - title: WordPress Maintenance and Updates

@@ -12,3 +12,7 @@ or ask any questions you may have in the message box. You will be contacted with
 <script src='https://square.site/appointments/buyer/widget/jk123kyje3db16/L1VAAW55MM5GS.js'></script>
 
 <p></p>
+
+Open 
+<a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc" 
+target="_blank">Booking Site in New Window</a>
