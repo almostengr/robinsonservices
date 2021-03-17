@@ -81,14 +81,14 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 
     if ($_POST['emailaddress'] == "tester@thealmostengineer.com") {
         $mail_result = true;
-    } else if ($appearSpam == false)
+    } else if ($appearSpam == false) {
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
     }
 
     // display messages to user
 
     if ($appearSpam) {
-    ?>
+?>
         <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
             Invalid submission. It appears that your submission is spam and was not submitted.
         </div>
