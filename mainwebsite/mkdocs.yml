@@ -196,17 +196,17 @@ theme:
         links:
           - url: "tel:(334) 595-9690"
             name: "(334) 595-9690"
-            icon: fas fa-phone
+            icon: bi bi-telephone
           - url: "https://rhtservices.net"
             name: "rhtservices.net"
-            icon: fas fa-globe-africa
+            icon: bi bi-globe
           - url: https://facebook.com/rhtservicesllc
             name: RHT Services on Facebook
-            # icon: bi bi-facebook
+            icon: bi bi-facebook
           - name: "Sun-Fri Hours: By Appointment"
-            icon: fas fa-clock
+            icon: bi bi-clock-fill
           - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)"
-            icon: fas fa-clock
+            icon: bi bi-clock-fill
       - heading: Service Areas
         links:
           - name: Montgomery, Alabama
@@ -218,22 +218,22 @@ theme:
         links:
           - name: "Make A Payment"
             url: /payment
-            icon: far fa-money-bill-alt
+            icon: bi bi-cash
           - name: "Projects"
             url: /projects
-            icon: fas fa-tasks
+            icon: bi bi-kanban
           - name: Uses
             url: /uses
-            icon: fas fa-tools
+            icon: bi bi-tools
           - name: Frequently Asked Questions (FAQ)
             url: /faq
-            icon: fas fa-question
+            icon: bi bi-patch-question
           - name: Privacy Policy
             url: /privacy
-            icon: fas fa-user-secret
+            icon: bi bi-key
           - name: Sitemap
             url: /sitemap.xml
-            icon: fas fa-sitemap
+            icon: bi bi-diagram-3
   footer:
     - bgcolor: bg-black
       textcolor: text-warning

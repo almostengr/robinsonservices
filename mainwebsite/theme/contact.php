@@ -88,7 +88,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     // display messages to user
 
     if ($appearSpam) {
-?>
+    ?>
         <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
             Invalid submission. It appears that your submission is spam and was not submitted.
         </div>
