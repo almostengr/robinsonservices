@@ -5,7 +5,7 @@ site_author: Robinson Handy and Technology Services LLC
 site_url: https://rhtservices.net
 copyright: Robinson Handy and Technology (RHT) Services LLC
 
-# site_favicon: images/lightbulb/favicon.ico
+site_favicon: /images/logo.ico
 
 # repository information
 repo_url: https://github.com/almostengr/robinsonservices
@@ -43,7 +43,7 @@ theme:
       url: /services
       background_image: "/images/jumbotron.jpg"
       textcolor: text-warning
-      buttoncolor: btn-warning 
+      buttoncolor: btn-warning
   mainnav:
     bgcolor: bg-dark
     linkcolor: text-white
@@ -84,6 +84,95 @@ theme:
       imageurl: /images/service_area.jpg
       bgcolor: bg-light
       textcolor: text-dark
+  serviceslist:
+    - category:
+      name: Handyman Services
+      services:
+      - title: Air Filter Replacment
+      - title: Baby Crib Assembly
+        image: /images/baby_crib_20200208/re20200208_131750.jpg
+      - title: Bed Assembly
+        image: /images/headboard_assembly_20200822/re20200822_101231.jpg
+      # - title: Bookcase Assembly
+      - title: "Ceiling Fan Replacement / Installation"
+        favorite: true
+        image: /images/ceilingfan20210220.jpg
+      - title: Desk Assembly
+        image: /images/desk_assembly/re20200111_144150.jpg
+      - title: Door Knob Replacement
+        image: /images/keypad_20201013/re20201013_125226.jpg
+        url: /services/keypadlock
+      - title: Doorbell Replacement / Installation
+        url: /services/doorbell
+        image: /images/doorbell_20200919/20200919_160721T.jpg
+      - title: Dresser Assembly
+        url: /services/dresser
+        image: /images/dresser_20200823/20200823_194032T.jpg
+      - title: Exercise Equipment Assembly
+        image: /images/exercise_20211009/re20210109_113530.jpg
+      - title: "Furniture Assembly"
+        url: /furniture
+        favorite: true
+        image: /images/office_chair_20201124/re20201124_110805.jpg
+      - title: Kitchen Island Assembly
+        image: /images/kitchen_island_20200404/re20200404_102500.jpg
+      - title: Lawn Services (Cutting, Edging, Light Landscaping)
+        image: /images/landscaping_20200718/re20200719_085301.jpg
+      - title: "Lighting Fixture Replacement / Installation"
+        url: /services/lightfixture
+        favorite: true
+        image: /images/light_fixture_install_20201231/re20201231_155035.jpg
+      - title: Patio Furniture Assembly
+        image: /images/patio_furniture/re20200527_203222.jpg
+      # - title: Picture Hanging/Hanging Pictures
+      - title: Sense Energy Monitor Installation
+        url: /services/sensemonitor
+        image: /images/sense_install.jpg
+      - title: Shed Assembly
+        url: /services/shed2
+        image: /images/shed_20200926/20200926_113722T.jpg
+      - title: Table Assembly
+      - title: "Television (TV) Stand Assembly"
+        url: /services/tvstand
+        favorite: true
+        image: /images/tv_stand_20200926/20200926_080447T.jpg
+      - title: "Television (TV) Wall Mounting"
+        url: /services/tvmounting
+        favorite: true
+        image: /images/tvmounting.jpg
+      - title: Thermostat (Smart and Non-Smart) Replacement / Installation
+        url: /services/smartthermostat
+        image: /images/thermostat_20210213/re20210213_123820.jpg
+      - title: Toilet Leak Repair / Valve Replacement
+      - title: Window Blind Replacement / Installation
+      - title: Window Curtain Replacement / Installation
+      - title: Window Drapery Replacement / Installation
+    - category:
+      name: Technology Services
+      services:
+      - title: Computer Repair
+      - title: "Computer Programming Sessions"
+        favorite: true
+        url: https://www.youtube.com/watch?v=fg9AgEkuy9o
+      - title: Drupal Maintenance and Updates
+        url: https://www.youtube.com/watch?v=DjtIx1my2eE
+      - title: Google Analytics Installation and Configuration
+      - title: Googe Search Console
+      - title: "Home Networking Solutions"
+        favorite: true  
+      - title: "Linux Training"
+        favorite: true
+      - title: Mentoring (Programming and Linux)
+      - title: Printer Installation / Configuration
+      - title: Robotic Process Automation (RPA)
+      - title: Search Engine Optimization (SEO)
+      - title: Selenium WebDriver Automation
+      - title: Thermostat Installation
+        url: /services/smartthermostat
+        image: /images/thermostat_20210213/re20210213_123820.jpg
+      - title: Website Design
+      - title: Wi-Fi Router Installation / Setup
+      - title: WordPress Maintenance and Updates
   promotions:
     - heading: "Save 5% on your first service!"
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!"
@@ -107,18 +196,21 @@ theme:
         links:
           - url: "tel:(334) 595-9690"
             name: "(334) 595-9690"
-            icon: fas fa-phone
+            icon: bi bi-telephone
           - url: "https://rhtservices.net"
             name: "rhtservices.net"
-            icon: fas fa-globe-africa
+            icon: bi bi-globe
+          - url: https://facebook.com/rhtservicesllc
+            name: RHT Services on Facebook
+            icon: bi bi-facebook
           - name: "Sun-Fri Hours: By Appointment"
-            icon: fas fa-clock
+            icon: bi bi-clock-fill
           - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)"
-            icon: fas fa-clock
+            icon: bi bi-clock-fill
       - heading: Service Areas
         links:
           - name: Montgomery, Alabama
-          - name: Pike Road, Alabama            
+          - name: Pike Road, Alabama
           - name: Autauga County, Alabama
           - name: Elmore County, Alabama
           - name: Montgomery County, Alabama
@@ -126,22 +218,22 @@ theme:
         links:
           - name: "Make A Payment"
             url: /payment
-            icon: far fa-money-bill-alt
+            icon: bi bi-cash
           - name: "Projects"
             url: /projects
-            icon: fas fa-tasks
+            icon: bi bi-kanban
           - name: Uses
             url: /uses
-            icon: fas fa-tools
+            icon: bi bi-tools
           - name: Frequently Asked Questions (FAQ)
             url: /faq
-            icon: fas fa-question
+            icon: bi bi-patch-question
           - name: Privacy Policy
             url: /privacy
-            icon: fas fa-user-secret
+            icon: bi bi-key
           - name: Sitemap
             url: /sitemap.xml
-            icon: fas fa-sitemap
+            icon: bi bi-diagram-3
   footer:
     - bgcolor: bg-black
       textcolor: text-warning

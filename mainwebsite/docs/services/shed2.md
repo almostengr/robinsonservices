@@ -17,4 +17,4 @@ including the instructions were misplaced. Thus this shed was assembled based on
 
 ![](/images/shed_20200926/20200926_132229T.jpg)
 
-[<< Back to Services list](/services)
+[<< Back to Services](/services)

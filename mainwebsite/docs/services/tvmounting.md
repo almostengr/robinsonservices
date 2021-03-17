@@ -8,4 +8,4 @@ purchased and provided the TV mount to be installed.
 
 ![Swivel TV mount installed](/images/tvmounting.jpg)
 
-[<< Back to Services list](/services)
+[<< Back to Services](/services)
