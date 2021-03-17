@@ -45,9 +45,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
 
   
 
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    type="text/css">
   <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.min.css">
 
   
 
@@ -57,7 +56,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
 
 <body class="bg-black">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="/">RHT Services LLC</a>
+    <a class="navbar-brand" href="/">
+      
+      <img src="/images/logo.ico">
+      
+      RHT Services LLC
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -190,25 +194,26 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 
     if ($appearSpam) {
         $subject = "[SPAM] " . $subject;
+        $mail_result == false;
     }
 
     if ($_POST['emailaddress'] == "tester@thealmostengineer.com") {
         $mail_result = true;
-    } else {
+    } else if ($appearSpam == false)
         $mail_result = mail($HELPDESK_EMAIL, $subject, $message, $headers);
     }
 
     // display messages to user
 
     if ($appearSpam) {
-?>
+    ?>
         <div class="bg-danger text-light container py-2 my-5" id="failuremessage">
-            Invalid submission. It appears that your submission is spam and has been flagged.
+            Invalid submission. It appears that your submission is spam and was not submitted.
         </div>
     <?php
     }
 
-    if ($mail_result && $appearSpam == false) {
+    if ($mail_result) {
     ?>
         <div class="bg-success text-light container py-2 my-5" id="successmessage">
             Your request has been submitted successfully!
@@ -232,7 +237,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     <p>Call <a href="tel:3345959690">334-595-9690</a></p>
     <h2>Email</h2>
     <p>Please allow up to 2 business days to get back to you.</p>
-    <form method="POST" action="/contact.php">
+    <form method="POST" action="/contact.php" id="contactForm">
         <p>
             <label for="customerfirst" class="required">First Name</label>
             <input class="form-control" name="customerfirst" type="text" placeholder="First Name" minlength="3" required="required">
@@ -264,6 +269,10 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <div class="text-small text-muted font-italic">Minimum 100 characters. The more details, the better</div>
         </p>
         <p>
+            <label class="required">Are You Human?</label>
+            <div class="g-recaptcha" data-sitekey="6LfYSYIaAAAAAMYtAq6ND9mMb0CyaTiMld1CtZW4"></div>
+        </p>
+        <p>
             <input type="submit" class="form-control btn btn-dark-gray" value="Submit">
         </p>
     </form>
@@ -272,6 +281,8 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 ?>
 
     </div>
+
+    
   </main>
 
   
@@ -302,7 +313,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-phone"></i>
+            <i class="bi bi-telephone"></i>
             
             
             <a href="tel:(334) 595-9690" class="text-white">
@@ -312,7 +323,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-globe-africa"></i>
+            <i class="bi bi-globe"></i>
             
             
             <a href="https://rhtservices.net" class="text-white">
@@ -322,7 +333,17 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-clock"></i>
+            <i class="bi bi-facebook"></i>
+            
+            
+            <a href="https://facebook.com/rhtservicesllc" class="text-white">
+              RHT Services on Facebook</a>
+            
+          </p>
+          
+          <p>
+            
+            <i class="bi bi-clock-fill"></i>
             
             
             Sun-Fri Hours: By Appointment
@@ -331,7 +352,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-clock"></i>
+            <i class="bi bi-clock-fill"></i>
             
             
             Sat Hours: 8 AM (0800) - 8 PM (2000)
@@ -385,7 +406,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="far fa-money-bill-alt"></i>
+            <i class="bi bi-cash"></i>
             
             
             <a href="/payment" class="text-white">
@@ -395,7 +416,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-tasks"></i>
+            <i class="bi bi-kanban"></i>
             
             
             <a href="/projects" class="text-white">
@@ -405,7 +426,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-tools"></i>
+            <i class="bi bi-tools"></i>
             
             
             <a href="/uses" class="text-white">
@@ -415,7 +436,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-question"></i>
+            <i class="bi bi-patch-question"></i>
             
             
             <a href="/faq" class="text-white">
@@ -425,7 +446,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-user-secret"></i>
+            <i class="bi bi-key"></i>
             
             
             <a href="/privacy" class="text-white">
@@ -435,7 +456,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           
           <p>
             
-            <i class="fas fa-sitemap"></i>
+            <i class="bi bi-diagram-3"></i>
             
             
             <a href="/sitemap.xml" class="text-white">
@@ -465,7 +486,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
       </div>
-      <!-- Last updated: 2021-02-20 19:53:12.011601+00:00 -->
+      <!-- Last updated: 2021-03-17 01:42:01.761457+00:00 -->
     </div>
   </footer>
   
@@ -475,8 +496,8 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     crossorigin="anonymous"></script>
   <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
-  <script async src="//kit.fontawesome.com/a076d05399.js"></script>
   <script async src="/js/javascript.min.js"></script>
+  <script async src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

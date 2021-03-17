@@ -126,3 +126,7 @@ main a:hover.btn, section input:hover.btn, footer a, footer a:hover {
 .subfooterheader {
     border-bottom: solid 3px;
 }
+
+div#services{
+    opacity: 0;
+}
