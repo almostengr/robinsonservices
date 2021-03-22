@@ -74,7 +74,7 @@ theme:
       description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation/Configuration, and Website Design."
       buttonlink: /services
       buttontext: View Technology Services
-      imageurl: /images/thermostat.jpg
+      imageurl: /images/thermostat_20210213/re20210213_123820.jpg
       bgcolor: bg-warning
       textcolor: text-dark
     - heading: Service Areas
@@ -88,12 +88,13 @@ theme:
     - category:
       name: Handyman Services
       services:
-      - title: Air Filter Replacment
+      - title: Air Filter Replacement
       - title: Baby Crib Assembly
         image: /images/baby_crib_20200208/re20200208_131750.jpg
       - title: Bed Assembly
         image: /images/headboard_assembly_20200822/re20200822_101231.jpg
-      # - title: Bookcase Assembly
+      - title: Bookcase Assembly
+      - title: Camera Installation
       - title: "Ceiling Fan Replacement / Installation"
         favorite: true
         image: /images/ceilingfan20210220.jpg
@@ -108,12 +109,14 @@ theme:
       - title: Dresser Assembly
         url: /services/dresser
         image: /images/dresser_20200823/20200823_194032T.jpg
+      - title: Exterior Door Replacement
       - title: Exercise Equipment Assembly
         image: /images/exercise_20211009/re20210109_113530.jpg
       - title: "Furniture Assembly"
         url: /furniture
         favorite: true
         image: /images/office_chair_20201124/re20201124_110805.jpg
+      - title: Grass Cutting
       - title: Kitchen Island Assembly
         image: /images/kitchen_island_20200404/re20200404_102500.jpg
       - title: Lawn Services (Cutting, Edging, Light Landscaping)
@@ -122,15 +125,21 @@ theme:
         url: /services/lightfixture
         favorite: true
         image: /images/light_fixture_install_20201231/re20201231_155035.jpg
+      - title: Mailbox Replacement
+      - title: Motion Light Replacement / Installation
+        url: https://www.facebook.com/rhtservicesllc/photos/a.107519491418044/107133814789945/
       - title: Patio Furniture Assembly
         image: /images/patio_furniture/re20200527_203222.jpg
-      # - title: Picture Hanging/Hanging Pictures
+      - title: Picture Hanging/Hanging Pictures
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
         image: /images/sense_install.jpg
       - title: Shed Assembly
         url: /services/shed2
         image: /images/shed_20200926/20200926_113722T.jpg
+      - title: Screen Door Installation
+      - title: Soundbar Installation
+      - title: Storm Door Replacment
       - title: Table Assembly
       - title: "Television (TV) Stand Assembly"
         url: /services/tvstand
@@ -152,6 +161,7 @@ theme:
       services:
       - title: Computer Repair
       - title: "Computer Programming Sessions"
+        image: /images/computer_programming.jpg
         favorite: true
         url: https://www.youtube.com/watch?v=fg9AgEkuy9o
       - title: Drupal Maintenance and Updates
@@ -159,9 +169,11 @@ theme:
       - title: Google Analytics Installation and Configuration
       - title: Googe Search Console
       - title: "Home Networking Solutions"
-        favorite: true  
+        favorite: true
+        image: /images/home_networking.jpg
       - title: "Linux Training"
         favorite: true
+        image: /images/linux_training.jpg
       - title: Mentoring (Programming and Linux)
       - title: Printer Installation / Configuration
       - title: Robotic Process Automation (RPA)
@@ -170,6 +182,7 @@ theme:
       - title: Thermostat Installation
         url: /services/smartthermostat
         image: /images/thermostat_20210213/re20210213_123820.jpg
+      - title: Technology Mentoring
       - title: Website Design
       - title: Wi-Fi Router Installation / Setup
       - title: WordPress Maintenance and Updates
@@ -222,7 +235,7 @@ theme:
           - name: "Projects"
             url: /projects
             icon: bi bi-kanban
-          - name: Uses
+          - name: Uses - Tools Used
             url: /uses
             icon: bi bi-tools
           - name: Frequently Asked Questions (FAQ)

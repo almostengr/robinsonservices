@@ -29,3 +29,9 @@ Below are the primary areas served in Alabama's River Region.
 Cities or counties not listed here can be served, depending
 on availability and distance. Mileage fees may apply to jobs outside of the below mentioned
 cities and counties in Alabama. See the [About page](/about) for exact locations.
+
+## What are affiliate links?
+
+Affiliate links help to bring income in to the business. Products that are recommended on this website 
+may be an affiliate link. When clicked or a purchase is made, a percentage of that purchase is given to 
+the affiliate partner.

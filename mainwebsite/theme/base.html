@@ -223,22 +223,22 @@
       {% for category in config.theme.serviceslist %}
       <h2 id="{{ category.name | lower | replace(' ', '-') }}">{{ category.name }}</h2>
       <div class="row text-center align-items-start mx-auto">
-
         {% for service in category.services %}
-        {% if service.favorite %}
-        <div class="col-sm-12 col-md-4 my-1 card text-decoration-none">
-          {% if service.image %}
-          <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
-          {% endif %}
-          <div class="card-body">
-            <h3 class="card-title text-decoration-none">
-              {% if service.url %}
-              <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
-              {% else %}
-              {{ service.title }}
-              {% endif %}
-            </h3>
-          </div>
+
+          {% if service.favorite %}
+          <div class="col-sm-12 col-md-4 my-1 card text-decoration-none">
+            {% if service.image %}
+            <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
+            {% endif %}
+            <div class="card-body">
+              <h3 class="card-title text-decoration-none">
+                {% if service.url %}
+                <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
+                {% else %}
+                {{ service.title }}
+                {% endif %}
+              </h3>
+            </div>
         </div>
         {% endif %}
         {% endfor %}
