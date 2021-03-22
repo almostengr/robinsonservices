@@ -25,7 +25,7 @@ on the following page.
 
 ## Payment via PayPal
 
-To pay via PayPal, click the "Pay Now" button below.
+To pay via PayPal, click the "Pay Now" button or scan the QR code below.
 
 **NOTE: You will need to change the quantity to match the amount that you desire to pay.**
 For example, if you want to pay $255, then you will need to change the quantity to 255.
@@ -37,3 +37,5 @@ For example, if you want to pay $255, then you will need to change the quantity 
         name="submit" alt="PayPal - The safer, easier way to pay online!">
     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+
+![Paypal QR Code for RHT Services](/images/paypalqrcode.png)
