@@ -94,8 +94,30 @@
 <body class="bg-black">
 
   <!-- Facebook Chat -->
+  <!-- <div id="fb-root"></div>
+  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107"></div> -->
+
+  <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107"></div>
+  <script defer async>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107">
+  </div>
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top {{ config.theme.mainnav.bgcolor }}">
     <a class="navbar-brand" href="/">
@@ -225,20 +247,20 @@
       <div class="row text-center align-items-start mx-auto">
         {% for service in category.services %}
 
-          {% if service.favorite %}
-          <div class="col-sm-12 col-md-4 my-1 card text-decoration-none">
-            {% if service.image %}
-            <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
-            {% endif %}
-            <div class="card-body">
-              <h3 class="card-title text-decoration-none">
-                {% if service.url %}
-                <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
-                {% else %}
-                {{ service.title }}
-                {% endif %}
-              </h3>
-            </div>
+        {% if service.favorite %}
+        <div class="col-sm-12 col-md-4 my-1 card text-decoration-none">
+          {% if service.image %}
+          <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
+          {% endif %}
+          <div class="card-body">
+            <h3 class="card-title text-decoration-none">
+              {% if service.url %}
+              <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
+              {% else %}
+              {{ service.title }}
+              {% endif %}
+            </h3>
+          </div>
         </div>
         {% endif %}
         {% endfor %}
