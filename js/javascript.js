@@ -33,7 +33,6 @@ function facebookChat() {
             version: 'v10.0'
         });
     };
-
     (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -44,5 +43,5 @@ function facebookChat() {
 }
 
 externalLinks();
-fadeIn();
+// fadeIn();
 facebookChat();

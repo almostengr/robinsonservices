@@ -57,8 +57,30 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
 <body class="bg-black">
 
   <!-- Facebook Chat -->
+  <!-- <div id="fb-root"></div>
+  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107"></div> -->
+
+  <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
-  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107"></div>
+  <script defer async>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107">
+  </div>
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="/">
@@ -491,7 +513,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
         More information this is available in the Privacy Policy.
       </div>
-      <!-- Last updated: 2021-03-22 01:40:57.893796+00:00 -->
+      <!-- Last updated: 2021-03-22 01:59:53.438777+00:00 -->
     </div>
   </footer>
   
