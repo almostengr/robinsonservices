@@ -32,11 +32,16 @@ theme:
     #   detail: detail
     #   bgcolor: bg-primary
     #   textcolor: text-light
-  homemessage:
-    - heading: COVID-19 (Coronavirus) Notice
-      detail: We take COVID-19 seriously. Masks are worn while performing services indoors, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
-      bgcolor: bg-primary
+  sitemessage:
+    - heading: Juneteenth Ceiling Fan Special
+      detail: Got a ceiling fan that needs to be replaced or upgraded? Now is the time to book your ceiling fan installation appointment for $75! <a href="#">Book now!</a>
+      bgcolor: bg-success
       textcolor: text-light
+  # homemessage:
+  #   - heading: COVID-19 (Coronavirus) Notice
+  #     detail: We take COVID-19 seriously. Masks are worn while performing services indoors, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
+  #     bgcolor: bg-primary
+  #     textcolor: text-light
   jumbotron:
     - heading: Get It Done, Without Headaches
       detail: Providing services to homeowners and businesses in Montgomery, AL and surrounding areas.
@@ -60,7 +65,7 @@ theme:
       button: false
     # - url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
     - url: /request
-      name: Request Services
+      name: BOOK SERVICE
       button: true
   featurette:
     - heading: Handyman Services
@@ -216,14 +221,15 @@ theme:
           - url: https://facebook.com/rhtservicesllc
             name: RHT Services on Facebook
             icon: bi bi-facebook
-          - name: "Sun-Fri Hours: By Appointment"
-            icon: bi bi-clock-fill
-          - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)"
+          # - name: "Sun-Fri Hours: By Appointment"
+          #   icon: bi bi-clock-fill
+          - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)<br />Sun-Fri Hours: By Appointment"
             icon: bi bi-clock-fill
       - heading: Service Areas
         links:
           - name: Montgomery, Alabama
           - name: Pike Road, Alabama
+          - name: Prattville, Alabama
           - name: Autauga County, Alabama
           - name: Elmore County, Alabama
           - name: Montgomery County, Alabama
