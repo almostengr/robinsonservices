@@ -1,11 +1,9 @@
-site_name: Robinson Handy and Tech Services LLC
-site_name_short: RHT Services LLC
+site_name: Robinson Handy and Technology Services LLC
 site_description: Providing handyman and technology services for the Montgomery, Alabama area.
 site_author: Robinson Handy and Technology Services LLC
 site_url: https://rhtservices.net
 copyright: Robinson Handy and Technology (RHT) Services LLC
 
-site_favicon: /images/logo.ico
 
 # repository information
 repo_url: https://github.com/almostengr/robinsonservices
@@ -18,6 +16,8 @@ dev_addr: 192.168.57.117:8082
 
 # Appearance
 theme:
+  site_name_short: RHT Services LLC
+  site_favicon: /images/logo.ico
   name: null
   custom_dir: 'theme'
   language: en
@@ -32,11 +32,11 @@ theme:
     #   detail: detail
     #   bgcolor: bg-primary
     #   textcolor: text-light
-  sitemessage:
-    - heading: Juneteenth Ceiling Fan Special
-      detail: Got a ceiling fan that needs to be replaced or upgraded? Now is the time to book your ceiling fan installation appointment for $75! <a href="#">Book now!</a>
-      bgcolor: bg-success
-      textcolor: text-light
+  # sitemessage:
+  #   - heading: Juneteenth Ceiling Fan Special
+  #     detail: Got a ceiling fan that needs to be replaced or upgraded? Now is the time to book your ceiling fan installation appointment for $75! <a href="#">Book now!</a>
+  #     bgcolor: bg-success
+  #     textcolor: text-light
   # homemessage:
   #   - heading: COVID-19 (Coronavirus) Notice
   #     detail: We take COVID-19 seriously. Masks are worn while performing services indoors, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
@@ -60,6 +60,9 @@ theme:
     - url: /services
       name: Services
       button: false
+    - url: /specials
+      name: Specials
+      button: false
     - url: /contact.php
       name: Contact
       button: false
@@ -69,14 +72,14 @@ theme:
       button: true
   featurette:
     - heading: Handyman Services
-      description: "Our popular handyman services include Ceiling Fan Replacement/Installation, Desk Assembly, Furniture Assembly (Indoor and Outdoor), Lawn Services (Cutting, Edging, Light Landscaping), Lighting Fixture Replacement/Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
+      description: "Our popular handyman services include Ceiling Fan Replacement and Installation, Furniture Assembly (Indoor and Outdoor), Lighting Fixture Replacement and Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
       buttonlink: /services
       buttontext: View Handyman Services
       imageurl: /images/tvmounting.jpg
       bgcolor: bg-light
       textcolor: text-dark
     - heading: Technology Services
-      description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation/Configuration, and Website Design."
+      description: "Our popular tech services include Computer Repair, Computer Programming Sessions, Linux Training, Printer Installation and Configuration, and Website Design."
       buttonlink: /services
       buttontext: View Technology Services
       imageurl: /images/thermostat_20210213/re20210213_123820.jpg
@@ -91,16 +94,17 @@ theme:
       textcolor: text-dark
   serviceslist:
     - category:
-      name: Handyman Services
+      name: Popular Services
       services:
+      ## handyman
       - title: Air Filter Replacement
       - title: Baby Crib Assembly
         image: /images/baby_crib_20200208/re20200208_131750.jpg
       - title: Bed Assembly
         image: /images/headboard_assembly_20200822/re20200822_101231.jpg
       - title: Bookcase Assembly
-      - title: Camera Installation
-      - title: "Ceiling Fan Replacement / Installation"
+      - title: Camera Replacement / Installation
+      - title: Ceiling Fan Replacement / Installation
         favorite: true
         image: /images/ceilingfan20210220.jpg
       - title: Desk Assembly
@@ -117,8 +121,8 @@ theme:
       - title: Exterior Door Replacement
       - title: Exercise Equipment Assembly
         image: /images/exercise_20211009/re20210109_113530.jpg
-      - title: "Furniture Assembly"
-        url: /furniture
+      - title: Furniture Assembly
+        url: /services/furniture
         favorite: true
         image: /images/office_chair_20201124/re20201124_110805.jpg
       - title: Grass Cutting
@@ -126,7 +130,7 @@ theme:
         image: /images/kitchen_island_20200404/re20200404_102500.jpg
       - title: Lawn Services (Cutting, Edging, Light Landscaping)
         image: /images/landscaping_20200718/re20200719_085301.jpg
-      - title: "Lighting Fixture Replacement / Installation"
+      - title: Lighting Fixture Replacement / Installation
         url: /services/lightfixture
         favorite: true
         image: /images/light_fixture_install_20201231/re20201231_155035.jpg
@@ -135,22 +139,23 @@ theme:
         url: https://www.facebook.com/rhtservicesllc/photos/a.107519491418044/107133814789945/
       - title: Patio Furniture Assembly
         image: /images/patio_furniture/re20200527_203222.jpg
-      - title: Picture Hanging/Hanging Pictures
+      - title: Picture Hanging
+        favorite: true
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
         image: /images/sense_install.jpg
       - title: Shed Assembly
         url: /services/shed2
         image: /images/shed_20200926/20200926_113722T.jpg
-      - title: Screen Door Installation
+      - title: Screen Door Replacement / Installation
       - title: Soundbar Installation
-      - title: Storm Door Replacment
+      - title: Storm Door Replacement / Installation
       - title: Table Assembly
-      - title: "Television (TV) Stand Assembly"
+      - title: Television (TV) Stand Assembly
         url: /services/tvstand
         favorite: true
         image: /images/tv_stand_20200926/20200926_080447T.jpg
-      - title: "Television (TV) Wall Mounting"
+      - title: Television (TV) Wall Mounting
         url: /services/tvmounting
         favorite: true
         image: /images/tvmounting.jpg
@@ -161,11 +166,9 @@ theme:
       - title: Window Blind Replacement / Installation
       - title: Window Curtain Replacement / Installation
       - title: Window Drapery Replacement / Installation
-    - category:
-      name: Technology Services
-      services:
+      ## technology
       - title: Computer Repair
-      - title: "Computer Programming Sessions"
+      - title: Computer Programming Sessions
         image: /images/computer_programming.jpg
         favorite: true
         url: https://www.youtube.com/watch?v=fg9AgEkuy9o
@@ -173,7 +176,7 @@ theme:
         url: https://www.youtube.com/watch?v=DjtIx1my2eE
       - title: Google Analytics Installation and Configuration
       - title: Googe Search Console
-      - title: "Home Networking Solutions"
+      - title: Home Networking Solutions
         favorite: true
         image: /images/home_networking.jpg
       - title: "Linux Training"
@@ -184,9 +187,6 @@ theme:
       - title: Robotic Process Automation (RPA)
       - title: Search Engine Optimization (SEO)
       - title: Selenium WebDriver Automation
-      - title: Thermostat Installation
-        url: /services/smartthermostat
-        image: /images/thermostat_20210213/re20210213_123820.jpg
       - title: Technology Mentoring
       - title: Website Design
       - title: Wi-Fi Router Installation / Setup
@@ -195,11 +195,19 @@ theme:
     - heading: "Save 5% on your first service!"
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!"
       buttoncolor: btn-dark-gray
-      buttontext: Request Services
+      buttontext: Book Now!
       # buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
       buttonurl: /request
       bgcolor: bg-warning
       textcolor: text-dark
+    # - heading: "Save 5% on your first service!"
+    #   detail: "Mention that you saw this message on our website and you will get 5% off your first service! Mention that you saw this message on our website and you will get 5% off your first service! Mention that you saw this message on our website and you will get 5% off your first service!"
+    #   buttoncolor: btn-dark-gray
+    #   buttontext: Request Services
+    #   # buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
+    #   buttonurl: /request
+    #   bgcolor: bg-warning
+    #   textcolor: text-dark
     # - heading: "Free Business Website"
     #   detail: "During the month of February, one business will be selected each week to have a free business website created. See terms and conditions."
     #   buttontext: Register for Free Website
@@ -221,38 +229,102 @@ theme:
           - url: https://facebook.com/rhtservicesllc
             name: RHT Services on Facebook
             icon: bi bi-facebook
-          # - name: "Sun-Fri Hours: By Appointment"
+          - url: /services
+            name: Services Offered
+            icon: bi bi-kanban
+          # - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)<br />Sun-Fri Hours: By Appointment"
           #   icon: bi bi-clock-fill
-          - name: "Sat Hours: 8 AM (0800) - 8 PM (2000)<br />Sun-Fri Hours: By Appointment"
-            icon: bi bi-clock-fill
-      - heading: Service Areas
-        links:
-          - name: Montgomery, Alabama
-          - name: Pike Road, Alabama
-          - name: Prattville, Alabama
-          - name: Autauga County, Alabama
-          - name: Elmore County, Alabama
-          - name: Montgomery County, Alabama
-      - heading: "Other Links"
-        links:
           - name: "Make A Payment"
             url: /payment
             icon: bi bi-cash
-          - name: "Projects"
-            url: /projects
-            icon: bi bi-kanban
-          - name: Uses - Tools Used
-            url: /uses
-            icon: bi bi-tools
           - name: Frequently Asked Questions (FAQ)
             url: /faq
             icon: bi bi-patch-question
+          - name: Uses (Recommended Tools)
+            url: /uses
+            icon: bi bi-tools
           - name: Privacy Policy
             url: /privacy
             icon: bi bi-key
           - name: Sitemap
             url: /sitemap.xml
             icon: bi bi-diagram-3
+          - name: Book Appointment / Service
+            url: /request
+            icon: bi bi-calendar-check
+      - heading: Service Areas
+        links:
+          - name: Autaugaville
+            icon: bi bi-geo-alt-fill
+          - name: Cecil
+            icon: bi bi-geo-alt-fill
+          - name: Coosada
+            icon: bi bi-geo-alt-fill
+          - name: Deatsville
+            icon: bi bi-geo-alt-fill
+          - name: Elmore
+            icon: bi bi-geo-alt-fill
+          - name: Hope Hull
+            icon: bi bi-geo-alt-fill
+          - name: Millbrook
+            icon: bi bi-geo-alt-fill
+          - name: Montgomery
+            icon: bi bi-geo-alt-fill
+          - name: Mount Meigs
+            icon: bi bi-geo-alt-fill
+          - name: Pike Road
+            icon: bi bi-geo-alt-fill
+          - name: Pine Level<br />(Autauga and Montgomery Counties)
+            icon: bi bi-geo-alt-fill
+          - name: Prattville
+            icon: bi bi-geo-alt-fill
+          - name: Rolling Hills
+            icon: bi bi-geo-alt-fill
+          - name: Tallassee
+            icon: bi bi-geo-alt-fill
+          - name: Waugh
+            icon: bi bi-geo-alt-fill
+          - name: Wetumpka
+            icon: bi bi-geo-alt-fill
+          - name: Autauga County, Alabama
+            icon: bi bi-geo-alt-fill
+          - name: Elmore County, Alabama
+            icon: bi bi-geo-alt-fill
+          - name: Montgomery County, Alabama
+            icon: bi bi-geo-alt-fill
+      - heading: Popular Services
+        links:
+          # - name: "Make A Payment"
+          #   url: /payment
+          #   icon: bi bi-cash
+          # - name: Frequently Asked Questions (FAQ)
+          #   url: /faq
+          #   icon: bi bi-patch-question
+          # - name: Privacy Policy
+          #   url: /privacy
+          #   icon: bi bi-key
+          # - name: Sitemap
+          #   url: /sitemap.xml
+          #   icon: bi bi-diagram-3
+          - name: Ceiling Fan Replacement
+            icon: bi bi-hammer
+          - name: Furniture Assembly
+            icon: bi bi-hammer
+          - name: Home Networking Solutions
+            icon: bi bi-hammer
+          - name: Lighting Fixture Replacement
+            icon: bi bi-hammer
+          - name: Linux Training
+            icon: bi bi-hammer
+          - name: Picture Hanging
+            icon: bi bi-hammer
+          - name: TV Stand Assembly
+            icon: bi bi-hammer
+          - name: TV Wall Mounting
+            icon: bi bi-hammer
+          - name: All Services
+            url: /services
+            icon: bi bi-list-task
   footer:
     - bgcolor: bg-black
       textcolor: text-warning

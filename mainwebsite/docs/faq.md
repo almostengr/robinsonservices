@@ -21,7 +21,7 @@ will automatically be routed to our work tracking system.
 
 ## What are your working hours?
 
-Services are primarily performed on weekday evenings and on Saturdays between 8 AM (0800) and 7 PM (1900).
+Services are primarily performed on weekday evenings and on Saturdays.
 
 ## What areas do you serve? 
 

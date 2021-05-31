@@ -83,8 +83,8 @@
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.min.css">
 
-  {% if config.theme.site_icon %}
-  <link rel="shortcut icon" href="{{ config.site_favicon | url }}">
+  {% if config.theme.site_favicon %}
+  <link rel="shortcut icon" href="{{ config.theme.site_favicon | url }}">
   {% endif %}
 
   <!-- Custom styles for this template -->
@@ -121,10 +121,10 @@
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top {{ config.theme.mainnav.bgcolor }}">
     <a class="navbar-brand" href="/">
-      {% if config.site_favicon %}
-      <img src="{{ config.site_favicon | url }}" alt="RHT Services logo">
+      {% if config.theme.site_favicon %}
+      <img src="{{ config.theme.site_favicon | url }}" alt="RHT Services logo">
       {% endif %}
-      {{ config.site_name_short }}
+      {{ config.theme.site_name_short }}
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -248,18 +248,20 @@
         {% for service in category.services %}
 
         {% if service.favorite %}
-        <div class="col-sm-12 col-md-4 my-1 card text-decoration-none">
-          {% if service.image %}
-          <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
-          {% endif %}
-          <div class="card-body">
-            <h3 class="card-title text-decoration-none">
-              {% if service.url %}
-              <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
-              {% else %}
-              {{ service.title }}
-              {% endif %}
-            </h3>
+        <div class="col-sm-12 col-md-4 my-1">
+          <div class="card text-decoration-none h-100">
+            {% if service.image %}
+            <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
+            {% endif %}
+            <div class="card-body">
+              <h3 class="card-title text-decoration-none">
+                {% if service.url %}
+                <a class="text-decoration-none" href="{{ service.url | url }}">{{ service.title }}</a>
+                {% else %}
+                {{ service.title }}
+                {% endif %}
+              </h3>
+            </div>
           </div>
         </div>
         {% endif %}
@@ -267,7 +269,7 @@
       </div>
       {% endfor %}
 
-      <h3 class="text-center">
+      <h3 class="text-center py-2">
         Ready to get started?
         <a href="/request">Schedule your service</a> today!
       </h3>
@@ -287,10 +289,43 @@
         {% endfor %}
       </ul>
     </div>
+
+    {% elif page and page.url == "specials/" %}
+    <div class="container py-2" id="services">
+      <div class="row text-center align-items-start mx-auto">
+        {% for promo in config.theme.promotions %}
+        <div class="col-sm-12 col-md-4 m-1 card text-decoration-none h-100">
+          {% if promo.image %}
+          <img src="{{ promo.image }}" class="card-img-top" alt="{{ promo.heading }}" />
+          {% endif %}
+          <div class="card-body">
+            <h3 class="card-title text-decoration-none">
+              {% if promo.buttonurl %}
+              <a class="text-decoration-none" href="{{ promo.buttonurl | url }}">{{ promo.heading }}</a>
+              {% else %}
+              {{ promo.heading }}
+              {% endif %}
+            </h3>
+            <p class="card-text">{{ promo.detail }}</p>
+            {% if promo.buttonurl %}
+            <form action="{{ promo.buttonurl }}">
+              <button class="btn btn-secondary" type="submit">{{ promo.buttontext }}</button>
+            </form>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <p><br /></p>
+      <h3 class="text-center py-2">
+        Ready to get started?
+        <a href="/request">Schedule your service</a> today!
+      </h3>
+    </div>
     {% endif %}
   </main>
 
-  {% for promo in config.theme.promotions %}
+  <!-- {% for promo in config.theme.promotions %}
   <section class="{{ promo.bgcolor }} {{ promo.textcolor }} py-4 promotions">
     <div class="container">
       <div class="row">
@@ -306,17 +341,19 @@
       </div>
     </div>
   </section>
-  {% endfor %}
+  {% endfor %} -->
 
   {% for section in config.theme.subfooter %}
   <section class="{{ section.bgcolor }} {{ section.textcolor }} subfooter">
-    <div class="container text-center py-3">
+    <div class="container text-left py-3">
       <div class="row">
         {% for column in section.columns %}
         <div class="col-sm-12 col-md-4">
           <h4 class="subfooterheader {{ section.headercolor }}">{{ column.heading }}</h4>
+          <ul class="list-unstyled mx-3">
           {% for item in column.links %}
-          <p>
+          <!-- <p> -->
+            <li>
             {% if item.icon %}
             <i class="{{ item.icon }}"></i>
             {% endif %}
@@ -326,8 +363,11 @@
             {% else %}
             {{ item.name }}
             {% endif %}
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           {% endfor %}
+          </ul>
         </div>
         {% endfor %}
       </div>
