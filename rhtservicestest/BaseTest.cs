@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace Almostengr.RhtServicesTest
 {
-    public class BaseTest
+    public abstract class BaseTest
     {
         public IWebDriver StartBrowser()
         {

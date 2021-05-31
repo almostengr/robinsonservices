@@ -37,8 +37,7 @@ namespace Almostengr.RhtServicesTest
             System.Collections.ObjectModel.ReadOnlyCollection<IWebElement> iFrameElements = driver.FindElements(By.TagName("iframe"));
 
             // assert
-            Assert.AreEqual("Request Service", h1Element.Text);
-            // Assert.AreEqual(1, iFrameElements.Count);
+            Assert.AreEqual("Get It Done, Without Headaches", h1Element.Text);
         }
 
         [Test]
