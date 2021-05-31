@@ -8,7 +8,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Robinson Handy and Tech Services LLC" />
+  <meta property="og:site_name" content="Robinson Handy and Technology Services LLC" />
   <meta name="twitter:card" content="summary" />
 
   
@@ -22,9 +22,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   
 
   
-  <title>Robinson Handy and Tech Services LLC</title>
-  <meta property="og:title" content="Robinson Handy and Tech Services LLC" />
-  <meta name="twitter:title" content="Robinson Handy and Tech Services LLC" />
+  <title>Robinson Handy and Technology Services LLC</title>
+  <meta property="og:title" content="Robinson Handy and Technology Services LLC" />
+  <meta name="twitter:title" content="Robinson Handy and Technology Services LLC" />
   
 
   
@@ -48,6 +48,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.min.css">
 
+  
+  <link rel="shortcut icon" href="/images/logo.ico">
   
 
   <!-- Custom styles for this template -->
@@ -85,7 +87,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="/">
       
-      <img src="/images/logo.ico">
+      <img src="/images/logo.ico" alt="RHT Services logo">
       
       RHT Services LLC
     </a>
@@ -110,6 +112,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
         
         
         <li class="nav-item">
+          <a class="nav-link text-white" href="/specials">Specials</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
           <a class="nav-link text-white" href="/contact.php">Contact</a>
         </li>
         
@@ -125,8 +133,10 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
       
       
       
+      
+      
       <a href="/request">
-        <button class="btn btn-warning my-2 my-sm-0">Request Services</button>
+        <button class="btn btn-warning my-2 my-sm-0">SCHEDULE SERVICE</button>
       </a>
       
       
@@ -312,33 +322,35 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     
   </main>
 
-  
+  <!-- 
   <section class="bg-warning text-dark py-4 promotions">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 pb-2 text-center">
           <h4>Save 5% on your first service!</h4>
-          <p>Mention that you saw this message on our website and you will get 5% off your first service!</p>
+          <p>Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers.</p>
         </div>
         <div class="col-sm-12 col-md-6 pb-2 text-center">
           <form method="GET" action="/request">
-            <input type="submit" class="btn btn-lg btn-dark-gray" value="Request Services">
+            <input type="submit" class="btn btn-lg btn-dark-gray" value="Book Now!">
           </form>
         </div>
       </div>
     </div>
   </section>
-  
+   -->
 
   
   <section class="bg-dark text-white subfooter">
-    <div class="container text-center py-3">
+    <div class="container text-left py-3">
       <div class="row">
         
         <div class="col-sm-12 col-md-4">
-          <h4 class="subfooterheader text-warning">About RHTS</h4>
+          <h4 class="px-2 subfooterheader text-warning">About RHT Services</h4>
+          <ul class="list-unstyled mx-3">
           
-          <p>
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-telephone"></i>
             
@@ -346,9 +358,12 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="tel:(334) 595-9690" class="text-white">
               (334) 595-9690</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-globe"></i>
             
@@ -356,9 +371,12 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="https://rhtservices.net" class="text-white">
               rhtservices.net</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-facebook"></i>
             
@@ -366,72 +384,25 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="https://facebook.com/rhtservicesllc" class="text-white">
               RHT Services on Facebook</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
-            <i class="bi bi-clock-fill"></i>
+            <i class="bi bi-kanban"></i>
             
             
-            Sun-Fri Hours: By Appointment
+            <a href="/services" class="text-white">
+              Services Offered</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
-            
-            <i class="bi bi-clock-fill"></i>
-            
-            
-            Sat Hours: 8 AM (0800) - 8 PM (2000)
-            
-          </p>
-          
-        </div>
-        
-        <div class="col-sm-12 col-md-4">
-          <h4 class="subfooterheader text-warning">Service Areas</h4>
-          
-          <p>
-            
-            
-            Montgomery, Alabama
-            
-          </p>
-          
-          <p>
-            
-            
-            Pike Road, Alabama
-            
-          </p>
-          
-          <p>
-            
-            
-            Autauga County, Alabama
-            
-          </p>
-          
-          <p>
-            
-            
-            Elmore County, Alabama
-            
-          </p>
-          
-          <p>
-            
-            
-            Montgomery County, Alabama
-            
-          </p>
-          
-        </div>
-        
-        <div class="col-sm-12 col-md-4">
-          <h4 class="subfooterheader text-warning">Other Links</h4>
-          
-          <p>
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-cash"></i>
             
@@ -439,29 +410,38 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="/payment" class="text-white">
               Make A Payment</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
-            <i class="bi bi-kanban"></i>
+            <i class="bi bi-calendar-check"></i>
             
             
-            <a href="/projects" class="text-white">
-              Projects</a>
+            <a href="/request" class="text-white">
+              Book Appointment / Service</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
-            <i class="bi bi-tools"></i>
+            <i class="bi bi-person-check"></i>
             
             
-            <a href="/uses" class="text-white">
-              Uses - Tools Used</a>
+            <a href="/about#customer-reviews" class="text-white">
+              Customer Reviews</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-patch-question"></i>
             
@@ -469,9 +449,25 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="/faq" class="text-white">
               Frequently Asked Questions (FAQ)</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-tools"></i>
+            
+            
+            <a href="/uses" class="text-white">
+              Uses (Recommended Tools)</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-key"></i>
             
@@ -479,9 +475,12 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="/privacy" class="text-white">
               Privacy Policy</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
-          <p>
+          <!-- <p> -->
+            <li>
             
             <i class="bi bi-diagram-3"></i>
             
@@ -489,8 +488,370 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
             <a href="/sitemap.xml" class="text-white">
               Sitemap</a>
             
-          </p>
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
           
+          </ul>
+        </div>
+        
+        <div class="col-sm-12 col-md-4">
+          <h4 class="px-2 subfooterheader text-warning">Service Areas</h4>
+          <ul class="list-unstyled mx-3">
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Autaugaville
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Cecil
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Coosada
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Deatsville
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Elmore
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Hope Hull
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Millbrook
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Montgomery
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Mount Meigs
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Pike Road
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Pine Level<br />(Autauga and Montgomery Counties)
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Prattville
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Rolling Hills
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Tallassee
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Waugh
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Wetumpka
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Autauga County, Alabama
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Elmore County, Alabama
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            
+            
+            Montgomery County, Alabama
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          </ul>
+        </div>
+        
+        <div class="col-sm-12 col-md-4">
+          <h4 class="px-2 subfooterheader text-warning">Popular Services</h4>
+          <ul class="list-unstyled mx-3">
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/ceilingfan" class="text-white">
+              Ceiling Fan Replacement</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/furniture" class="text-white">
+              Furniture Assembly</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/homenetwork" class="text-white">
+              Home Networking Solutions</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/lightfixture" class="text-white">
+              Lighting Fixture Replacement</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/linuxtraining" class="text-white">
+              Linux Training</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/picturehanging" class="text-white">
+              Picture Hanging</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/tvstand" class="text-white">
+              TV Stand Assembly</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-hammer"></i>
+            
+            
+            <a href="/services/tvmounting" class="text-white">
+              TV Wall Mounting</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          <!-- <p> -->
+            <li>
+            
+            <i class="bi bi-list-task"></i>
+            
+            
+            <a href="/services" class="text-white">
+              All Services</a>
+            
+            </li>
+          <!-- </p> -->
+          <!-- </div> -->
+          
+          </ul>
         </div>
         
       </div>
@@ -511,9 +872,9 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
       <div class="col-sm-12 pt-2">
         Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-        More information this is available in the Privacy Policy.
+        More information this is available in the <a href="/privacy">Privacy Policy</a>.
       </div>
-      <!-- Last updated: 2021-04-17 12:26:16.657706+00:00 -->
+      <!-- Last updated: 2021-05-31 21:53:57.354273+00:00 -->
     </div>
   </footer>
   
