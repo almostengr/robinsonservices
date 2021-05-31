@@ -14,7 +14,6 @@ on the ceiling. [Schedule](/request) your filter change appointment today!
 
 Air filters have their maximum usage listed on the filter or the filter's packaging. It is best recommended
 to follow this information.
-
 As a general rule, filter should be changed at least once per quarter or every 90 days. Some filters are
 designed to be changed monthly.
 

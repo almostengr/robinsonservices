@@ -58,4 +58,3 @@ these types of walls, can result in damage that would result in repair work need
 <h3>Ready to get started? <a href="/request">Schedule your TV mounting service</a> today!</h3>
 
 [<< Back to Services](/services)
-
