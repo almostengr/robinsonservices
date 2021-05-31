@@ -349,7 +349,7 @@
       <div class="row">
         {% for column in section.columns %}
         <div class="col-sm-12 col-md-4">
-          <h4 class="subfooterheader {{ section.headercolor }}">{{ column.heading }}</h4>
+          <h4 class="px-2 subfooterheader {{ section.headercolor }}">{{ column.heading }}</h4>
           <ul class="list-unstyled mx-3">
           {% for item in column.links %}
           <!-- <p> -->
@@ -390,7 +390,7 @@
       <div class="col-sm-12 pt-2">
         Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
         by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-        More information this is available in the Privacy Policy.
+        More information this is available in the <a href="/privacy">Privacy Policy</a>.
       </div>
       <!-- Last updated: {{ build_date_utc }} -->
     </div>

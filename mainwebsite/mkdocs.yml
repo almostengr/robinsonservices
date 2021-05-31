@@ -68,7 +68,7 @@ theme:
       button: false
     # - url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
     - url: /request
-      name: BOOK SERVICE
+      name: SCHEDULE SERVICE
       button: true
   featurette:
     - heading: Handyman Services
@@ -98,6 +98,7 @@ theme:
       services:
       ## handyman
       - title: Air Filter Replacement
+        url: /services/airfilterreplacement
       - title: Baby Crib Assembly
         image: /images/baby_crib_20200208/re20200208_131750.jpg
       - title: Bed Assembly
@@ -106,6 +107,7 @@ theme:
       - title: Camera Replacement / Installation
       - title: Ceiling Fan Replacement / Installation
         favorite: true
+        url: /services/ceilingfan
         image: /images/ceilingfan20210220.jpg
       - title: Desk Assembly
         image: /images/desk_assembly/re20200111_144150.jpg
@@ -141,6 +143,7 @@ theme:
         image: /images/patio_furniture/re20200527_203222.jpg
       - title: Picture Hanging
         favorite: true
+        url: /services/picturehanging
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
         image: /images/sense_install.jpg
@@ -178,9 +181,11 @@ theme:
       - title: Googe Search Console
       - title: Home Networking Solutions
         favorite: true
+        url: /services/homenetwork
         image: /images/home_networking.jpg
       - title: "Linux Training"
         favorite: true
+        url: /services/linuxtraining
         image: /images/linux_training.jpg
       - title: Mentoring (Programming and Linux)
       - title: Printer Installation / Configuration
@@ -208,17 +213,17 @@ theme:
     #   buttonurl: /request
     #   bgcolor: bg-warning
     #   textcolor: text-dark
-    # - heading: "Free Business Website"
-    #   detail: "During the month of February, one business will be selected each week to have a free business website created. See terms and conditions."
-    #   buttontext: Register for Free Website
-    #   buttonlink: /freewebsiteoffer
-    #   color: bg-light
+    - heading: "Free Business Website"
+      detail: "During the month of February, one business will be selected each week to have a free business website created. See terms and conditions."
+      buttontext: Register for Free Website
+      buttonlink: /freewebsiteoffer
+      color: bg-light
   subfooter:
     - bgcolor: bg-dark
       textcolor: text-white
       headercolor: text-warning
       columns:
-      - heading: About RHTS
+      - heading: About RHT Services
         links:
           - url: "tel:(334) 595-9690"
             name: "(334) 595-9690"
@@ -237,6 +242,12 @@ theme:
           - name: "Make A Payment"
             url: /payment
             icon: bi bi-cash
+          - name: Book Appointment / Service
+            url: /request
+            icon: bi bi-calendar-check
+          - name: Customer Reviews
+            url: /about#customer-reviews
+            icon: bi bi-person-check
           - name: Frequently Asked Questions (FAQ)
             url: /faq
             icon: bi bi-patch-question
@@ -249,9 +260,6 @@ theme:
           - name: Sitemap
             url: /sitemap.xml
             icon: bi bi-diagram-3
-          - name: Book Appointment / Service
-            url: /request
-            icon: bi bi-calendar-check
       - heading: Service Areas
         links:
           - name: Autaugaville
@@ -308,20 +316,28 @@ theme:
           #   icon: bi bi-diagram-3
           - name: Ceiling Fan Replacement
             icon: bi bi-hammer
+            url: /services/ceilingfan
           - name: Furniture Assembly
             icon: bi bi-hammer
+            url: /services/furniture
           - name: Home Networking Solutions
             icon: bi bi-hammer
+            url: /services/homenetwork
           - name: Lighting Fixture Replacement
             icon: bi bi-hammer
+            url: /services/lightfixture
           - name: Linux Training
             icon: bi bi-hammer
+            url: /services/linuxtraining
           - name: Picture Hanging
             icon: bi bi-hammer
+            url: /services/picturehanging
           - name: TV Stand Assembly
             icon: bi bi-hammer
+            url: /services/tvstand
           - name: TV Wall Mounting
             icon: bi bi-hammer
+            url: /services/tvmounting
           - name: All Services
             url: /services
             icon: bi bi-list-task

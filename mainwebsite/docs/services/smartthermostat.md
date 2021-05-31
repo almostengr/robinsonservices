@@ -16,4 +16,6 @@ WiFi network.
 
 ![](/images/thermostat_20210213/re20210213_123820.jpg)
 
+<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
+
 [<< Back to Services](/services)

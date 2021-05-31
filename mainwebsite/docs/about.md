@@ -19,7 +19,7 @@ Montgomery County, Alabama. This includes, but not limited to, the cities and co
 <li>Montgomery</li>
 <li>Mount Meigs</li>
 <li>Pike Road</li>
-<li>Pine Level (Autauga County and Montgomery County)</li>
+<li>Pine Level (Autauga and Montgomery Counties)</li>
 <li>Prattville</li>
 <li>Rolling Hills</li>
 <li>Tallassee</li>
@@ -39,7 +39,7 @@ Customers outside of these areas may request services, but may be subject to mil
 
 ## Customer Reviews
 
-Thank you Kennth for the wonderful Job and espeically so for ensuring the mismatched 
+Thank you Kenneth for the wonderful Job and especially so for ensuring the mismatched 
 bottom panel works with the structure.
 
 *Handy Customer, May 2021*
