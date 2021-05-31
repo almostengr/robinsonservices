@@ -18,12 +18,13 @@ the TV to be positioned in multiple angles. The television was a 42 inch.
 ### Can I buy any mount for my TV?
 
 No. The mount that is needed for a TV is determined by the size and weight of TV to 
-be mounted.
+be mounted. A mount designed for a 40 inch TV may not necessarily work for a 65 inch TV.
 
 Some manufacturers, like 
-LG and Samsung, have specially designed mounts for their TVs. Thus you MUST buy that manufacturer's mount 
-for the TV and not a generic name brand mount. Check the TV documentation or the 
-manufacturer’s website to see if that TV requires a specific mount.
+LG and Samsung, have certain TV models that require a manufacturer specific mount.
+Thus you MUST buy that manufacturer's mount 
+for the TV and not a generic name brand mount. Check your TV owners manual or the 
+manufacturer’s website to see your TV model requires a specific mount.
 
 ### Can I mount a TV over the fireplace?
 

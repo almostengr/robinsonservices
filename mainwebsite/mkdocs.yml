@@ -144,6 +144,7 @@ theme:
       - title: Picture Hanging
         favorite: true
         url: /services/picturehanging
+        image: /images/picture_hanging_20210424/re20210424_155249.jpg
       - title: Sense Energy Monitor Installation
         url: /services/sensemonitor
         image: /images/sense_install.jpg
@@ -198,26 +199,18 @@ theme:
       - title: WordPress Maintenance and Updates
   promotions:
     - heading: "Save 5% on your first service!"
-      detail: "Mention that you saw this message on our website and you will get 5% off your first service!"
+      detail: "Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers."
       buttoncolor: btn-dark-gray
       buttontext: Book Now!
       # buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
       buttonurl: /request
       bgcolor: bg-warning
       textcolor: text-dark
-    # - heading: "Save 5% on your first service!"
-    #   detail: "Mention that you saw this message on our website and you will get 5% off your first service! Mention that you saw this message on our website and you will get 5% off your first service! Mention that you saw this message on our website and you will get 5% off your first service!"
-    #   buttoncolor: btn-dark-gray
-    #   buttontext: Request Services
-    #   # buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
-    #   buttonurl: /request
-    #   bgcolor: bg-warning
-    #   textcolor: text-dark
-    - heading: "Free Business Website"
-      detail: "During the month of February, one business will be selected each week to have a free business website created. See terms and conditions."
-      buttontext: Register for Free Website
-      buttonlink: /freewebsiteoffer
-      color: bg-light
+    # - heading: "Free Business Website"
+    #   detail: "During the month of February, one business will be selected each week to have a free business website created. See terms and conditions."
+    #   buttontext: Register for Free Website
+    #   buttonlink: /freewebsiteoffer
+    #   color: bg-light
   subfooter:
     - bgcolor: bg-dark
       textcolor: text-white
