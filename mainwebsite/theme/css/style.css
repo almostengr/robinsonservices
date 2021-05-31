@@ -130,3 +130,8 @@ main a:hover.btn, section input:hover.btn, footer a, footer a:hover {
 div#services{
     opacity: 0;
 }
+
+
+main {
+    min-height: 1vh;
+}
