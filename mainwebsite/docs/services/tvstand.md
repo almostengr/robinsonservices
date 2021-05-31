@@ -3,6 +3,8 @@ title: TV Stand Assembly Photos
 description: Assembly of a TV Stand for a customer by RHT Services LLC
 ---
 
+## Recent Work
+
 A customer order this TV (television) stand from Wayfair.
 
 ![TV stand assembly in progress](/images/tv_stand_20200926/20200926_070427T.jpg)

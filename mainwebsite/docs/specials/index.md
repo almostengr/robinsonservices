@@ -1,5 +1,5 @@
 ---
-title: Specials
+title: Service Specials
 ---
 
 Check out these great offers from RHT Services!

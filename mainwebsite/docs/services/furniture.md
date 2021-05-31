@@ -4,6 +4,8 @@
 <img src="/images/office_chair_20201124/re20201124_110805.jpg" alt="Chair furniture assembly being performed">
 </p>
 
+## Common Furniture Assembly Questions
+
 ### Is it that hard to put furniture together?
 
 No it is not. However, depending on the item, there are a lot of small parts and the instructions can be

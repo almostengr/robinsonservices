@@ -3,6 +3,8 @@ title: Doorbell Installation Photos
 description: Photos from installing a Ring Video Doorbell for a customer
 ---
 
+## Recent Work
+
 Photos from installing a Ring Video Doorbell for a customer. This doorbell was wider that the door trim, 
 so the doorbell had to be installed on an angle so that it would fit and not reach into the doorway.
 

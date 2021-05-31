@@ -2,6 +2,7 @@
 title: Shed Assembly Photos
 description: Assembly of a shed by RHT Services LLC
 ---
+## Recent Work
 
 A customer had this shed for some time. Someone had committed to assemblying it, but had not done so.
 Because a significant amount of time had passed between when it was purchased and when the
@@ -20,7 +21,7 @@ including the instructions were misplaced. Thus this shed was assembled based on
 
 [<< Back to Services](/services)
 
-## Other Shed Assembly Photos
+## More Recent Shed Assembly Photos
 
 A customer ordered this Shed from Wayfair. Customer stated that he was going to use the shed to store
 chemicals for his pool. This shed was designed to hide garbage cans.

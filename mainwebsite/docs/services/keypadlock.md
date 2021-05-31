@@ -3,6 +3,8 @@ title: Keypad Door Knob Photos
 description: Assembly of a door knob with keypad by RHT Services LLC
 ---
 
+## Recent Work
+
 A customer wanted to have keyless entry into the house. This keypad door handle was installed on 
 an exterior door to the home.
 

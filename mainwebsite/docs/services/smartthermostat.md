@@ -2,6 +2,7 @@
 title: Smart Thermostat Installation
 description: Thermostat being replaced for a customer.
 ---
+## Recent Work
 
 This project, an old thermostat was removed and replaced with an Ecobee 3 Lite Thermostat. As part of the 
 installation, I shared with the customer some of the features that she was not aware that the thermostat

@@ -1,5 +1,7 @@
 # Picture Hanging Services
 
+## Common Picture Hanging Questions
+
 ### Can I hang a picture anywhere I want to?
 
 Short answer is no. Hanging a picture anywhere, could result in that picture falling off of the wall and 

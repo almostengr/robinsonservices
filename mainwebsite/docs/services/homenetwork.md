@@ -3,6 +3,8 @@ title: Home Networking Service
 description: Explain why home networking is essential
 ---
 
+## Recent Work
+
 <p class="text-center">
 <img src="/images/home_networking.jpg" alt="Network connectivity for localhost" />
 </p>
@@ -17,6 +19,8 @@ videos playing in lower quality by default.
 RHT Services provides home networking services. By properly dividing your home network up, you will see
 improved speeds and almost no buffering with your streaming devices. 
 Schedule your home networking service appointment today!
+
+## Common Home Networking Questions
 
 ### Wireless (WiFi) is better than wired (Ethernet) correct?
 

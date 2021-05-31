@@ -1,11 +1,15 @@
 # Light Fixture Replacement and Installation
 
+## Recent Work
+
 <p class="text-center">
 <img src="/images/light_fixture_install_20201231/re20201231_155035.jpg" alt="Recently replaced light fixture">
 </p>
 
 Whether you are looking to change the appearance of a room or your existing light fixture
 no longer works, RHT Services replaces light fixtures.
+
+## Common Light Fixture Questions
 
 ### Is there a certain light fixture I need to get?
 

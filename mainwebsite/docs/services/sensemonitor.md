@@ -10,6 +10,8 @@ description: Photos from installing a Sense Energy Monitor
 Sense Energy Monitor was installed in this customers' breaker panel. The Sense Energy Monitor tracks 
 the energy usage in a home.
 
+## Common Questions About Sense Energy Montior
+
 ### How does it work?
 
 The way that Sense works, is that it monitors your home's electrical usage. From there, it learns the 
