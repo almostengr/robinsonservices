@@ -251,7 +251,7 @@
         <div class="col-sm-12 col-md-4 my-1">
           <div class="card text-decoration-none h-100">
             {% if service.image %}
-            <img src="{{ service.image }}" class="card-img-top" alt="{{ service.title }}" />
+            <img src="{{ service.image }}" class="card-img-top" alt="" />
             {% endif %}
             <div class="card-body">
               <h3 class="card-title text-decoration-none">
@@ -278,11 +278,13 @@
       <ul class="text-center">
         {% for category in config.theme.serviceslist %}
         {% for service in category.services %}
-        {% if service.url %}
-        <span style="white-space: nowrap;"><a href="{{ service.url | url }}">{{ service.title }}</a></span>
-        {% else %}
-        <span style="white-space: nowrap;">{{ service.title }}</span>
-        {% endif %}
+        <span style="white-space: nowrap;">
+          {% if service.url %}
+          <a href="{{ service.url | url }}">{{ service.title }}</a>
+          {% else %}
+          {{ service.title }}
+          {% endif %}
+        </span>
         {% if not loop.last %} | {% endif %}
         {% endfor %}
         {% if not loop.last %} | {% endif %}
@@ -296,7 +298,7 @@
         {% for promo in config.theme.promotions %}
         <div class="col-sm-12 col-md-4 m-1 card text-decoration-none h-100">
           {% if promo.image %}
-          <img src="{{ promo.image }}" class="card-img-top" alt="{{ promo.heading }}" />
+          <img src="{{ promo.image }}" class="card-img-top" alt="" />
           {% endif %}
           <div class="card-body">
             <h3 class="card-title text-decoration-none">
