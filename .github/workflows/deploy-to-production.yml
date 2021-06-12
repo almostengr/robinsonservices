@@ -53,4 +53,3 @@ jobs:
 
     - run: dotnet test -c RELEASE rhtservicestest
       
-      
