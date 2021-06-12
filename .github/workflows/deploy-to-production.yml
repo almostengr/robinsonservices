@@ -16,7 +16,7 @@ jobs:
 
     - run: /usr/bin/python3 -m pip install --upgrade setuptools
 
-    - run: /usr/bin/python3 -m pip install --upgrade mkdocs
+    - run: /usr/bin/python3 -m pip install mkdocs==1.1.2
 
     - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
 
@@ -53,12 +53,4 @@ jobs:
 
     - run: dotnet test -c RELEASE rhtservicestest
       
-  sitemappush:
-    runs-on: ubuntu-latest
-    needs: test
-    steps:
-    - name: Sitemap Ping to search engines
-      uses: atymic/sitemap-ping-action@1.0.0
-      with:
-        sitemap-url: https://rhtservices.net/sitemap.xml
       
