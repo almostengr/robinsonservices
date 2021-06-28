@@ -3,8 +3,6 @@ title: Doorbell Installation Photos
 description: Photos from installing a Ring Video Doorbell for a customer
 ---
 
-## Recent Work
-
 Photos from installing a Ring Video Doorbell for a customer. This doorbell was wider that the door trim, 
 so the doorbell had to be installed on an angle so that it would fit and not reach into the doorway.
 
@@ -35,6 +33,4 @@ you could get a security camera system and have cameras watch your door.
 There are several options including motion activated lights with cameras that can be used
 in this scenario. 
 
-<h3>Ready to get started? <a href="/request">Schedule your doorbell installation service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your doorbell installation service</a> today!</h3>

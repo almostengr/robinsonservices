@@ -3,8 +3,6 @@ title: Shed Assembly Photos
 description: Assembly of a shed by RHT Services LLC
 ---
 
-## Recent Work
-
 A customer had this shed for some time. Someone had committed to assembling it, but had not done so.
 Because a significant amount of time had passed between when it was purchased and when the
 assembly had taken, several of the items,
@@ -69,6 +67,4 @@ away during severe weather or storms. Even if the shed has heavy items in
 them, the shed could still blow away or fall over if not properly anchored. RHT Services will 
 will install anchors for sheds if requested.
 
-<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>

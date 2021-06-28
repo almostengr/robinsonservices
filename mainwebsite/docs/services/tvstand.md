@@ -8,10 +8,10 @@ description: Assembly of a TV Stand for a customer by RHT Services LLC
 A customer order this TV (television) stand from Wayfair. Assembly took about an hour to complete.
 
 <div class="row p-2">
-<div class="col-sm-12 col-lg-4 p-1">
+<div class="col-sm-12 col-lg-6 p-1">
 <img src="/images/tv_stand_20200926/20200926_070430T.jpg" alt="TV stand assembly in progress" />
 </div>
-<div class="col-sm-12 col-lg-4 p-1">
+<div class="col-sm-12 col-lg-6 p-1">
 <img src="/images/tv_stand_20200926/20200926_080447T.jpg" alt="TV stand assmebly completed" />
 </div>
 </div>
@@ -27,6 +27,4 @@ There are some exceptions to this. If the TV has a single base in the middle of 
 near the ends of the TV, then it is possible to place a larger TV on the stand than 
 the stand itself. However, this is not advised.
 
-<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>

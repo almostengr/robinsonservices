@@ -3,8 +3,6 @@ title: Dresser Assembly Photos
 description: Photos from dresser assembly done by RHT Services LLC
 ---
 
-## Recent Work
-
 Photos from dresser assembly done by RHT Services LLC.
 
 ![Dresser in the shipping box](/images/dresser_20200823/20200823_180708T.jpg)
@@ -13,7 +11,4 @@ Photos from dresser assembly done by RHT Services LLC.
 
 ![Completed assembly of dresser](/images/dresser_20200823/20200823_194032T.jpg)
 
-<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
-
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>

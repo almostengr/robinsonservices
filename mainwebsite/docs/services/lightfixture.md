@@ -1,7 +1,5 @@
 # Light Fixture Replacement and Installation
 
-## Recent Work
-
 <p class="text-center">
 <img src="/images/light_fixture_install_20201231/re20201231_155035.jpg" alt="Recently replaced light fixture">
 </p>
@@ -28,6 +26,4 @@ have a smaller base and usually consume less power than the common Edison bulbs.
 Thus if you try to use bulbs that consume more power than what the fixture is rated for, either the light
 will not work or the light may catch fire due to it pulling more power than it is rated for.
 
-<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>

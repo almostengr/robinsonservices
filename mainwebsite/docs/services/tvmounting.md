@@ -3,8 +3,6 @@ title: TV Mounting Photos
 description: Photos from installing wall mounted television
 ---
 
-## Recent Work
-
 <p class="text-center">
 <img src="/images/tvmounting.jpg" alt="Swivel TV mount installed">
 </p>
@@ -56,6 +54,7 @@ additional problems that have to be addressed.
 Concrete and tiled walls require special tools in order to drill through them. Using the wrong tool on 
 these types of walls, can result in damage that would result in repair work needing to be done.
 
-<h3>Ready to get started? <a href="/request">Schedule your TV mounting service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3 class="text-center">
+Ready to get started? 
+<a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your TV mounting service</a> today!
+</h3>

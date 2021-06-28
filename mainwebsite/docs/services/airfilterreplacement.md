@@ -6,7 +6,7 @@ Air filters keep your home free of dust and your HVAC equipment protected. Like 
 your home’s air filter needs to be changed regularly. Failing to change the filter regularly can result
 in your HVAC equipment having issues, such as freezing coils, poor air flow, and longer run times.
 RHT Services changes air filters, including those that are hard to reach filters that are located
-on the ceiling. [Schedule](/request) your filter change appointment today!
+on the ceiling. [Schedule](https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc) your filter change appointment today!
 
 ## Common Air Filter Questions
 
@@ -33,6 +33,4 @@ One recommendation for dark filters is to change them more often. A really dirty
 with your HVAC system including but not limited to freezing coils, longer run times, and 
 premature system failure.
 
-<h3>Ready to get started? <a href="/request">Schedule your air filter replacement service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your air filter replacement service</a> today!</h3>

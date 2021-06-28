@@ -3,8 +3,6 @@ title: Home Networking Service
 description: Explain why home networking is essential
 ---
 
-## Recent Work
-
 <p class="text-center">
 <img src="/images/home_networking.jpg" alt="Network connectivity for localhost" />
 </p>
@@ -42,8 +40,6 @@ this knowledge from years of experience working with technology.
 ### I don’t want to run wires through my house to get the fastest internet speeds. 
 
 You don’t have to. Part of the Home Networking service is to run wire to connect your 
-entire home. Just [contact us](/contact.php) or [schedule service](/request) to get started.
+entire home. Just [contact us](/contact.php) or [schedule service](https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc) to get started.
 
-<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>

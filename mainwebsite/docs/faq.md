@@ -21,7 +21,7 @@ will automatically be routed to our work tracking system.
 
 ## What are your working hours?
 
-Services are primarily performed on weekday evenings and on Saturdays.
+Services are primarily performed on weekday evenings and on weekends.
 
 ## What areas do you serve? 
 

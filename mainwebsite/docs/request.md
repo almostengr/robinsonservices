@@ -9,12 +9,10 @@ the work to be done, you may <a href="tel:(334) 595-9690">give us a call</a>.
 
 All appointments made here, will be followed up with a phone, text, or email confirmation.
 
-<p></p>
-
-<script async src='https://square.site/appointments/buyer/widget/jk123kyje3db16/L1VAAW55MM5GS.js'></script>
-
-<p></p>
-
-Open 
-<a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc" 
-target="_blank">Booking Site in New Window</a>
+<p class="text-center">
+<button class="btn btn-warning">
+<a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc" target="_blank">
+Go to Appointment Booking Website
+</a>
+</button>
+<p>

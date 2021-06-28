@@ -54,21 +54,20 @@ theme:
     linkcolor: text-white
     buttoncolor: btn-warning
     links:
-    - url: /about
-      name: About
-      button: false
     - url: /services
       name: Services
       button: false
     - url: /specials
       name: Specials
       button: false
+    - url: /about
+      name: About
+      button: false
     - url: /contact.php
       name: Contact
       button: false
-    # - url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
-    - url: /request
-      name: SCHEDULE SERVICE
+    - name: SCHEDULE SERVICE
+      url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
       button: true
   featurette:
     - heading: Handyman Services
@@ -202,8 +201,7 @@ theme:
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers."
       buttoncolor: btn-dark-gray
       buttontext: Book Now!
-      # buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
-      buttonurl: /request
+      buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
       bgcolor: bg-warning
       textcolor: text-dark
     # - heading: "Free Business Website"
@@ -236,7 +234,7 @@ theme:
             url: /payment
             icon: bi bi-cash
           - name: Book Appointment / Service
-            url: /request
+            url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
             icon: bi bi-calendar-check
           - name: Customer Reviews
             url: /about#customer-reviews

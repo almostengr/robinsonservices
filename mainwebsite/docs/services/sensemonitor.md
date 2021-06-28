@@ -33,6 +33,4 @@ electrical bill.
 By switching from incandescent to LED, when the same lights are turned on, they draw
 between 5 and 15 watts. A 90 to 95 percent decrease in lighting energy usage.
 
-<h3>Ready to get started? <a href="/request">Schedule your service</a> today!</h3>
-
-[<< Back to Services](/services)
+<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>
