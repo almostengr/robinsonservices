@@ -33,4 +33,4 @@ you could get a security camera system and have cameras watch your door.
 There are several options including motion activated lights with cameras that can be used
 in this scenario. 
 
-<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your doorbell installation service</a> today!</h3>
+<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your doorbell installation service</a> today!</h3>

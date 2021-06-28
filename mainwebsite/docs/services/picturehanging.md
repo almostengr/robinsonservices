@@ -23,4 +23,4 @@ that they hold the picture up against gravity. Using a nail or screw will work,
 but requires that the fastener be installed in a particular way so that it does not fall out of the 
 wall or fall from the weight of the picture being on it.
 
-<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>
+<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

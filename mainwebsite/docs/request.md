@@ -11,7 +11,7 @@ All appointments made here, will be followed up with a phone, text, or email con
 
 <p class="text-center">
 <button class="btn btn-warning">
-<a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc" target="_blank">
+<a href="https://rhtservices.square.site/" target="_blank">
 Go to Appointment Booking Website
 </a>
 </button>

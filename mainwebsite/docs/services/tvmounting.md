@@ -56,5 +56,5 @@ these types of walls, can result in damage that would result in repair work need
 
 <h3 class="text-center">
 Ready to get started? 
-<a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your TV mounting service</a> today!
+<a href="https://rhtservices.square.site/">Schedule your TV mounting service</a> today!
 </h3>

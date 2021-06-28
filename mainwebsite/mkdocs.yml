@@ -67,7 +67,7 @@ theme:
       name: Contact
       button: false
     - name: SCHEDULE SERVICE
-      url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
+      url: https://rhtservices.square.site/
       button: true
   featurette:
     - heading: Handyman Services
@@ -201,7 +201,7 @@ theme:
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers."
       buttoncolor: btn-dark-gray
       buttontext: Book Now!
-      buttonurl: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
+      buttonurl: https://rhtservices.square.site/
       bgcolor: bg-warning
       textcolor: text-dark
     # - heading: "Free Business Website"
@@ -234,7 +234,7 @@ theme:
             url: /payment
             icon: bi bi-cash
           - name: Book Appointment / Service
-            url: https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc
+            url: https://rhtservices.square.site/
             icon: bi bi-calendar-check
           - name: Customer Reviews
             url: /about#customer-reviews

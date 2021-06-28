@@ -39,4 +39,4 @@ in the housing. Unlike car parts, finding that exact replacement motor for your 
 fan is not as easy as you think. It is best to replace the existing fan with a new one instead
 of trying to find replacement parts.
 
-<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>
+<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

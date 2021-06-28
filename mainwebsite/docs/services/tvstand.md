@@ -27,4 +27,4 @@ There are some exceptions to this. If the TV has a single base in the middle of 
 near the ends of the TV, then it is possible to place a larger TV on the stand than 
 the stand itself. However, this is not advised.
 
-<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>
+<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

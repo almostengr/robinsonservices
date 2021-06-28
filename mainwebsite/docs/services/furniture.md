@@ -19,4 +19,4 @@ RHT Services has put together a number of furniture pieces. This includes beds, 
 patio furniture, pool tables, recliners, television (TV) stands, and dining room tables. If it needs to be
 put together, then we can do it.
 
-<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>
+<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

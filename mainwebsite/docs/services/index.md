@@ -15,7 +15,7 @@ If you do not see a service that you need listed below, please
 <div class="card-body text-center">
 <h3>Ready to get started?
 <a class="btn btn-warning text-decoration-none text-center" target="_blank"
- href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Get Started</a>
+ href="https://rhtservices.square.site/">Get Started</a>
 </h3>
 </div>
 </div>

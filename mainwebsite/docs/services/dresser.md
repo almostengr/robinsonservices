@@ -11,4 +11,4 @@ Photos from dresser assembly done by RHT Services LLC.
 
 ![Completed assembly of dresser](/images/dresser_20200823/20200823_194032T.jpg)
 
-<h3>Ready to get started? <a href="https://square.site/book/L1VAAW55MM5GS/robinson-handy-and-technology-services-llc">Schedule your service</a> today!</h3>
+<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>
