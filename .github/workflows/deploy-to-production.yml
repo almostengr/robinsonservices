@@ -6,6 +6,26 @@ on:
       - main
 
 jobs:
+  updateimages:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - run: find maintwebsite/docs/images/ -iname *png -exec convert {} {}.jpg \;
+      name: Converting PNG images to JPG
+
+    - run: find mainwebsite/docs/images/ -iname *png -exec git rm {} \;
+      name: Removing PNG images
+
+    - run: find mainwebsite/docs/images/ -iname *jpg -iname *jpeg -exec cp {} mainwebsite/docs/img/ \;
+      name: Copying images to img directory
+
+    - run: find mainwebsite/docs/img -iname *jpg -iname *jpeg -exec convert -resize 45% {} {} \;
+      name: Convert images to thumbnails
+
+    - name: Run commit on files
+      run: bash scripts/ghcommit.sh
+
   build:
     runs-on: ubuntu-latest
 
@@ -53,3 +73,11 @@ jobs:
 
     - run: dotnet test -c RELEASE rhtservicestest
       
+  sitemapping:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+    - name: Sitemap Ping to search engines
+      uses: atymic/sitemap-ping-action@1.0.0
+      with:
+        sitemap-url: https://rhtservices.net/sitemap.xml
