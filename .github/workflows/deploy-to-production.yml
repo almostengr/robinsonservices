@@ -17,10 +17,10 @@ jobs:
     - run: find mainwebsite/docs/images/ -iname *png -exec git rm {} \;
       name: Removing PNG images
 
-    - run: find mainwebsite/docs/images/ -iname *jpg -iname *jpeg -exec cp {} mainwebsite/docs/img/ \;
+    - run: find mainwebsite/docs/images/ -iname *jpg -exec cp {} mainwebsite/docs/img/ \;
       name: Copying images to img directory
 
-    - run: find mainwebsite/docs/img -iname *jpg -iname *jpeg -exec convert -resize 45% {} {} \;
+    - run: find mainwebsite/docs/img -iname *jpg -exec convert -resize 45% {} {} \;
       name: Convert images to thumbnails
 
     - name: Run commit on files
