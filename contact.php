@@ -10,58 +10,40 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Robinson Handy and Technology Services LLC" />
   <meta name="twitter:card" content="summary" />
-
   
   <meta name="description" content="Providing handyman and technology services for the Montgomery, Alabama area.">
   <meta property="og:description" content="Providing handyman and technology services for the Montgomery, Alabama area." />
   <meta name="twitter:description" content="Providing handyman and technology services for the Montgomery, Alabama area." />
   
-
   
   <meta name="author" content="Robinson Handy and Technology Services LLC">
   
-
   
   <title>Robinson Handy and Technology Services LLC</title>
   <meta property="og:title" content="Robinson Handy and Technology Services LLC" />
   <meta name="twitter:title" content="Robinson Handy and Technology Services LLC" />
   
-
   
 
   
-
   
   <meta property="og:type" content="website" />
   
-
   
   <meta name="robots" content="index, follow" />
   
-
   
-
   
-
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.min.css">
-
   
   <link rel="shortcut icon" href="/images/logo.ico">
   
-
-  <!-- Custom styles for this template -->
   <link href="/css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-black">
-
-  <!-- Facebook Chat -->
-  <!-- <div id="fb-root"></div>
-  <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107"></div> -->
-
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script defer async>
@@ -71,7 +53,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
         version: 'v10.0'
       });
     };
-
     (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -80,10 +61,8 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
-  <!-- Your Chat Plugin code -->
   <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107">
   </div>
-
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="/">
       
@@ -100,12 +79,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
         
         
         <li class="nav-item">
-          <a class="nav-link text-white" href="/about">About</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
           <a class="nav-link text-white" href="/services">Services</a>
         </li>
         
@@ -113,6 +86,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
         
         <li class="nav-item">
           <a class="nav-link text-white" href="/specials">Specials</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/about">About</a>
         </li>
         
         
@@ -135,28 +114,22 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
       
       
       
-      <a href="/request">
-        <button class="btn btn-warning my-2 my-sm-0">SCHEDULE SERVICE</button>
+      <a href="https://rhtservices.square.site/">
+        <button class="btn btn-warning my-2 my-sm-0 rounded">Schedule Service</button>
       </a>
       
       
     </div>
   </nav>
-
   <main role="main" class="bg-light">
-
     
-
     
-
     <div class="bg-success text-light container py-2 d-none" id="successmessage">
       Your request has been submitted successfully!
     </div>
-
     <div class="bg-danger text-light container py-2 d-none" id="failuremessage">
       An error occurred when attempting to process your request.
     </div>
-
     <div class="container py-2" id="pagebody">
 <h1 id="request-services-contact">Contact Us</h1>
 <?php
@@ -318,10 +291,8 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 ?>
 
     </div>
-
     
   </main>
-
   <!-- 
   <section class="bg-warning text-dark py-4 promotions">
     <div class="container">
@@ -331,7 +302,23 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           <p>Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers.</p>
         </div>
         <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <form method="GET" action="/request">
+          <form method="GET" action="https://rhtservices.square.site/">
+            <input type="submit" class="btn btn-lg btn-dark-gray" value="Book Now!">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="bg-warning text-dark py-4 promotions">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 pb-2 text-center">
+          <h4>4th Of July Ceiling Fan Special</h4>
+          <p>We are offering 25% off our normal Ceiling Fan Installation price! You must book an appointment by July 4, 2021. Cannot be combined with any other offers. Offer will be applied at checkout.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 pb-2 text-center">
+          <form method="GET" action="https://rhtservices.square.site/">
             <input type="submit" class="btn btn-lg btn-dark-gray" value="Book Now!">
           </form>
         </div>
@@ -339,7 +326,6 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     </div>
   </section>
    -->
-
   
   <section class="bg-dark text-white subfooter">
     <div class="container text-left py-3">
@@ -348,509 +334,392 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         <div class="col-sm-12 col-md-4">
           <h4 class="px-2 subfooterheader text-warning">About RHT Services</h4>
           <ul class="list-unstyled mx-3">
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-telephone"></i>
-            
-            
-            <a href="tel:(334) 595-9690" class="text-white">
-              (334) 595-9690</a>
-            
+              
+              <i class="bi bi-telephone"></i>
+              
+              
+              <a href="tel:(334) 595-9690" class="text-white">
+                (334) 595-9690</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-globe"></i>
-            
-            
-            <a href="https://rhtservices.net" class="text-white">
-              rhtservices.net</a>
-            
+              
+              <i class="bi bi-globe"></i>
+              
+              
+              <a href="https://rhtservices.net" class="text-white">
+                rhtservices.net</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-facebook"></i>
-            
-            
-            <a href="https://facebook.com/rhtservicesllc" class="text-white">
-              RHT Services on Facebook</a>
-            
+              
+              <i class="bi bi-facebook"></i>
+              
+              
+              <a href="https://facebook.com/rhtservicesllc" class="text-white">
+                RHT Services on Facebook</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-kanban"></i>
-            
-            
-            <a href="/services" class="text-white">
-              Services Offered</a>
-            
+              
+              <i class="bi bi-kanban"></i>
+              
+              
+              <a href="/services" class="text-white">
+                Services Offered</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-cash"></i>
-            
-            
-            <a href="/payment" class="text-white">
-              Make A Payment</a>
-            
+              
+              <i class="bi bi-cash"></i>
+              
+              
+              <a href="/payment" class="text-white">
+                Make A Payment</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-calendar-check"></i>
-            
-            
-            <a href="/request" class="text-white">
-              Book Appointment / Service</a>
-            
+              
+              <i class="bi bi-calendar-check"></i>
+              
+              
+              <a href="https://rhtservices.square.site/" class="text-white">
+                Book Appointment / Service</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-person-check"></i>
-            
-            
-            <a href="/about#customer-reviews" class="text-white">
-              Customer Reviews</a>
-            
+              
+              <i class="bi bi-person-check"></i>
+              
+              
+              <a href="/about#customer-reviews" class="text-white">
+                Customer Reviews</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-patch-question"></i>
-            
-            
-            <a href="/faq" class="text-white">
-              Frequently Asked Questions (FAQ)</a>
-            
+              
+              <i class="bi bi-patch-question"></i>
+              
+              
+              <a href="/faq" class="text-white">
+                Frequently Asked Questions (FAQ)</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-tools"></i>
-            
-            
-            <a href="/uses" class="text-white">
-              Uses (Recommended Tools)</a>
-            
+              
+              <i class="bi bi-tools"></i>
+              
+              
+              <a href="/uses" class="text-white">
+                Uses (Recommended Tools)</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-key"></i>
-            
-            
-            <a href="/privacy" class="text-white">
-              Privacy Policy</a>
-            
+              
+              <i class="bi bi-key"></i>
+              
+              
+              <a href="/privacy" class="text-white">
+                Privacy Policy</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-diagram-3"></i>
-            
-            
-            <a href="/sitemap.xml" class="text-white">
-              Sitemap</a>
-            
+              
+              <i class="bi bi-diagram-3"></i>
+              
+              
+              <a href="/sitemap.xml" class="text-white">
+                Sitemap</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
+            
           </ul>
         </div>
         
         <div class="col-sm-12 col-md-4">
           <h4 class="px-2 subfooterheader text-warning">Service Areas</h4>
           <ul class="list-unstyled mx-3">
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Autaugaville
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Autaugaville
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Cecil
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Cecil
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Coosada
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Coosada
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Deatsville
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Deatsville
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Elmore
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Elmore
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Hope Hull
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Hope Hull
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Millbrook
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Millbrook
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Montgomery
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Montgomery
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Mount Meigs
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Mount Meigs
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Pike Road
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Pike Road
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Pine Level<br />(Autauga and Montgomery Counties)
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Pine Level<br />(Autauga and Montgomery Counties)
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Prattville
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Prattville
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Rolling Hills
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Rolling Hills
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Tallassee
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Tallassee
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Waugh
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Waugh
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Wetumpka
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Wetumpka
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Autauga County, Alabama
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Autauga County, Alabama
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Elmore County, Alabama
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Elmore County, Alabama
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-geo-alt-fill"></i>
-            
-            
-            Montgomery County, Alabama
-            
+              
+              <i class="bi bi-geo-alt-fill"></i>
+              
+              
+              Montgomery County, Alabama
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
+            
           </ul>
         </div>
         
         <div class="col-sm-12 col-md-4">
           <h4 class="px-2 subfooterheader text-warning">Popular Services</h4>
           <ul class="list-unstyled mx-3">
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/ceilingfan" class="text-white">
-              Ceiling Fan Replacement</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/ceilingfan" class="text-white">
+                Ceiling Fan Installation</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/furniture" class="text-white">
-              Furniture Assembly</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/furniture" class="text-white">
+                Furniture Assembly</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/homenetwork" class="text-white">
-              Home Networking Solutions</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/homenetwork" class="text-white">
+                Home Networking Solutions</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/lightfixture" class="text-white">
-              Lighting Fixture Replacement</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/lightfixture" class="text-white">
+                Lighting Fixture Installation</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/linuxtraining" class="text-white">
-              Linux Training</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/linuxtraining" class="text-white">
+                Linux Training</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/picturehanging" class="text-white">
-              Picture Hanging</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/picturehanging" class="text-white">
+                Picture Hanging</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/tvstand" class="text-white">
-              TV Stand Assembly</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/tvstand" class="text-white">
+                TV Stand Assembly</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-hammer"></i>
-            
-            
-            <a href="/services/tvmounting" class="text-white">
-              TV Wall Mounting</a>
-            
+              
+              <i class="bi bi-hammer"></i>
+              
+              
+              <a href="/services/tvmounting" class="text-white">
+                TV Wall Mounting</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
-          <!-- <p> -->
+            
             <li>
-            
-            <i class="bi bi-list-task"></i>
-            
-            
-            <a href="/services" class="text-white">
-              All Services</a>
-            
+              
+              <i class="bi bi-list-task"></i>
+              
+              
+              <a href="/services" class="text-white">
+                All Services</a>
+              
             </li>
-          <!-- </p> -->
-          <!-- </div> -->
-          
+            
           </ul>
         </div>
         
@@ -858,30 +727,23 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     </div>
   </section>
   
-
   
   <footer class="bg-black text-warning">
     <div class="container text-center py-3">
       <div class="col-sm-12">
         &copy; Copyright 2021 Robinson Handy and Technology (RHT) Services LLC
         
-        <br />
+      </div>
+      <div class="col-sm-12">
         Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
           LLC</a>
       </div>
-      <div class="col-sm-12 pt-2">
-        Cookies are used on this website to track your visits, provide advertisements specific to you, and preferences
-        by a third-party. By continuing to use this site, you agree to the use of cookies unless you have disabled them.
-        More information this is available in the <a href="/privacy">Privacy Policy</a>.
-      </div>
-      <!-- Last updated: 2021-06-12 17:30:43.842547+00:00 -->
+      <!-- Last updated: 2021-06-29 03:04:41.588234+00:00 -->
     </div>
   </footer>
   
-
-  <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async crossorigin="anonymous"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"></script>
   <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <script async src="/js/javascript.min.js"></script>
