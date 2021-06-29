@@ -32,5 +32,3 @@ your home.
 One recommendation for dark filters is to change them more often. A really dirty filter can cause problems 
 with your HVAC system including but not limited to freezing coils, longer run times, and 
 premature system failure.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your air filter replacement service</a> today!</h3>

@@ -19,4 +19,14 @@ RHT Services has put together a number of furniture pieces. This includes beds, 
 patio furniture, pool tables, recliners, television (TV) stands, and dining room tables. If it needs to be
 put together, then we can do it.
 
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>
+### I have furniture to be assembled, but I have lost the instructions? Can you still do it?
+
+It is possible that we can still put the furniture together without the instructions, but it may take more 
+time to complete the task. 
+
+### Furniture I ordered is damaged. What do I do?
+
+We check the parts before assembling the furniture to make sure that everything is good working order. We have 
+discovered that sometimes furniture is damaged during delivery. When we find damaged furniture pieces, we 
+inform the customer of this and allow them to decide whether to continue with the assembly or to contact 
+the vendor to have a replacement sent or refund given.

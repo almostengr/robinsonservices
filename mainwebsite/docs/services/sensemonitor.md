@@ -32,5 +32,3 @@ After having Sense installed, this customer switched from a mix of incandescent 
 electrical bill.
 By switching from incandescent to LED, when the same lights are turned on, they draw
 between 5 and 15 watts. A 90 to 95 percent decrease in lighting energy usage.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

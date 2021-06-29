@@ -54,7 +54,11 @@ additional problems that have to be addressed.
 Concrete and tiled walls require special tools in order to drill through them. Using the wrong tool on 
 these types of walls, can result in damage that would result in repair work needing to be done.
 
-<h3 class="text-center">
-Ready to get started? 
-<a href="https://rhtservices.square.site/">Schedule your TV mounting service</a> today!
-</h3>
+### My TV no longer shows an image. What's wrong with it?
+
+The most common reason for TV no longer showing an image is that the backlight has gone bad. There are two 
+main reasons that backlights stop working. The first is backlights are 
+designed to work for a certain number of hours, similar to how a light bulb has a estimated lifespan in hours. 
+Once that amount of hours pass, the backlight can go out without warning. The second is a power surge or other 
+component that controls the backlight goes out. In either scenario, we advise customers that when the backlight
+goes out, that it is cheaper to get a new TV than to get their current TV repaired.

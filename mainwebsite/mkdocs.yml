@@ -4,7 +4,6 @@ site_author: Robinson Handy and Technology Services LLC
 site_url: https://rhtservices.net
 copyright: Robinson Handy and Technology (RHT) Services LLC
 
-
 # repository information
 repo_url: https://github.com/almostengr/robinsonservices
 repo_name: Github
@@ -32,11 +31,6 @@ theme:
     #   detail: detail
     #   bgcolor: bg-primary
     #   textcolor: text-light
-  # sitemessage:
-  #   - heading: Juneteenth Ceiling Fan Special
-  #     detail: Got a ceiling fan that needs to be replaced or upgraded? Now is the time to book your ceiling fan installation appointment for $75! <a href="#">Book now!</a>
-  #     bgcolor: bg-success
-  #     textcolor: text-light
   # homemessage:
   #   - heading: COVID-19 (Coronavirus) Notice
   #     detail: We take COVID-19 seriously. Masks are worn while performing services indoors, hands are washed before and after each service, and we practice social distancing by performing the service in a room separate from the customer if possible and maintaining 6ft distance.
@@ -66,12 +60,12 @@ theme:
     - url: /contact.php
       name: Contact
       button: false
-    - name: SCHEDULE SERVICE
+    - name: Schedule Service
       url: https://rhtservices.square.site/
       button: true
   featurette:
     - heading: Handyman Services
-      description: "Our popular handyman services include Ceiling Fan Replacement and Installation, Furniture Assembly (Indoor and Outdoor), Lighting Fixture Replacement and Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
+      description: "Our popular handyman services include Ceiling Fan Installation and Installation, Furniture Assembly (Indoor and Outdoor), Lighting Fixture Installation and Installation, Television (TV) Stand Assembly, and Television (TV) Wall Mounting."
       buttonlink: /services
       buttontext: View Handyman Services
       imageurl: /images/tvmounting.jpg
@@ -96,32 +90,37 @@ theme:
       name: Popular Services
       services:
       ## handyman
-      - title: Air Filter Replacement
-        url: /services/airfilterreplacement
+      - title: Air Filter Installation
+        url: /services/airfilterInstallation
       - title: Baby Crib Assembly
         image: /images/baby_crib_20200208/re20200208_131750.jpg
+        url: /services/furniture
       - title: Bed Assembly
         image: /images/headboard_assembly_20200822/re20200822_101231.jpg
+        url: /services/furniture
       - title: Bookcase Assembly
-      - title: Camera Replacement / Installation
-      - title: Ceiling Fan Replacement / Installation
+        url: /services/furniture
+      - title: Camera Installation
+      - title: Ceiling Fan Installation
         favorite: true
         url: /services/ceilingfan
         image: /images/ceilingfan20210220.jpg
       - title: Desk Assembly
         image: /images/desk_assembly/re20200111_144150.jpg
-      - title: Door Knob Replacement
+        url: /services/furniture
+      - title: Door Knob Installation
         image: /images/keypad_20201013/re20201013_125226.jpg
         url: /services/keypadlock
-      - title: Doorbell Replacement / Installation
+      - title: Doorbell Installation
         url: /services/doorbell
         image: /images/doorbell_20200919/20200919_160721T.jpg
       - title: Dresser Assembly
         url: /services/dresser
         image: /images/dresser_20200823/20200823_194032T.jpg
-      - title: Exterior Door Replacement
+      - title: Exterior Door Installation
       - title: Exercise Equipment Assembly
         image: /images/exercise_20211009/re20210109_113530.jpg
+        url: /services/furniture
       - title: Furniture Assembly
         url: /services/furniture
         favorite: true
@@ -129,17 +128,19 @@ theme:
       - title: Grass Cutting
       - title: Kitchen Island Assembly
         image: /images/kitchen_island_20200404/re20200404_102500.jpg
-      - title: Lawn Services (Cutting, Edging, Light Landscaping)
+        url: /services/furniture
+      - title: Lawn Services
         image: /images/landscaping_20200718/re20200719_085301.jpg
-      - title: Lighting Fixture Replacement / Installation
+      - title: Lighting Fixture Installation
         url: /services/lightfixture
         favorite: true
         image: /images/light_fixture_install_20201231/re20201231_155035.jpg
-      - title: Mailbox Replacement
-      - title: Motion Light Replacement / Installation
+      - title: Mailbox Installation
+      - title: Motion Light Installation
         url: https://www.facebook.com/rhtservicesllc/photos/a.107519491418044/107133814789945/
       - title: Patio Furniture Assembly
         image: /images/patio_furniture/re20200527_203222.jpg
+        url: /services/furniture
       - title: Picture Hanging
         favorite: true
         url: /services/picturehanging
@@ -150,10 +151,11 @@ theme:
       - title: Shed Assembly
         url: /services/shed2
         image: /images/shed_20200926/20200926_113722T.jpg
-      - title: Screen Door Replacement / Installation
+      - title: Screen Door Installation
       - title: Soundbar Installation
-      - title: Storm Door Replacement / Installation
+      - title: Storm Door Installation
       - title: Table Assembly
+        url: /services/furniture
       - title: Television (TV) Stand Assembly
         url: /services/tvstand
         favorite: true
@@ -162,22 +164,22 @@ theme:
         url: /services/tvmounting
         favorite: true
         image: /images/tvmounting.jpg
-      - title: Thermostat (Smart and Non-Smart) Replacement / Installation
+      - title: Thermostat Installation
         url: /services/smartthermostat
         image: /images/thermostat_20210213/re20210213_123820.jpg
-      - title: Toilet Leak Repair / Valve Replacement
-      - title: Window Blind Replacement / Installation
-      - title: Window Curtain Replacement / Installation
-      - title: Window Drapery Replacement / Installation
+      - title: Toilet Leak Repair
+      - title: Window Blind Installation
+      - title: Window Curtain Installation
+      - title: Window Drapery Installation
       ## technology
       - title: Computer Repair
       - title: Computer Programming Sessions
         image: /images/computer_programming.jpg
-        favorite: true
-        url: https://www.youtube.com/watch?v=fg9AgEkuy9o
+      #   favorite: true
+      #   url: https://www.youtube.com/watch?v=fg9AgEkuy9o
       - title: Drupal Maintenance and Updates
         url: https://www.youtube.com/watch?v=DjtIx1my2eE
-      - title: Google Analytics Installation and Configuration
+      - title: Google Analytics
       - title: Googe Search Console
       - title: Home Networking Solutions
         favorite: true
@@ -199,6 +201,13 @@ theme:
   promotions:
     - heading: "Save 5% on your first service!"
       detail: "Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers."
+      buttoncolor: btn-dark-gray
+      buttontext: Book Now!
+      buttonurl: https://rhtservices.square.site/
+      bgcolor: bg-warning
+      textcolor: text-dark
+    - heading: 4th Of July Ceiling Fan Special
+      detail: We are offering 25% off our normal Ceiling Fan Installation price! You must book an appointment by July 4, 2021. Cannot be combined with any other offers. Offer will be applied at checkout.
       buttoncolor: btn-dark-gray
       buttontext: Book Now!
       buttonurl: https://rhtservices.square.site/
@@ -305,7 +314,7 @@ theme:
           # - name: Sitemap
           #   url: /sitemap.xml
           #   icon: bi bi-diagram-3
-          - name: Ceiling Fan Replacement
+          - name: Ceiling Fan Installation
             icon: bi bi-hammer
             url: /services/ceilingfan
           - name: Furniture Assembly
@@ -314,7 +323,7 @@ theme:
           - name: Home Networking Solutions
             icon: bi bi-hammer
             url: /services/homenetwork
-          - name: Lighting Fixture Replacement
+          - name: Lighting Fixture Installation
             icon: bi bi-hammer
             url: /services/lightfixture
           - name: Linux Training

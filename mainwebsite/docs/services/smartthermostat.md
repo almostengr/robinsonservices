@@ -8,12 +8,30 @@ installation, I shared with the customer some of the features that she was not a
 has including Circulation Mode. Also assisted with getting the thermostat connected to the customer's 
 WiFi network.
 
-![](/images/thermostat_20210213/re20210213_111551.jpg)
+<div class="row my-2">
+<div class="col-sm-12 col-md-3">
+<img src="/images/thermostat_20210213/re20210213_111551.jpg" alt="">
+</div>
+<div class="col-sm-12 col-md-3">
+<img src="/images/thermostat_20210213/re20210213_111932.jpg" alt="">
+</div>
+<div class="col-sm-12 col-md-3">
+<img src="/images/thermostat_20210213/re20210213_120441.jpg" alt="">
+</div>
+<div class="col-sm-12 col-md-3">
+<img src="/images/thermostat_20210213/re20210213_123820.jpg" alt="">
+</div>
+</div>
 
-![](/images/thermostat_20210213/re20210213_111932.jpg)
+## Common Thermostat Replacement Questions
 
-![](/images/thermostat_20210213/re20210213_120441.jpg)
+### Are all thermostats the same? 
 
-![](/images/thermostat_20210213/re20210213_123820.jpg)
+They are not. Traditional programmable thermostats run off of batteries. Smart thermostats run off of power
+supplied by your air conditioner unit.
 
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>
+### Can I have a smart thermostat but not connect it to the internet?
+
+Yes you can. Do note, that because it is not connected to the internet, that many of the features, such as 
+being able to change the temperature while away from home, energy savings based on the weather conditions, 
+and software updates will not be available.

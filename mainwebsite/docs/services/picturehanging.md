@@ -22,5 +22,3 @@ Proper way to hang picture is to use a picture hanging hook. Picture hanging hoo
 that they hold the picture up against gravity. Using a nail or screw will work, 
 but requires that the fastener be installed in a particular way so that it does not fall out of the 
 wall or fall from the weight of the picture being on it.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

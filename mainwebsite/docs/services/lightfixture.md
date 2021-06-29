@@ -25,5 +25,3 @@ have a smaller base and usually consume less power than the common Edison bulbs.
 
 Thus if you try to use bulbs that consume more power than what the fixture is rated for, either the light
 will not work or the light may catch fire due to it pulling more power than it is rated for.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

@@ -20,8 +20,6 @@ including the instructions were misplaced. Thus this shed was assembled based on
 </div>
 </div>
 
-[<< Back to Services](/services)
-
 ## More Recent Shed Assembly Photos
 
 A customer ordered this Shed from Wayfair. Customer stated that he was going to use the shed to store
@@ -43,9 +41,9 @@ chemicals for his pool. This shed was designed to hide garbage cans.
 
 ### Can a shed be placed it directly on the ground?
 
-This depends. Some sheds are not designed to be placed directly on the ground. These type of sheds require
-that you purchase an additional floor kit. The purpose of the floor kit is to keep the bottom of the shed
-from separating.
+This depends. Some sheds are not designed to be placed directly on the ground. These type of sheds usually require
+that you purchase a separate floor kit. The purpose of the floor kit is to keep the bottom of the shed
+from separating and deforming the shape of the shed
 
 In addition to the above, the ground that the shed is being placed on must be level. If the
 ground is not level, then you can experience problems with your shed, such as the doors
@@ -66,5 +64,3 @@ Yes they do. Sheds that are not anchored to the ground are more likely to blow
 away during severe weather or storms. Even if the shed has heavy items in 
 them, the shed could still blow away or fall over if not properly anchored. RHT Services will 
 will install anchors for sheds if requested.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>

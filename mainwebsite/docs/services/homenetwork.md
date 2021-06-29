@@ -22,24 +22,21 @@ Schedule your home networking service appointment today!
 
 ### Wireless (WiFi) is better than wired (Ethernet) correct?
 
-False. While wireless is more convenient, is usually slower than the latest wired standard.
+False. While wireless is more convenient, is has always been slower than the latest wired standard.
 
-With wireless, only one device can send or receive data a time. This would be the equivalent 
-of a cars going through a single lane road construction zone. Only traffic in one direction 
-move at a time. 
-
-With wired or Ethernet, all devices can send and receive data at the same time. This would be 
+With wireless networks, only one device can send or receive data a time. This would be the equivalent 
+of a cars navigating a single lane road. Traffic can only move in one direction at a time. 
+With wired or Ethernet networks, all devices can send and receive data at the same time. This would be 
 the equivalent of cars driving on the interstate or other multi-lane highway.
 
 In addition, wireless signals can interfere with each other, thus further slowing the overall speed
 of the network. The impact of this is more common with 
-those that live in apartments or other multi-unit dwellings than in single family houses. While this 
+those that live in apartments or other multi-unit dwellings that are close together
+than in single family houses. While this 
 can be resolved, it does take technical knowledge and know how to address it. RHT Services has 
 this knowledge from years of experience working with technology. 
 
 ### I don’t want to run wires through my house to get the fastest internet speeds. 
 
-You don’t have to. Part of the Home Networking service is to run wire to connect your 
-entire home. Just [contact us](/contact.php) or [schedule service](https://rhtservices.square.site/) to get started.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>
+You don’t have to. Part of the Home Networking service is to run wire through the attic or basement 
+to connect your entire home. Just [book an appointment](https://rhtservices.square.site/) to get started.

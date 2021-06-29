@@ -3,16 +3,10 @@ title: Schedule Service
 description: Submit a service request to have work done on the project of your choosing
 ---
 
-To book an appointment or schedule service, use the form below. Some services have additional details that 
-need to be provided in order to properly prepare for the requested service. If you have questions about 
-the work to be done, you may <a href="tel:(334) 595-9690">give us a call</a>.
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="2;url=https://rhtservices.square.site"/>
 
-All appointments made here, will be followed up with a phone, text, or email confirmation.
+Redirecting...
 
-<p class="text-center">
-<button class="btn btn-warning">
-<a href="https://rhtservices.square.site/" target="_blank">
-Go to Appointment Booking Website
-</a>
-</button>
-<p>
+If you are not automatically redirected,
+go to [RHT Services Appointment Booking Website](https://rhtservices.square.site).

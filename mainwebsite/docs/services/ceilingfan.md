@@ -38,5 +38,3 @@ are made differently than down rod ceiling fans. As a result, their motors are m
 in the housing. Unlike car parts, finding that exact replacement motor for your ceiling
 fan is not as easy as you think. It is best to replace the existing fan with a new one instead
 of trying to find replacement parts.
-
-<h3>Ready to get started? <a href="https://rhtservices.square.site/">Schedule your service</a> today!</h3>
