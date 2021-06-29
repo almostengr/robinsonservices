@@ -47,9 +47,11 @@ namespace Almostengr.RhtServicesTest
 
             // act
             GoHome(driver);
+            
+            string footerText = driver.FindElement(By.TagName("footer")).Text;
 
             // assert
-            Assert.IsTrue(driver.PageSource.ToUpper().Contains(string.Concat("COPYRIGHT ", DateTime.Now.Year.ToString())));
+            Assert.IsTrue(footerText.Contains(DateTime.Now.Year.ToString()));
         }
 
         [OneTimeTearDown]
