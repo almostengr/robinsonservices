@@ -1,0 +1,23 @@
+<form method="post" action="https://rhtservices.net/rhtnewsletter/?p=subscribe&id=1" name="subscribeform"
+    id="subscribeform" enctype="multipart/form-data">
+    <input type="hidden" name="list[2]" value="signup" />
+    <input type="hidden" name="listname[2]" value="newsletter" />
+    <input type="hidden" name="htmlemail" value="1" />
+    <input type="hidden" name="subscribe" value="subscribe" />
+    <div class="my-2">
+        Sign up to receive deals in your inbox! We won't send you more than 1-2 emails per month.
+    </div>
+    <div class="my-2">
+        <label class="required font-weight-bold" for="email">Email Address</label><br />
+        <input type="text" name="email" required="required" class="form-control" id="email" />
+        <script language="Javascript" type="text/javascript">addFieldToCheck("email", "Email");</script>
+    </div>
+    <div style="display:none">
+        <input type="text" name="VerificationCodeX" value="">
+    </div>
+    <div class="my-2">
+        <button class='button form-control btn btn-warning'
+            onclick="if (checkNewsletterform()) {submitNewsletterForm();} return false;">Subscribe!</button>
+    </div>
+    <div id="result" style="color: red;"></div>
+</form>

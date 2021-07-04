@@ -30,9 +30,9 @@
   <meta property="og:title" content="{{ page.title | striptags }}" />
   <meta name="twitter:title" content="{{ page.title | striptags }}" />
   {% else %}
-  <title>{{ config.site_name }}</title>
-  <meta property="og:title" content="{{ config.site_name }}" />
-  <meta name="twitter:title" content="{{ config.site_name }}" />
+  <title>{{ config.site_name }} | {{ config.site_description }}</title>
+  <meta property="og:title" content="{{ config.site_name }} | {{ config.site_description }}" />
+  <meta name="twitter:title" content="{{ config.site_name }} | {{ config.site_description }}" />
   {% endif %}
   {% if page and page.meta.image %}
   <meta property="og:image" content="{{ page.meta.image | url }}" />
@@ -204,7 +204,7 @@
       {%- endblock %}
     </div>
     {% if page and page.url == "services/" %}
-    <div class="container py-2" id="services">
+    <div class="container py-2" id="services1">
       {% for category in config.theme.serviceslist %}
       <h2 id="{{ category.name | lower | replace(' ', '-') }}">{{ category.name }}</h2>
       <div class="row text-center align-items-start mx-auto">
@@ -280,6 +280,9 @@
           </div>
         </div>
         {% endfor %}
+
+
+
       </div>
       <p><br /></p>
       <div class="card text-decoration-none h-100">
@@ -293,29 +296,16 @@
     </div>
     {% endif %}
   </main>
-  <!-- {% for promo in config.theme.promotions %}
-  <section class="{{ promo.bgcolor }} {{ promo.textcolor }} py-4 promotions">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <h4>{{ promo.heading }}</h4>
-          <p>{{ promo.detail }}</p>
-        </div>
-        <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <form method="GET" action="{{ promo.buttonurl }}">
-            <input type="submit" class="btn btn-lg {{ promo.buttoncolor }}" value="{{ promo.buttontext }}">
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  {% endfor %} -->
   {% for section in config.theme.subfooter %}
   <section class="{{ section.bgcolor }} {{ section.textcolor }} subfooter">
     <div class="container text-left py-3">
       <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <h4 class="px-2 subfooterheader {{ section.headercolor }}">Sign Up for Deals!</h4>
+          {% include "_subscribemail.html" %}
+        </div>
         {% for column in section.columns %}
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-3">
           <h4 class="px-2 subfooterheader {{ section.headercolor }}">{{ column.heading }}</h4>
           <ul class="list-unstyled mx-3">
             {% for item in column.links %}
@@ -357,7 +347,6 @@
   {% endfor %}
   <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async crossorigin="anonymous"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"></script>
-  <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <script async src="/js/javascript.min.js"></script>
   <script async src="/js/bootstrap.min.js"></script>
