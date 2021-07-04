@@ -11,17 +11,17 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   <meta property="og:site_name" content="Robinson Handy and Technology Services LLC" />
   <meta name="twitter:card" content="summary" />
   
-  <meta name="description" content="Providing handyman and technology services for the Montgomery, Alabama area.">
-  <meta property="og:description" content="Providing handyman and technology services for the Montgomery, Alabama area." />
-  <meta name="twitter:description" content="Providing handyman and technology services for the Montgomery, Alabama area." />
+  <meta name="description" content="Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.">
+  <meta property="og:description" content="Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
+  <meta name="twitter:description" content="Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
   
   
-  <meta name="author" content="Robinson Handy and Technology Services LLC">
+  <meta name="author" content="Robinson Handy and Technology Services">
   
   
-  <title>Robinson Handy and Technology Services LLC</title>
-  <meta property="og:title" content="Robinson Handy and Technology Services LLC" />
-  <meta name="twitter:title" content="Robinson Handy and Technology Services LLC" />
+  <title>Robinson Handy and Technology Services LLC | Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.</title>
+  <meta property="og:title" content="Robinson Handy and Technology Services LLC | Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
+  <meta name="twitter:title" content="Robinson Handy and Technology Services LLC | Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
   
   
 
@@ -85,12 +85,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
         
         
         <li class="nav-item">
-          <a class="nav-link text-white" href="/specials">Specials</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
           <a class="nav-link text-white" href="/about">About</a>
         </li>
         
@@ -104,8 +98,6 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
         
         
       </ul>
-      
-      
       
       
       
@@ -293,45 +285,38 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
     </div>
     
   </main>
-  <!-- 
-  <section class="bg-warning text-dark py-4 promotions">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <h4>Save 5% on your first service!</h4>
-          <p>Mention that you saw this message on our website and you will get 5% off your first service!<br />Not valid for Handy or HomeAdvisor customers.</p>
-        </div>
-        <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <form method="GET" action="https://rhtservices.square.site/">
-            <input type="submit" class="btn btn-lg btn-dark-gray" value="Book Now!">
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="bg-warning text-dark py-4 promotions">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <h4>4th Of July Ceiling Fan Special</h4>
-          <p>We are offering 25% off our normal Ceiling Fan Installation price! You must book an appointment by July 4, 2021. Cannot be combined with any other offers. Offer will be applied at checkout.</p>
-        </div>
-        <div class="col-sm-12 col-md-6 pb-2 text-center">
-          <form method="GET" action="https://rhtservices.square.site/">
-            <input type="submit" class="btn btn-lg btn-dark-gray" value="Book Now!">
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-   -->
   
   <section class="bg-dark text-white subfooter">
     <div class="container text-left py-3">
       <div class="row">
+        <div class="col-sm-12 col-md-3">
+          <h4 class="px-2 subfooterheader text-warning">Sign Up for Deals!</h4>
+          <form method="post" action="https://rhtservices.net/rhtnewsletter/?p=subscribe&id=1" name="subscribeform"
+    id="subscribeform" enctype="multipart/form-data">
+    <input type="hidden" name="list[2]" value="signup" />
+    <input type="hidden" name="listname[2]" value="newsletter" />
+    <input type="hidden" name="htmlemail" value="1" />
+    <input type="hidden" name="subscribe" value="subscribe" />
+    <div class="my-2">
+        Sign up to receive deals in your inbox! We won't send you more than 1-2 emails per month.
+    </div>
+    <div class="my-2">
+        <label class="required font-weight-bold" for="email">Email Address</label><br />
+        <input type="text" name="email" required="required" class="form-control" id="email" />
+        <script language="Javascript" type="text/javascript">addFieldToCheck("email", "Email");</script>
+    </div>
+    <div style="display:none">
+        <input type="text" name="VerificationCodeX" value="">
+    </div>
+    <div class="my-2">
+        <button class='button form-control btn btn-warning'
+            onclick="if (checkNewsletterform()) {submitNewsletterForm();} return false;">Subscribe!</button>
+    </div>
+    <div id="result" style="color: red;"></div>
+</form>
+        </div>
         
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-3">
           <h4 class="px-2 subfooterheader text-warning">About RHT Services</h4>
           <ul class="list-unstyled mx-3">
             
@@ -448,7 +433,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           </ul>
         </div>
         
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-3">
           <h4 class="px-2 subfooterheader text-warning">Service Areas</h4>
           <ul class="list-unstyled mx-3">
             
@@ -626,7 +611,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           </ul>
         </div>
         
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-3">
           <h4 class="px-2 subfooterheader text-warning">Popular Services</h4>
           <ul class="list-unstyled mx-3">
             
@@ -738,13 +723,12 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
           LLC</a>
       </div>
-      <!-- Last updated: 2021-06-29 03:21:08.601631+00:00 -->
+      <!-- Last updated: 2021-07-04 01:02:14.371210+00:00 -->
     </div>
   </footer>
   
   <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" async crossorigin="anonymous"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"></script>
-  <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script async src="/js/bootstrap.bundle.min.js"></script>
   <script async src="/js/javascript.min.js"></script>
   <script async src="/js/bootstrap.min.js"></script>

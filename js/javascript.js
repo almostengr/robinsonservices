@@ -1,22 +1,3 @@
-var opacity = 0;
-var intervalID = 0;
-// window.onload = fadeIn;
-
-function fadeIn() {
-    setInterval(show, 50);
-}
-
-function show() {
-    var body = document.getElementById("services");
-    opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity"));
-    if (opacity < 1) {
-        opacity = opacity + 0.1;
-        body.style.opacity = opacity
-    } else {
-        clearInterval(intervalID);
-    }
-}
-
 function externalLinks() {
     var anchors = document.getElementsByTagName('a');
     for (var i = 0; i < anchors.length; i++) {
@@ -40,6 +21,35 @@ function facebookChat() {
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+}
+
+function checkNewsletterform() {
+    re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+    if (!(re.test(jQuery("#email").val()))) {
+        jQuery("#result").empty().append("Please enter a valid email address");
+        jQuery("#email").focus();
+        return false;
+    }
+    return true;
+}
+
+function submitNewsletterForm() {
+    successMessage = 'Thank you for your registration. Please check your email to confirm.';
+    data = jQuery('#subscribeform').serialize();
+    jQuery.ajax({
+        type: 'POST',
+        data: data,
+        // url: 'https://installationname.yourdomain.com/lists/?p=subscribe&id=1',
+        url: 'https://rhtservices.net/rhtnewsletter/?p=subscribe&id=1',
+        dataType: 'html',
+        success: function(data, status, request) {
+            jQuery("#result").empty().append(data != '' ? data : successMessage);
+            jQuery('#email').val('');
+        },
+        error: function(request, status, error) {
+            alert('Sorry, we were unable to process your subscription.');
+        }
+    });
 }
 
 externalLinks();
