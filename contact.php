@@ -11,17 +11,17 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   <meta property="og:site_name" content="Robinson Handy and Technology Services LLC" />
   <meta name="twitter:card" content="summary" />
   
-  <meta name="description" content="Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.">
-  <meta property="og:description" content="Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
-  <meta name="twitter:description" content="Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
+  <meta name="description" content="Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.">
+  <meta property="og:description" content="Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
+  <meta name="twitter:description" content="Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
   
   
   <meta name="author" content="Robinson Handy and Technology Services">
   
   
-  <title>Robinson Handy and Technology Services LLC | Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.</title>
-  <meta property="og:title" content="Robinson Handy and Technology Services LLC | Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
-  <meta name="twitter:title" content="Robinson Handy and Technology Services LLC | Provindg handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
+  <title>Robinson Handy and Technology Services LLC | Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.</title>
+  <meta property="og:title" content="Robinson Handy and Technology Services LLC | Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
+  <meta name="twitter:title" content="Robinson Handy and Technology Services LLC | Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas." />
   
   
 
@@ -723,7 +723,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
           LLC</a>
       </div>
-      <!-- Last updated: 2021-07-04 01:02:14.371210+00:00 -->
+      <!-- Last updated: 2021-07-05 15:55:51.823380+00:00 -->
     </div>
   </footer>
   
