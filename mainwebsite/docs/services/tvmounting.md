@@ -22,14 +22,14 @@ Some manufacturers, like
 LG and Samsung, have certain TV models that require a manufacturer specific mount.
 Thus you MUST buy that manufacturer's mount 
 for the TV and not a generic name brand mount. Check your TV owners manual or the 
-manufacturer’s website to see your TV model requires a specific mount.
+manufacturer’s website to see what kind of mount your TV is compatible with.
 
 ### Can I mount a TV over the fireplace?
 
 The common answer from manufacturers is no. The reason being is that 
-heat rises and as a result, the heat from the 
-fireplace will go upward where the TV is. This can result in the TV overheating and thus
-malfunction or stop working.
+heat rises and as a result, the heat and soot from the 
+fireplace will go upward where the TV is as heat rises. This can result in the TV overheating and becoming 
+dirty and thus malfunction or stop working.
 
 What we advise is that if customers do not use their fireplace, then TV over the fireplace 
 is fine. However, if customers do use their fireplace, then we would suggest that the TV

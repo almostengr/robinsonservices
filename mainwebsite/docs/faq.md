@@ -35,3 +35,8 @@ cities and counties in Alabama. See the [About page](/about) for exact locations
 Affiliate links help to bring income in to the business. Products that are recommended on this website 
 may be an affiliate link. When clicked or a purchase is made, a percentage of that purchase is given to 
 the affiliate partner.
+
+## I have question about a specific service. Where can I get answers?
+
+Please visit the [Services](/services) page and click the specific service that you are interested in 
+finding out more about for more information.

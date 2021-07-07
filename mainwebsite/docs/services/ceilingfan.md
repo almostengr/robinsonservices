@@ -38,3 +38,29 @@ are made differently than down rod ceiling fans. As a result, their motors are m
 in the housing. Unlike car parts, finding that exact replacement motor for your ceiling
 fan is not as easy as you think. It is best to replace the existing fan with a new one instead
 of trying to find replacement parts.
+
+### The ceiling fan wobbles a lot when running. Why is that?
+
+All ceiling fans will have some wobble when running as it is moving. 
+However, a lot of wobbling can be an indicator for one of several problems: 
+
+* The ceiling fan is out of balance
+* One or more of the ceiling fan blades are loose and need to be tightened
+* The ceiling fan is not properly seated in the hanger and needs to be repositioned
+* The junction box that the ceiling fan is mounted to is not secured correctly to the framing
+* The junction box that the ceiling fan is not rated for ceiling fans
+
+Regardless of what the cause may be, RHT Services will investigate and repair the problem for you.
+
+### I want brighter bulbs in my fixture, but it says that only low wattage blubs can be used. Why is this?
+
+In 2005, Congress passed the Energy Policy Act of 2005. Part of this legislation limits the amount of power
+that a ceiling fan and other multi-bulb fixtures can consume. As a result of this legislation,
+some manufacturers updated their products to have a wattage limiter switch.
+Other manufacturers took things a step further and designed
+their fixtures to use candelabra bulbs instead of standard Edison bulbs. The candelabra bulbs
+have a smaller base and usually consume less power than the common Edison bulbs.
+
+Thus if you try to use bulbs that consume more power than what the fixture is rated for, either the light
+will not work or the light may catch fire due to it pulling more power than it is rated for.
+
