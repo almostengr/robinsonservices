@@ -723,7 +723,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
           LLC</a>
       </div>
-      <!-- Last updated: 2021-07-05 15:55:51.823380+00:00 -->
+      <!-- Last updated: 2021-07-07 03:18:58.069955+00:00 -->
     </div>
   </footer>
   
