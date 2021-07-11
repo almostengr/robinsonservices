@@ -18,6 +18,9 @@ namespace Almostengr.RhtServicesTest
         public void ProperFormSubmission()
         {
             GoHome(driver);
+
+            driver.FindElement(By.ClassName("navbar-toggler")).Click();
+            
             driver.FindElement(By.LinkText("Contact")).Click();
 
             driver.FindElement(By.Name("customerfirst")).SendKeys("RHT");

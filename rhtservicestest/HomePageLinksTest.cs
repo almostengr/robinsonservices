@@ -21,6 +21,8 @@ namespace Almostengr.RhtServicesTest
 
             // act
             GoHome(driver);
+
+            driver.FindElement(By.ClassName("navbar-toggler")).Click();
             
             System.Collections.ObjectModel.ReadOnlyCollection<IWebElement> buttonElements = 
                 driver.FindElements(By.TagName("button"));
