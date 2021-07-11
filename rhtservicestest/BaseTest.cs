@@ -17,6 +17,7 @@ namespace Almostengr.RhtServicesTest
 
             driver = new ChromeDriver(options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+            driver.Manage().Window.Maximize();
 
 #if RELEASE
             driver.Navigate().GoToUrl("https://rhtservices.net");
