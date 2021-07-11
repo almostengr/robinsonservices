@@ -2,7 +2,7 @@ site_name: Robinson Handy and Technology Services LLC
 site_description: Providing handyman and technology services for Montgomery, Prattville, Wetumpka, Millbrook and surrounding areas.
 site_author: Robinson Handy and Technology Services
 site_url: https://rhtservices.net
-copyright: Robinson Handy and Technology (RHT) Services LLC
+copyright: Robinson Handy and Technology Services LLC
 
 # repository information
 repo_url: https://github.com/almostengr/robinsonservices
@@ -244,46 +244,46 @@ theme:
           - name: Sitemap
             url: /sitemap.xml
             icon: bi bi-diagram-3
-      - heading: Service Areas
-        links:
-          - name: Autaugaville
-            icon: bi bi-geo-alt-fill
-          - name: Cecil
-            icon: bi bi-geo-alt-fill
-          - name: Coosada
-            icon: bi bi-geo-alt-fill
-          - name: Deatsville
-            icon: bi bi-geo-alt-fill
-          - name: Elmore
-            icon: bi bi-geo-alt-fill
-          - name: Hope Hull
-            icon: bi bi-geo-alt-fill
-          - name: Millbrook
-            icon: bi bi-geo-alt-fill
-          - name: Montgomery
-            icon: bi bi-geo-alt-fill
-          - name: Mount Meigs
-            icon: bi bi-geo-alt-fill
-          - name: Pike Road
-            icon: bi bi-geo-alt-fill
-          - name: Pine Level<br />(Autauga and Montgomery Counties)
-            icon: bi bi-geo-alt-fill
-          - name: Prattville
-            icon: bi bi-geo-alt-fill
-          - name: Rolling Hills
-            icon: bi bi-geo-alt-fill
-          - name: Tallassee
-            icon: bi bi-geo-alt-fill
-          - name: Waugh
-            icon: bi bi-geo-alt-fill
-          - name: Wetumpka
-            icon: bi bi-geo-alt-fill
-          - name: Autauga County, Alabama
-            icon: bi bi-geo-alt-fill
-          - name: Elmore County, Alabama
-            icon: bi bi-geo-alt-fill
-          - name: Montgomery County, Alabama
-            icon: bi bi-geo-alt-fill
+      # - heading: Service Areas
+      #   links:
+      #     - name: Autaugaville
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Cecil
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Coosada
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Deatsville
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Elmore
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Hope Hull
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Millbrook
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Montgomery
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Mount Meigs
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Pike Road
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Pine Level<br />(Autauga and Montgomery Counties)
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Prattville
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Rolling Hills
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Tallassee
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Waugh
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Wetumpka
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Autauga County, Alabama
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Elmore County, Alabama
+      #       icon: bi bi-geo-alt-fill
+      #     - name: Montgomery County, Alabama
+      #       icon: bi bi-geo-alt-fill
       - heading: Popular Services
         links:
           - name: Ceiling Fan Installation
