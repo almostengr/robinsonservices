@@ -545,7 +545,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
         Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
           LLC</a>
       </div>
-      <!-- Last updated: 2021-07-11 21:09:04.830731+00:00 -->
+      <!-- Last updated: 2021-07-11 21:33:28.755806+00:00 -->
     </div>
   </footer>
   
