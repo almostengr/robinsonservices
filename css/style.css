@@ -135,4 +135,9 @@ div#services{
 
 main {
     min-height: 1vh;
+}   
+ 
+.navbar > a 
+{
+    float: left;
 }

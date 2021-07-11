@@ -63,7 +63,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
   </script>
   <div class="fb-customerchat" attribution="setup_tool" page_id="105211041648889" theme_color="#ffc107">
   </div>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="/">
       
       <img src="/images/logo.ico" alt="RHT Services logo">
@@ -75,7 +75,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/../phpenv.rs.php");
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto pr-2">
         
         
         <li class="nav-item">
@@ -289,7 +289,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
   <section class="bg-dark text-white subfooter">
     <div class="container text-left py-3">
       <div class="row">
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4">
           <h4 class="px-2 subfooterheader text-warning">Sign Up for Deals!</h4>
           <form method="post" action="https://rhtservices.net/rhtnewsletter/?p=subscribe&id=1" name="subscribeform"
     id="subscribeform" enctype="multipart/form-data">
@@ -316,7 +316,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
 </form>
         </div>
         
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4">
           <h4 class="px-2 subfooterheader text-warning">About RHT Services</h4>
           <ul class="list-unstyled mx-3">
             
@@ -433,185 +433,7 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
           </ul>
         </div>
         
-        <div class="col-sm-12 col-md-3">
-          <h4 class="px-2 subfooterheader text-warning">Service Areas</h4>
-          <ul class="list-unstyled mx-3">
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Autaugaville
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Cecil
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Coosada
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Deatsville
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Elmore
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Hope Hull
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Millbrook
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Montgomery
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Mount Meigs
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Pike Road
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Pine Level<br />(Autauga and Montgomery Counties)
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Prattville
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Rolling Hills
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Tallassee
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Waugh
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Wetumpka
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Autauga County, Alabama
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Elmore County, Alabama
-              
-            </li>
-            
-            <li>
-              
-              <i class="bi bi-geo-alt-fill"></i>
-              
-              
-              Montgomery County, Alabama
-              
-            </li>
-            
-          </ul>
-        </div>
-        
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4">
           <h4 class="px-2 subfooterheader text-warning">Popular Services</h4>
           <ul class="list-unstyled mx-3">
             
@@ -716,14 +538,14 @@ if (isset($_POST['emailaddress']) && isset($HELPDESK_EMAIL)) {
   <footer class="bg-black text-warning">
     <div class="container text-center py-3">
       <div class="col-sm-12">
-        &copy; Copyright 2021 Robinson Handy and Technology (RHT) Services LLC
+        &copy; Copyright 2021 Robinson Handy and Technology Services LLC
         
       </div>
       <div class="col-sm-12">
         Website developed by <a href="https://rhtservices.net" target='_blank'>Robinson Handy and Technology Services
           LLC</a>
       </div>
-      <!-- Last updated: 2021-07-07 03:18:58.069955+00:00 -->
+      <!-- Last updated: 2021-07-11 20:20:15.493625+00:00 -->
     </div>
   </footer>
   
